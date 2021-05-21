@@ -11688,7 +11688,7 @@ module.exports = function(e) {
                 staticClass: "header"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("前 100 个匹配的规则(共 " + e._s(e.memoryData.length) + " 个).")]), e._v(" "), n("div", {
+            }, [e._v("前 100 个匹配的规则 (共 " + e._s(e.memoryData.length) + " 个).")]), e._v(" "), n("div", {
                 staticClass: "header-btns"
             }, [n("div", {
                 staticClass: "btn btn-add md-button",
@@ -11771,7 +11771,11 @@ module.exports = function(e) {
                     staticClass: "right",
                     style: e.randomBGC(t.proxy),
                     domProps: {
-                        innerHTML: e._s(e.$parseEmoji(t.proxy, 22, 0, 0))
+                        innerHTML: e._s(e.$parseEmoji((
+                            (t.proxy == "DIRECT") ? "☆ 直连 ☆" :
+                            (t.proxy == "REJECT") ? "☆ 拒绝 ☆" :
+                            t.proxy
+                        ), 22, 0, 0))
                     }
                 }, [e._v("\n          " + e._s(t.proxy) + "\n        ")]), e._v(" "), n("svg", {
                     staticClass: "icon",
@@ -18538,7 +18542,7 @@ module.exports = function(e) {
                 staticClass: "section ad-section"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("汉化版 v0.15.7.1 · 译者: ImFatF1sh")]), e._v(" "), n("div", {
+            }, [e._v("汉化版 v0.15.7.1.1 · 译者: ImFatF1sh")]), e._v(" "), n("div", {
                 staticClass: "ad-img-list"
             }, e._l(e.adImages, (function(t, r) {
                 return n("div", {
