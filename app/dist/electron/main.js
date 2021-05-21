@@ -322,7 +322,7 @@ module.exports = function(e) {
         }, {
             label: "更多",
             submenu: [{
-                label: "展示/隐藏开发者工具",
+                label: "展示 / 隐藏开发者工具",
                 click: function() {
                     _.webContents.toggleDevTools()
                 }

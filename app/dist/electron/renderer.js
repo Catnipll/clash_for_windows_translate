@@ -9655,7 +9655,7 @@ module.exports = function(e) {
                 }
             })], 1) : e._e(), e._v(" "), 1 === e.settings.systemProxyTypeIndex ? e._e() : n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("绕过域名/IPNet")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("绕过域名 / IPNet")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
                     text: "编辑"
@@ -10045,7 +10045,7 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("separator"), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("展示/隐藏仪表盘")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("展示 / 隐藏仪表盘")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
@@ -11457,16 +11457,16 @@ module.exports = function(e) {
                         }
                     }
                 }, [e._v("\n                " + e._s(
-                    (t == "DOMAIN-SUFFIX") ? "域名后缀" :
-                    (t == "DOMAIN") ? "域名" :
-                    (t == "DOMAIN-KEYWORD") ? "域名关键字" :
-                    (t == "IP-CIDR") ? "IP CIDR" :
-                    (t == "SRC-IP-CIDR") ? "源 IP CIDR" :
-                    (t == "GEOIP") ? "GeoIP" :
-                    (t == "PROCESS-NAME") ? "进程名称" :
-                    (t == "DST-PORT") ? "DST 端口" :
-                    (t == "SRC-PORT") ? "源端口" :
-                    (t == "MATCH") ? "匹配" :
+                    (t == "DOMAIN-SUFFIX") ? "★ 域名后缀 ★" :
+                    (t == "DOMAIN") ? "★ 域名 ★" :
+                    (t == "DOMAIN-KEYWORD") ? "★ 域名关键字 ★" :
+                    (t == "IP-CIDR") ? "★ IP CIDR ★" :
+                    (t == "SRC-IP-CIDR") ? "★ 源 IP CIDR ★" :
+                    (t == "GEOIP") ? "★ GeoIP ★" :
+                    (t == "PROCESS-NAME") ? "★ 进程名称 ★" :
+                    (t == "DST-PORT") ? "★ 目标端口 ★" :
+                    (t == "SRC-PORT") ? "★ 源端口 ★" :
+                    (t == "MATCH") ? "★ 匹配 ★" :
                     t
                 ) + "\n              ")])
             })), 0), e._v(" "), n("div", {
@@ -11753,17 +11753,17 @@ module.exports = function(e) {
                 }, [e._v("\n          " + e._s(t.payload) + "\n        ")]), e._v(" "), n("div", {
                     class: ["rule-" + e.theme]
                 }, [e._v("\n          " + e._s(
-                    (t.type == "DOMAIN-SUFFIX") ? "域名后缀" :
-                    (t.type == "DOMAIN") ? "域名" :
-                    (t.type == "DOMAIN-KEYWORD") ? "域名关键字" :
-                    (t.type == "IP-CIDR") ? "IP CIDR" :
-                    (t.type == "IP-CIDR6") ? "IPv6 CIDR" :
-                    (t.type == "SRC-IP-CIDR") ? "源 IP CIDR" :
-                    (t.type == "GEOIP") ? "GeoIP" :
-                    (t.type == "PROCESS-NAME") ? "进程名称" :
-                    (t.type == "DST-PORT") ? "DST 端口" :
-                    (t.type == "SRC-PORT") ? "源端口" :
-                    (t.type == "MATCH") ? "匹配" :
+                    (t.type == "DOMAIN-SUFFIX") ? "★ 域名后缀 ★" :
+                    (t.type == "DOMAIN") ? "★ 域名 ★" :
+                    (t.type == "DOMAIN-KEYWORD") ? "★ 域名关键字 ★" :
+                    (t.type == "IP-CIDR") ? "★ IP CIDR ★" :
+                    (t.type == "IP-CIDR6") ? "★ IPv6 CIDR ★" :
+                    (t.type == "SRC-IP-CIDR") ? "★ 源 IP CIDR ★" :
+                    (t.type == "GEOIP") ? "★ GeoIP ★" :
+                    (t.type == "PROCESS-NAME") ? "★ 进程名称 ★" :
+                    (t.type == "DST-PORT") ? "★ 目标端口 ★" :
+                    (t.type == "SRC-PORT") ? "★ 源端口 ★" :
+                    (t.type == "MATCH") ? "★ 匹配 ★" :
                     t.type
                 ) + "\n          "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            规则: " + e._s(e.providerOfPayload(t.payload).ruleCount) + "\n          ")]) : e._e(), e._v(" "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            最后更新:\n            " + e._s(e.fromNow(e.providerOfPayload(t.payload).updatedAt)) + "\n          ")]) : e._e(), e._v(" "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            " + e._s(e.providerOfPayload(t.payload).vehicleType) + "\n            " + e._s(e.providerOfPayload(t.payload).behavior) + "\n          ")]) : e._e()])]), e._v(" "), n("div", {
                     staticClass: "right-main"
@@ -12484,7 +12484,7 @@ module.exports = function(e) {
                         var n = oe.statSync(se.join(this.profilesPath, t)).mtime;
                         return w()(n).locale('zh-cn').fromNow()
                     } catch (t) {
-                        return "无法获取变更时间"
+                        return "无法读取变更时间"
                     }
                 },
                 updateConfig: function(e) {
@@ -15215,7 +15215,7 @@ module.exports = function(e) {
                                     setTimeout(B, 500 + 500 * t)
                                 })), setInterval(B, 3e3), t.next = 73, e.handlerRestartClash();
                             case 73:
-                                T.a.put(W.a.IS_LIGHTWEIGHT_MODE_CLOSE, !1), e.showStartup || (e.showStartup = !0, Object(le.c)("Clash 正在后台运行", "享受你的自由时间!")), e.detectInterfaceName(), e.spawnUserDefindExes(), e.checkForUpdate().then((function() {})).catch((function(e) {
+                                T.a.put(W.a.IS_LIGHTWEIGHT_MODE_CLOSE, !1), e.showStartup || (e.showStartup = !0, Object(le.c)("Clash 正在后台运行", "享受自由的时间!")), e.detectInterfaceName(), e.spawnUserDefindExes(), e.checkForUpdate().then((function() {})).catch((function(e) {
                                     return console.error(e)
                                 })), setInterval(e.checkForUpdate, 216e5), e.preDownloadAds().then((function() {})).catch((function(e) {
                                     return console.error(e)
@@ -15924,8 +15924,8 @@ module.exports = function(e) {
                                     }
                                     return t.next = 14, e.$showDialog({
                                         type: "error",
-                                        message: "确保你".concat(e.serviceNeedUpdate ? "已更新" : "已安装", "服务模式以控制系统代理."),
-                                        buttons: ["".concat(e.serviceNeedUpdate ? "新更" : "装安", "在现"), "后稍"]
+                                        message: "为了控制系统代理, 请确保".concat(e.serviceNeedUpdate ? "已更新" : "已安装", "服务模式."),
+                                        buttons: ["立即".concat(e.serviceNeedUpdate ? "更新" : "安装", ""), "稍后"]
                                     });
                                 case 14:
                                     if (r = t.sent, 0 !== r.response) {
@@ -15999,7 +15999,7 @@ module.exports = function(e) {
                                     }
                                     return t.prev = 1, t.next = 4, e.$select({
                                         title: "TAP 设备管理",
-                                        message: '一个名为 "cfw-tap" 的适配器将把流量路由至 clash.<br /><br />若安装窗口弹出, 点击 "下一步" 直到安装完成.',
+                                        message: '流量将通过一个名为 "cfw-tap" 的适配器路由到 Clash.<br /><br />若安装窗口弹出, 保持单击 "下一步" 直到安装完成.',
                                         items: ["安装", "移除", "自定义"]
                                     });
                                 case 4:
@@ -16053,7 +16053,7 @@ module.exports = function(e) {
                                     }], t.prev = 33, t.next = 36, e.$input({
                                         title: "TAP 设备",
                                         data: c,
-                                        hint: "在这些字段变更以后, 你需要重新安装 TAP 设备!"
+                                        hint: "在这些字段变更以后, 需要重新安装 TAP 设备!"
                                     });
                                 case 36:
                                     d = t.sent, W.a.put(B.a.TAP_INFO, d), t.next = 42;
@@ -16142,7 +16142,7 @@ module.exports = function(e) {
                                     }], t.prev = 1, t.next = 4, e.$input({
                                         title: "更换混合端口",
                                         data: n,
-                                        hint: "混合 = http + socks"
+                                        hint: "混合 = HTTP + Socks"
                                     });
                                 case 4:
                                     if (r = t.sent, !(i = r.port)) {
@@ -16416,12 +16416,24 @@ module.exports = function(e) {
                                 case 19:
                                     d = function(t, n) {
                                         x.a.ftruncateSync(x.a.openSync(t, "r+"), n), e.$parent.handlerRestartClash()
-                                    }, c ? (e.geoipUpdateTime = "Updating... (0%)", u = g.a.join(e.$electron.remote.app.getPath("temp")), g.a.join(u, "cfw_geoip.tag.gz"), (p = _.a.stream("https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=".concat(c, "&suffix=tar.gz"))).on("downloadProgress", (function(t) {
+                                    }, c ? (e.geoipUpdateTime = "正在更新... (0%)", u = g.a.join(e.$electron.remote.app.getPath("temp")), g.a.join(u, "cfw_geoip.tag.gz"), (p = _.a.stream("https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=".concat(c, "&suffix=tar.gz"))).on("downloadProgress", (function(t) {
                                         var n;
                                         n = 1 === t.percent ? "正在重新启动核心..." : "正在更新... (".concat(l(100 * t.percent), "%)"), e.geoipUpdateTime = n
                                     })), p.on("error", (function(t) {
                                         e.$alert({
-                                            content: "下载 GeoIP 数据库失败, 错误: ".concat(t.name)
+                                            content: "下载 GeoIP 数据库失败, 错误: ".concat(
+                                                // OK great, heres another dirty hack...
+                                                (t.name == "GotError") ? "遇到错误" :
+                                                (t.name == "CacheError") ? "缓存错误" :
+                                                (t.name == "RequestError") ? "请求错误" :
+                                                (t.name == "ReadError") ? "读取错误" :
+                                                (t.name == "ParseError") ? "解析错误" :
+                                                (t.name == "HTTPError") ? "HTTP 错误" :
+                                                (t.name == "MaxRedirectsError") ? "最大重定向错误" :
+                                                (t.name == "UnsupportedProtocolError") ? "不支持的协议错误" :
+                                                (t.name == "TimeoutError") ? "超时错误" :
+                                                t.name
+                                            )
                                         }), e.geoipUpdateTime = n
                                     })), f = g.a.join(e.clashPath, "Country.mmdb"), h = H.a.extract(), v = 0, h.on("entry", (function(e, t, n) {
                                         t.on("end", (function() {
@@ -16431,14 +16443,26 @@ module.exports = function(e) {
                                         }))) : t.resume()
                                     })), h.on("finish", (function() {
                                         d(f, v)
-                                    })), p.pipe(F.a.createGunzip()).pipe(h)) : o && (e.geoipUpdateTime = "Updating... (0%)", m = _.a.stream(o), b = 0, m.on("downloadProgress", (function(t) {
+                                    })), p.pipe(F.a.createGunzip()).pipe(h)) : o && (e.geoipUpdateTime = "正在更新... (0%)", m = _.a.stream(o), b = 0, m.on("downloadProgress", (function(t) {
                                         var n = "",
                                             r = t.percent,
                                             i = t.total;
                                         1 === r ? (b = i, n = "正在重新启动核心...") : n = "正在更新... (".concat(l(100 * t.percent), "%)"), e.geoipUpdateTime = n
                                     })), m.on("error", (function(t) {
                                         e.$alert({
-                                            content: "下载 GeoIP 数据库失败, 错误: ".concat(t.name)
+                                            content: "下载 GeoIP 数据库失败, 错误: ".concat(
+                                                // Dirty hacks...
+                                                (t.name == "GotError") ? "遇到错误" :
+                                                (t.name == "CacheError") ? "缓存错误" :
+                                                (t.name == "RequestError") ? "请求错误" :
+                                                (t.name == "ReadError") ? "读取错误" :
+                                                (t.name == "ParseError") ? "解析错误" :
+                                                (t.name == "HTTPError") ? "HTTP 错误" :
+                                                (t.name == "MaxRedirectsError") ? "最大重定向错误" :
+                                                (t.name == "UnsupportedProtocolError") ? "不支持的协议错误" :
+                                                (t.name == "TimeoutError") ? "超时错误" :
+                                                t.name
+                                            )
                                         }), e.geoipUpdateTime = n
                                     })), y = g.a.join(e.clashPath, "Country.mmdb"), (w = x.a.createWriteStream(y, {
                                         flags: "r+"
@@ -16665,7 +16689,7 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("GeoIP Database")]), e._v(" "), n("div", {
+            }, [e._v("GeoIP 数据库")]), e._v(" "), n("div", {
                 staticClass: "item-right",
                 class: "clickable-" + e.theme,
                 on: {
@@ -16742,7 +16766,7 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [n("div", [e._v("混合")]), e._v(" "), n("info-icon", [e._v("\n          混合允许你覆盖原始配置文件.\n          "), n("a", {
+            }, [n("div", [e._v("混合")]), e._v(" "), n("info-icon", [e._v("\n          混合允许覆盖原始配置文件.\n          "), n("a", {
                 attrs: {
                     href: "https://docs.cfw.lbyczf.com/contents/mixin.html"
                 }
@@ -17869,7 +17893,7 @@ module.exports = function(e) {
             })), Object(f.mapGetters)(["clashAxiosClient"])),
             methods: {
                 fromNowString: function(e) {
-                    return v()(e).fromNow()
+                    return v()(e).locale('zh-cn').fromNow()
                 },
                 handleAllProvidersUpdate: function() {
                     for (var e in this.providers) this.handleProviderUpdate(e);
@@ -18542,7 +18566,7 @@ module.exports = function(e) {
                 staticClass: "section ad-section"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("汉化版 v0.15.7.1.2 · 译者: ImFatF1sh")]), e._v(" "), n("div", {
+            }, [e._v("汉化版 v0.15.7.2 · 译者: ImFatF1sh")]), e._v(" "), n("div", {
                 staticClass: "ad-img-list"
             }, e._l(e.adImages, (function(t, r) {
                 return n("div", {
@@ -18813,7 +18837,7 @@ module.exports = function(e) {
                 class: ["log-list-" + e.theme]
             }, [0 === e.listData.length ? n("div", {
                 staticClass: "empty-list"
-            }, [n("div", [e._v("空的日志列表")]), e._v(" "), n("div", [e._v("刷新你的浏览器以制造请求.")])]) : e._l(e.listData.slice(-200), (function(t) {
+            }, [n("div", [e._v("空的日志列表")]), e._v(" "), n("div", [e._v("刷新浏览器以制造请求.")])]) : e._l(e.listData.slice(-200), (function(t) {
                 return n("div", {
                     key: t.id,
                     class: ["log-item-" + e.theme],
@@ -18834,11 +18858,33 @@ module.exports = function(e) {
                     class: ["rule-" + e.theme]
                 }, [t.protocol ? n("div", [e._v(e._s(t.protocol))]) : e._e(), e._v(" "), t.ip ? n("div", [e._v(e._s(t.ip))]) : e._e(), e._v(" "), t.rule ? n("div", {
                     staticClass: "payload"
-                }, [e._v(e._s(t.rule))]) : e._e(), e._v(" "), t.from ? n("div", [e._v(e._s(t.from))]) : e._e(), e._v(" "), n("div", [e._v(e._s(t.time.format("HH:mm:ss.SSS")))])])]), e._v(" "), t.proxy ? n("div", {
+                }, [e._v(e._s(
+                    t.rule.replace("Domain(",
+                        "☆ 域名 ☆ (").replace("DomainSuffix(",
+                        "☆ 域名后缀 ☆ (").replace("DomainKeyword(",
+                        "☆ 域名关键字 ☆ (").replace("GeoIP(",
+                        "☆ GeoIP ☆ (").replace("IPCIDR(",
+                        "☆ IP CIDR ☆ (").replace("SrcIPCIDR(",
+                        "☆ 源 IP CIDR ☆ (").replace("SrcPort(",
+                        "☆ 源端口 ☆ (").replace("DstPort(",
+                        "☆ 目标端口 ☆ (").replace("Process(",
+                        "☆ 进程 ☆ (").replace("Match(",
+                        "☆ 匹配 ☆ (").replace("Unknown(",
+                        "☆ 未知 ☆ (")
+                ))]) : e._e(), e._v(" "), t.from ? n("div", [e._v(e._s(
+                    (t.from == "couldn't find ip") ? "无法查找 IP" :
+                    t.from
+                ))]) : e._e(), e._v(" "), n("div", [e._v(e._s(t.time.format("HH:mm:ss.SSS")))])])]), e._v(" "), t.proxy ? n("div", {
                     staticClass: "proxy-name",
                     style: e.randomBGC(t.proxy),
                     domProps: {
-                        innerHTML: e._s(e.$parseEmoji(t.proxy))
+                        innerHTML: e._s(e.$parseEmoji(
+                            t.proxy.replace("GLOBAL",
+                                "★ 全局 ★").replace("DIRECT",
+                                "★ 直连 ★").replace("REJECT",
+                                "★ 拒绝 ★").replace("(match ",
+                                "(匹配 ")
+                        ))
                     }
                 }) : e._e()])])
             }))], 2)])
@@ -18984,7 +19030,7 @@ module.exports = function(e) {
                     return 0 !== i && t.push("↑".concat(this.traffic(i), "/s")), 0 !== o && t.push("↓".concat(this.traffic(o), "/s")), t.join(" ")
                 },
                 fromNow: function(e) {
-                    return m()(e).fromNow()
+                    return m()(e).locale('zh-cn').fromNow()
                 },
                 traffic: function(e) {
                     for (var t = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : 2, n = ["B", "KB", "MB", "GB", "TB"], r = 0; ~~(e / 1024) && r < n.length;) e /= 1024, r++;
@@ -19209,10 +19255,17 @@ module.exports = function(e) {
                     staticClass: "conn1"
                 }, [e._v("\n            " + e._s(t.metadata.network.toUpperCase()) + "\n          ")]), e._v(" "), n("div", {
                     staticClass: "conn2"
-                }, [e._v(e._s(t.metadata.type))]), e._v(" "), e.connectionGroup(t) ? n("div", {
+                }, [e._v(e._s(
+                    (t.metadata.type == "HTTP Connect") ? "☆ HTTP 连接 ☆" :
+                    t.metadata.type
+                ))]), e._v(" "), e.connectionGroup(t) ? n("div", {
                     staticClass: "conn3",
                     domProps: {
-                        innerHTML: e._s(e.connectionGroup(t))
+                        innerHTML: e._s(
+                            (e.connectionGroup(t) == "DIRECT") ? "★ 直连 ★" :
+                            (e.connectionGroup(t) == "REJECT") ? "★ 拒绝 ★" :
+                            e.connectionGroup(t)
+                        )
                     }
                 }) : e._e(), e._v(" "), e.connectionEndpoint(t) ? n("div", {
                     staticClass: "conn4",
