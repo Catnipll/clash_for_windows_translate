@@ -1,3 +1,7 @@
+# 重要提醒 (To Our Dear China Users / 至我们亲爱的中国用户)
+## **翻译仅供学习** / **交流使用**，**若您认为本仓库内容涉嫌侵权**，**请联系我进行删除**；
+## **若您在本仓库下载了任何文件**，**请在** *24* **小时以内全部删除**，**谢谢**。
+
 # Clash for Windows Translate
 
 A translated version of CFW
