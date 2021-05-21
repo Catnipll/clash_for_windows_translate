@@ -5,7 +5,7 @@ while True:
     try:
         f = open('README.md', 'r', encoding='utf-8')
     except FileNotFoundError:
-        print('README.md not found...', filestderr)
+        print('README.md not found...', file=stderr)
         break
     contents = f.read()
     char_map = [
@@ -20,5 +20,5 @@ while True:
         contents=contents.replace(x[0], x[1])
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(contents)
+    print('Done')
     break
-print('Done')
