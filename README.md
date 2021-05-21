@@ -2,6 +2,8 @@
 
 A translated version of CFW
 
+![Preview](https://github.com/zijianjiao2017/clash_for_windows_translate/raw/zh_CN/img/Preview.png)
+
 ## Requierments
 * [electron/asar](https://github.com/electron/asar)
 * [beautify-web/js-beautify](https://github.com/beautify-web/js-beautify)
