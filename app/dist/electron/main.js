@@ -160,7 +160,7 @@ module.exports = function(e) {
                             return o = {
                                 type: "error",
                                 title: "Clash for Windows",
-                                message: "仪表盘崩溃啦!",
+                                message: "仪表盘崩溃了!",
                                 buttons: ["重新载入", "退出"]
                             }, e.next = 7, m.dialog.showMessageBox(_, o);
                         case 7:
@@ -176,7 +176,7 @@ module.exports = function(e) {
             }
         }()), _.setTouchBar(new g({
             items: [new b({
-                label: "通用",
+                label: "常规",
                 backgroundColor: "#505050",
                 click: function() {
                     _.webContents.send("menu-item-change", "general")
@@ -188,7 +188,7 @@ module.exports = function(e) {
                     _.webContents.send("menu-item-change", "proxy")
                 }
             }), new b({
-                label: "配置文件",
+                label: "配置",
                 backgroundColor: "#505050",
                 click: function() {
                     _.webContents.send("menu-item-change", "server")
@@ -230,7 +230,11 @@ module.exports = function(e) {
         r.setTemplateImage(!0);
         var i = y.join(__static, "tray_normal.ico");
         (x = new m.Tray("darwin" === process.platform ? r : i)).setToolTip("Clash for Windows"), x.on("click", (function() {
-            _.setBounds(a(_.getBounds())), _.show()
+            if ("darwin" === process.platform) {
+                x.popUpContextMenu(u)
+            } else {
+                _.setBounds(a(_.getBounds())), _.show()
+            }
         })), m.ipcMain.on("cleanup-done", (function() {
             c(), m.app.isQuiting = !0, m.app.quit()
         })), m.ipcMain.on("status-changed", (function(e, t) {
@@ -251,7 +255,7 @@ module.exports = function(e) {
             })), r.show()
         }));
         var u = m.Menu.buildFromTemplate([{
-            label: "仪表盘",
+            label: "展示仪表盘",
             click: function() {
                 return _.show()
             }
@@ -263,7 +267,7 @@ module.exports = function(e) {
         }, {
             type: "separator"
         }, {
-            label: "系统代理",
+            label: "系统代理开关",
             type: "checkbox",
             id: "system-proxy",
             enabled: !1,
@@ -272,7 +276,7 @@ module.exports = function(e) {
                 _.webContents.send("system-proxy-changed", t)
             }
         }, {
-            label: "混合",
+            label: "是否注入配置",
             type: "checkbox",
             id: "mixin",
             enabled: !1,
