@@ -25,9 +25,9 @@ js-beautify app/dist/electron/{index.html,main.js,renderer.js}
 
 ## Repack resources
 ````bash
-minify --type=html -o dist/electron/index.html dist/electron/index.html
-minify --type=js -o dist/electron/main.js dist/electron/main.js
-minify --type=js -o dist/electron/renderer.js dist/electron/renderer.js
+minify --type=html -o app/dist/electron/index.html app/dist/electron/index.html
+minify --type=js -o app/dist/electron/main.js app/dist/electron/main.js
+minify --type=js -o app/dist/electron/renderer.js app/dist/electron/renderer.js
 asar pack app translated.asar
 ````
 
