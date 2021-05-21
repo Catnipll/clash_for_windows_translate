@@ -8886,7 +8886,7 @@ module.exports = function(e) {
             }), e._v(" "), n("div", {
                 staticClass: "hint",
                 class: [e.isRecording ? "" : "hint-hide"]
-            }, [e._v("\n    Press Enter to stop\n  ")])])
+            }, [e._v("\n    轻按 ☆ 回车 ☆ 停止\n  ")])])
         }), [], !1, null, "4b964f25", null));
     T.options.__file = "KeyCapture.vue";
     var D = T.exports,
@@ -11095,8 +11095,8 @@ module.exports = function(e) {
                     key: r,
                     staticClass: "proxy-item left-item"
                 }, [e._v("\n          " + e._s(
-                    (t.name == "DIRECT") ? "☆ 直连 ☆" :
-                    (t.name == "REJECT") ? "☆ 拒绝 ☆" :
+                    (t.name == "DIRECT") ? "★ 直连 ★" :
+                    (t.name == "REJECT") ? "★ 拒绝 ★" :
                     t.name
                 ) + "\n        ")])
             })), 0), e._v(" "), n("div", {
@@ -11481,8 +11481,8 @@ module.exports = function(e) {
                     },
                     domProps: {
                         innerHTML: e._s(e.$parseEmoji((
-                            (t == "DIRECT") ? "☆ 直连 ☆" :
-                            (t == "REJECT") ? "☆ 拒绝 ☆" :
+                            (t == "DIRECT") ? "★ 直连 ★" :
+                            (t == "REJECT") ? "★ 拒绝 ★" :
                             t
                         ), 20))
                     },
@@ -11772,8 +11772,8 @@ module.exports = function(e) {
                     style: e.randomBGC(t.proxy),
                     domProps: {
                         innerHTML: e._s(e.$parseEmoji((
-                            (t.proxy == "DIRECT") ? "☆ 直连 ☆" :
-                            (t.proxy == "REJECT") ? "☆ 拒绝 ☆" :
+                            (t.proxy == "DIRECT") ? "★ 直连 ★" :
+                            (t.proxy == "REJECT") ? "★ 拒绝 ★" :
                             t.proxy
                         ), 22, 0, 0))
                     }
@@ -17151,8 +17151,8 @@ module.exports = function(e) {
                         (n == "URLTest") ? "URL 测试" :
                         n
                     ), " · ").concat(
-                        (t.data.now == "DIRECT") ? "☆ 直连 ☆" :
-                        (t.data.now == "REJECT") ? "☆ 拒绝 ☆" :
+                        (t.data.now == "DIRECT") ? "★ 直连 ★" :
+                        (t.data.now == "REJECT") ? "★ 拒绝 ★" :
                         t.data.now
                     ), 16) : "LoadBalance" === n ? "".concat((
                         (n == "LoadBalance") ? "负载均衡" :
@@ -17532,7 +17532,7 @@ module.exports = function(e) {
                     staticClass: "proxy-section-name-left",
                     domProps: {
                         innerHTML: e._s(e.$parseEmoji(
-                            (t.name == "GLOBAL") ? "☆ 全局 ☆" :
+                            (t.name == "GLOBAL") ? "★ 全局 ★" :
                             t.name
                             , 26))
                     }
@@ -17540,8 +17540,8 @@ module.exports = function(e) {
                     staticClass: "proxy-hint",
                     domProps: {
                         innerHTML: e._s(e.$parseEmoji(" · " + (
-                            (t.data.now == "DIRECT") ? "☆ 直连 ☆" :
-                            (t.data.now == "REJECT") ? "☆ 拒绝 ☆" :
+                            (t.data.now == "DIRECT") ? "★ 直连 ★" :
+                            (t.data.now == "REJECT") ? "★ 拒绝 ★" :
                             t.data.now
                         ), 20, 2, 0))
                     }
@@ -17643,8 +17643,8 @@ module.exports = function(e) {
                         staticClass: "item-name",
                         domProps: {
                             innerHTML: e._s(e.$parseEmoji(
-                                (r.name == "DIRECT") ? "☆ 直连 ☆" :
-                                (r.name == "REJECT") ? "☆ 拒绝 ☆" :
+                                (r.name == "DIRECT") ? "★ 直连 ★" :
+                                (r.name == "REJECT") ? "★ 拒绝 ★" :
                                 r.name
                                 , 19, 0, 5))
                         }
@@ -17652,8 +17652,8 @@ module.exports = function(e) {
                         staticClass: "item-hint",
                         domProps: {
                             innerHTML: e._s(r.provider ? "提供器: " + r.provider.name : (
-                                (e.nodeHint(r) == "Direct") ? "直连" :
-                                (e.nodeHint(r) == "Reject") ? "拒绝" :
+                                (e.nodeHint(r) == "Direct") ? "☆ 直连 ☆" :
+                                (e.nodeHint(r) == "Reject") ? "☆ 拒绝 ☆" :
                                 (e.nodeHint(r) == "LoadBalance") ? "负载均衡" :
                                 e.nodeHint(r)
                             ))
@@ -18542,7 +18542,7 @@ module.exports = function(e) {
                 staticClass: "section ad-section"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("汉化版 v0.15.7.1.1 · 译者: ImFatF1sh")]), e._v(" "), n("div", {
+            }, [e._v("汉化版 v0.15.7.1.2 · 译者: ImFatF1sh")]), e._v(" "), n("div", {
                 staticClass: "ad-img-list"
             }, e._l(e.adImages, (function(t, r) {
                 return n("div", {
