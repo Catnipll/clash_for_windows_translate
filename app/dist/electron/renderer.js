@@ -881,7 +881,7 @@ module.exports = function(e) {
             }
         }()
 }, function(e) {
-    e.exports = require("moment")
+    e.exports = require("moment/min/moment-with-locales")
 }, function(e) {
     e.exports = require("electron-log")
 }, function(e) {
@@ -5341,7 +5341,7 @@ module.exports = function(e) {
                         case 30:
                             return e.abrupt("return", {
                                 success: !1,
-                                message: "Download profile(".concat(n, ") failed with error: HTTP Response Status Code(").concat(o, ")")
+                                message: "下载配置文件 (".concat(n, ") 失败, 错误: HTTP 请求状态代码 (").concat(o, ")")
                             });
                         case 31:
                             e.next = 39;
@@ -5353,7 +5353,12 @@ module.exports = function(e) {
                             }
                             return e.abrupt("return", {
                                 success: !1,
-                                message: "Download profile(".concat(n, ") failed with error: ").concat(e.t0.message)
+                                message: "下载配置文件 (".concat(n, ") 失败, 错误: ").concat(
+                                    // Oh no this might be a shit from Node.js
+                                    // IDK for now lets just do the dirty hack(xdd
+                                    (e.t0.message == "Network Error") ? "网络错误" :
+                                    e.t0.message
+                                )
                             });
                         case 39:
                             return e.abrupt("return", {
@@ -7968,7 +7973,7 @@ module.exports = function(e) {
                 handleDone: function() {
                     if (0 < this.data.filter((function(e) {
                             return e.required && "" === e.value
-                        })).length) this.error = "required key(*) must have a value";
+                        })).length) this.error = "所需的键 (*) 必须有一个值";
                     else {
                         var e = this.data.find((function(e) {
                             return e.hasOwnProperty("validate") && "" !== e.validate(e.value)
@@ -8142,7 +8147,7 @@ module.exports = function(e) {
                 return {
                     isShow: !1,
                     content: "",
-                    title: "Error",
+                    title: "错误",
                     isShowErrorBtn: !1,
                     resolve: null,
                     reject: null
@@ -8167,7 +8172,7 @@ module.exports = function(e) {
                 show: function(e) {
                     var t = this,
                         n = e.title,
-                        r = void 0 === n ? "Error" : n,
+                        r = void 0 === n ? "错误" : n,
                         i = e.content,
                         a = void 0 === i ? "" : i,
                         o = e.isShowErrorBtn;
@@ -8219,7 +8224,7 @@ module.exports = function(e) {
                 on: {
                     click: e.handleCancel
                 }
-            }, [e._v("\n          Cancel\n        ")]) : e._e(), e._v(" "), n("div", {
+            }, [e._v("\n          取消\n        ")]) : e._e(), e._v(" "), n("div", {
                 staticClass: "btn btn-ok",
                 on: {
                     click: e.handleDone
@@ -8421,7 +8426,7 @@ module.exports = function(e) {
                                 i = n.end;
                             void 0 !== r && void 0 !== i && (t = ', at "'.concat(this.rawCode.slice(r, i), '"'))
                         }
-                        this.error = "Error: ".concat(a.message).concat(t), setTimeout((function() {
+                        this.error = "错误: ".concat(a.message).concat(t), setTimeout((function() {
                             e.error = ""
                         }), 3e3)
                     }
@@ -9283,8 +9288,8 @@ module.exports = function(e) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     return t.prev = 0, t.next = 3, e.$alert({
-                                        title: "Warning",
-                                        content: "Are you sure to reset all settings?",
+                                        title: "警告",
+                                        content: "确定要重置全部设置?",
                                         isShowErrorBtn: !0
                                     });
                                 case 3:
@@ -9727,7 +9732,7 @@ module.exports = function(e) {
                 staticClass: "item"
             }, [n("div", [e._v("排序")]), e._v(" "), n("SelectView", {
                 attrs: {
-                    items: ["默认", "根据延迟", "根据 Alphabet"]
+                    items: ["默认", "按延迟", "按字母表"]
                 },
                 model: {
                     value: e.settings.proxyOrder,
@@ -10419,7 +10424,13 @@ module.exports = function(e) {
                     attrs: {
                         for: t
                     }
-                }, [e._v(e._s(t))])])
+                }, [e._v(e._s(
+                    (t == "url-test") ? "url 测试" :
+                    (t == "fallback") ? "回退" :
+                    (t == "select") ? "选择" :
+                    (t == "load-balance") ? "负载均衡" :
+                    t
+                ))])])
             })), 0), e._v(" "), "select" === e.groupType ? e._e() : n("input", {
                 directives: [{
                     name: "model",
@@ -10639,7 +10650,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Obfs (可选, tls 或 http)"
+                    placeholder: "Obfs (可选, tls 或者 http)"
                 },
                 domProps: {
                     value: e.proxyObfs
@@ -11040,7 +11051,7 @@ module.exports = function(e) {
             }, [n("div", {
                 staticClass: "hint"
             }, [e._v("\n" +
-                "拖动以排序或添加到右侧的列表中.")]), e._v(" "), n("div", {
+                "拖动以排序或者添加到右侧的列表中.")]), e._v(" "), n("div", {
                 staticClass: "floating-right"
             }, [n("div", {
                 staticClass: "main-btn save",
@@ -11083,7 +11094,11 @@ module.exports = function(e) {
                 return n("div", {
                     key: r,
                     staticClass: "proxy-item left-item"
-                }, [e._v("\n          " + e._s(t.name) + "\n        ")])
+                }, [e._v("\n          " + e._s(
+                    (t.name == "DIRECT") ? "☆ 直连 ☆" :
+                    (t.name == "REJECT") ? "☆ 拒绝 ☆" :
+                    t.name
+                ) + "\n        ")])
             })), 0), e._v(" "), n("div", {
                 staticClass: "section-title"
             }, [n("h2", [e._v("代理组")]), e._v(" "), n("div", {
@@ -11225,7 +11240,13 @@ module.exports = function(e) {
                     }
                 }), e._v(" "), n("div", {
                     staticClass: "type-icon"
-                }, [e._v("( " + e._s(t.type) + " )")])]), e._v(" "), n("draggable", {
+                }, [e._v("( " + e._s(
+                    (t.type == "url-test") ? "url 测试" :
+                    (t.type == "fallback") ? "回退" :
+                    (t.type == "select") ? "选择" :
+                    (t.type == "load-balance") ? "负载均衡" :
+                    t.type
+                ) + " )")])]), e._v(" "), n("draggable", {
                     staticClass: "dragArea",
                     attrs: {
                         group: {
@@ -11396,11 +11417,11 @@ module.exports = function(e) {
                         return e.$emit("close")
                     }
                 }
-            }, [e._v("\n                Cancel\n              ")])])]), e._v(" "), n("div", {
+            }, [e._v("\n                取消\n              ")])])]), e._v(" "), n("div", {
                 class: ["scroll-view-" + e.theme]
             }, ["MATCH" === e.selectedType ? e._e() : n("div", {
                 staticClass: "rule-section-title"
-            }, [e._v("\n              Content\n            ")]), e._v(" "), n("div", ["MATCH" === e.selectedType ? e._e() : n("input", {
+            }, [e._v("\n              内容\n            ")]), e._v(" "), n("div", ["MATCH" === e.selectedType ? e._e() : n("input", {
                 directives: [{
                     name: "model",
                     rawName: "v-model",
@@ -11408,7 +11429,7 @@ module.exports = function(e) {
                     expression: "content"
                 }],
                 attrs: {
-                    placeholder: "eg: google.com",
+                    placeholder: "例: google.com",
                     id: "rule-content",
                     type: "text"
                 },
@@ -11422,7 +11443,7 @@ module.exports = function(e) {
                 }
             })]), e._v(" "), n("div", {
                 staticClass: "rule-section-title"
-            }, [e._v("Type")]), e._v(" "), n("div", {
+            }, [e._v("类型")]), e._v(" "), n("div", {
                 staticClass: "rule-type-group"
             }, e._l(e.ruleTypes, (function(t, r) {
                 return n("div", {
@@ -11435,10 +11456,22 @@ module.exports = function(e) {
                             e.selectedType = t
                         }
                     }
-                }, [e._v("\n                " + e._s(t) + "\n              ")])
+                }, [e._v("\n                " + e._s(
+                    (t == "DOMAIN-SUFFIX") ? "域名后缀" :
+                    (t == "DOMAIN") ? "域名" :
+                    (t == "DOMAIN-KEYWORD") ? "域名关键字" :
+                    (t == "IP-CIDR") ? "IP CIDR" :
+                    (t == "SRC-IP-CIDR") ? "源 IP CIDR" :
+                    (t == "GEOIP") ? "GeoIP" :
+                    (t == "PROCESS-NAME") ? "进程名称" :
+                    (t == "DST-PORT") ? "DST 端口" :
+                    (t == "SRC-PORT") ? "源端口" :
+                    (t == "MATCH") ? "匹配" :
+                    t
+                ) + "\n              ")])
             })), 0), e._v(" "), n("div", {
                 staticClass: "rule-section-title"
-            }, [e._v("Proxy or Policy")]), e._v(" "), n("div", {
+            }, [e._v("代理或者策略")]), e._v(" "), n("div", {
                 staticClass: "rule-proxy-group"
             }, e._l(e.proxyGroups, (function(t, r) {
                 return n("div", {
@@ -11447,7 +11480,11 @@ module.exports = function(e) {
                         "rule-proxy-item": !0, "rule-proxy-selected": t === e.selectedGroup
                     },
                     domProps: {
-                        innerHTML: e._s(e.$parseEmoji(t, 20))
+                        innerHTML: e._s(e.$parseEmoji((
+                            (t == "DIRECT") ? "☆ 直连 ☆" :
+                            (t == "REJECT") ? "☆ 拒绝 ☆" :
+                            t
+                        ), 20))
                     },
                     on: {
                         click: function() {
@@ -11517,7 +11554,7 @@ module.exports = function(e) {
                     })))()
                 },
                 fromNow: function(e) {
-                    return w()(e).fromNow()
+                    return w()(e).locale('zh-cn').fromNow();
                 },
                 providerOfPayload: function(e) {
                     var t = this.providers[e];
@@ -11570,9 +11607,9 @@ module.exports = function(e) {
                                                 i = e.params,
                                                 a = void 0 === i ? "" : i;
                                             return n ? "".concat(t, ",").concat(n, ",").concat(r).concat(a) : "".concat(t, ",").concat(r)
-                                        })), i = L.a.join(e.profilesPath, e.profileName), a = $.a.readFileSync(i, "utf8"), (o = _.a.parse(a)).rules = r, $.a.writeFileSync(i, _.a.stringify(o)), e.$emit("done"), e.saveBtnText = "Done"
+                                        })), i = L.a.join(e.profilesPath, e.profileName), a = $.a.readFileSync(i, "utf8"), (o = _.a.parse(a)).rules = r, $.a.writeFileSync(i, _.a.stringify(o)), e.$emit("done"), e.saveBtnText = "完成"
                                     } catch (t) {
-                                        e.$emit("error"), e.saveBtnText = "Fail"
+                                        e.$emit("error"), e.saveBtnText = "失败"
                                     }
                                     setTimeout((function() {
                                         e.saveBtnText = "保存"
@@ -11715,7 +11752,20 @@ module.exports = function(e) {
                     class: ["url", e.providerOfPayload(t.payload) ? "rule-set" : ""]
                 }, [e._v("\n          " + e._s(t.payload) + "\n        ")]), e._v(" "), n("div", {
                     class: ["rule-" + e.theme]
-                }, [e._v("\n          " + e._s(t.type) + "\n          "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            Rules: " + e._s(e.providerOfPayload(t.payload).ruleCount) + "\n          ")]) : e._e(), e._v(" "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            最后更新:\n            " + e._s(e.fromNow(e.providerOfPayload(t.payload).updatedAt)) + "\n          ")]) : e._e(), e._v(" "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            " + e._s(e.providerOfPayload(t.payload).vehicleType) + "\n            " + e._s(e.providerOfPayload(t.payload).behavior) + "\n          ")]) : e._e()])]), e._v(" "), n("div", {
+                }, [e._v("\n          " + e._s(
+                    (t.type == "DOMAIN-SUFFIX") ? "域名后缀" :
+                    (t.type == "DOMAIN") ? "域名" :
+                    (t.type == "DOMAIN-KEYWORD") ? "域名关键字" :
+                    (t.type == "IP-CIDR") ? "IP CIDR" :
+                    (t.type == "IP-CIDR6") ? "IPv6 CIDR" :
+                    (t.type == "SRC-IP-CIDR") ? "源 IP CIDR" :
+                    (t.type == "GEOIP") ? "GeoIP" :
+                    (t.type == "PROCESS-NAME") ? "进程名称" :
+                    (t.type == "DST-PORT") ? "DST 端口" :
+                    (t.type == "SRC-PORT") ? "源端口" :
+                    (t.type == "MATCH") ? "匹配" :
+                    t.type
+                ) + "\n          "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            规则: " + e._s(e.providerOfPayload(t.payload).ruleCount) + "\n          ")]) : e._e(), e._v(" "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            最后更新:\n            " + e._s(e.fromNow(e.providerOfPayload(t.payload).updatedAt)) + "\n          ")]) : e._e(), e._v(" "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            " + e._s(e.providerOfPayload(t.payload).vehicleType) + "\n            " + e._s(e.providerOfPayload(t.payload).behavior) + "\n          ")]) : e._e()])]), e._v(" "), n("div", {
                     staticClass: "right-main"
                 }, [n("div", {
                     staticClass: "right",
@@ -12267,7 +12317,7 @@ module.exports = function(e) {
                             }));
                         if (-1 < i && i < r.files.length) return void this.$alert({
                             content: "本地文件已经存在.",
-                            title: "Error"
+                            title: "错误"
                         });
                         this.appendProfile({
                             profile: {
@@ -12420,7 +12470,7 @@ module.exports = function(e) {
                     try {
                         var n = new URL(e),
                             r = n.host;
-                        return "file:" === n.protocol ? t : r || "空的主机"
+                        return "文件:" === n.protocol ? t : r || "空的主机"
                     } catch (t) {}
                     return t
                 },
@@ -12428,9 +12478,9 @@ module.exports = function(e) {
                     var t = e.time;
                     try {
                         var n = oe.statSync(se.join(this.profilesPath, t)).mtime;
-                        return w()(n).fromNow()
+                        return w()(n).locale('zh-cn').fromNow()
                     } catch (t) {
-                        return "文件丢失"
+                        return "无法获取变更时间"
                     }
                 },
                 updateConfig: function(e) {
@@ -14366,7 +14416,7 @@ module.exports = function(e) {
                                     t.next = 79;
                                     break;
                                 case 72:
-                                    t.prev = 72, t.t1 = t.catch(9), oe = "", (se = t.t1.linePos) && ((de = se.start) && (ue = de.line, pe = de.col, oe = ", on line: ".concat(ue, ", at column: ").concat(pe))), i = "Error: ".concat(t.t1.message).concat(oe), ee.warn("fail to restore last profile with error: ".concat(t.t1));
+                                    t.prev = 72, t.t1 = t.catch(9), oe = "", (se = t.t1.linePos) && ((de = se.start) && (ue = de.line, pe = de.col, oe = ", on line: ".concat(ue, ", at column: ").concat(pe))), i = "错误: ".concat(t.t1.message).concat(oe), ee.warn("fail to restore last profile with error: ".concat(t.t1));
                                 case 79:
                                     if (fe = d.selected, he = d.mode, !r || !fe) {
                                         t.next = 85;
@@ -14746,7 +14796,7 @@ module.exports = function(e) {
                             }
                         }
                         this.appendError({
-                            error: "Error: ".concat(t).concat(r)
+                            error: "错误: ".concat(t).concat(r)
                         }), ee.warn("fail to load general config.yaml with error: ".concat(t))
                     }
                 },
@@ -15472,7 +15522,7 @@ module.exports = function(e) {
                 attrs: {
                     id: "error-title"
                 }
-            }, [e._v("Errors")]), e._v(" "), n("div", {
+            }, [e._v("错误")]), e._v(" "), n("div", {
                 class: ["error-content-" + e.theme],
                 domProps: {
                     innerHTML: e._s(e.logs)
@@ -15484,7 +15534,7 @@ module.exports = function(e) {
                 on: {
                     click: e.openHomeDir
                 }
-            }, [e._v("\n        Home Directory\n      ")]), e._v(" "), n("div", {
+            }, [e._v("\n        主目录\n      ")]), e._v(" "), n("div", {
                 class: ["error-hint-" + e.theme],
                 on: {
                     click: e.openLogsFolder
@@ -15494,7 +15544,7 @@ module.exports = function(e) {
                 on: {
                     click: e.autoFix
                 }
-            }, [e._v("\n        Try to repair\n      ")])])]) : n("div", {
+            }, [e._v("\n        尝试修复\n      ")])])]) : n("div", {
                 staticClass: "loading-hint"
             }, [e._v("正在载入...")])])
         }), [], !1, null, "df69c500", null);
@@ -15792,7 +15842,7 @@ module.exports = function(e) {
                                     return t.prev = 0, n = ["silent", "error", "warning", "info", "debug"], t.next = 4, e.$select({
                                         title: "更换日志等级",
                                         message: "静默会阻止在下次启动时生成 .log 文件",
-                                        items: n
+                                        items: ["静默", "错误", "警告", "信息", "调试"]
                                     });
                                 case 4:
                                     return r = t.sent, i = n[r], t.next = 8, e.clashAxiosClient.patch("/configs", {
@@ -16565,7 +16615,14 @@ module.exports = function(e) {
                 on: {
                     click: e.handleEditLogLevel
                 }
-            }, [e._v("\n          " + e._s(e.logLevel) + "\n        ")])])]), e._v(" "), n("div", {
+            }, [e._v("\n          " + e._s(
+                (e.logLevel == "silent") ? "静默" :
+                (e.logLevel == "error") ? "错误" :
+                (e.logLevel == "warning") ? "警告" :
+                (e.logLevel == "info") ? "信息" :
+                (e.logLevel == "debug") ? "调试" :
+                e.logLevel
+            ) + "\n        ")])])]), e._v(" "), n("div", {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
@@ -16886,7 +16943,13 @@ module.exports = function(e) {
                             return e.switchMode(t)
                         }
                     }
-                }, [e._v("\n      " + e._s(e.upperCaseFirstLetter(t)) + "\n    ")])
+                }, [e._v("\n      " + e._s(
+                    (t == "global") ? "全局" :
+                    (t == "rule") ? "规则" :
+                    (t == "direct") ? "直连" :
+                    (t == "script") ? "脚本" :
+                    e.upperCaseFirstLetter(t)
+                ) + "\n    ")])
             })), 0)])
         }), [], !1, null, "3cb6848a", null);
     k.options.__file = "ProxyModeSwitcher.vue";
@@ -16991,7 +17054,7 @@ module.exports = function(e) {
                 checkBtnText: function(e) {
                     var t = e.provider,
                         n = e.latency;
-                    return t ? n || "" : n || "正在测试"
+                    return t ? n || "" : n || "Check"
                 },
                 handleSingleSpeedtest: function(e, t) {
                     var n = this;
@@ -17017,7 +17080,7 @@ module.exports = function(e) {
                                         return e.name === i
                                     }))) && ((u = l.data.all.find((function(e) {
                                         return e.name === a
-                                    }))) && (u.latency = o + (/\d/.test(o) ? " ms" : "超时")));
+                                    }))) && (u.latency = o + (/\d/.test(o) ? " ms" : "Timeout")));
                                 case 17:
                                 case "end":
                                     return r.stop()
@@ -17078,7 +17141,22 @@ module.exports = function(e) {
                     }));
                     if (!t) return "";
                     var n = t.data.type;
-                    return "Selector" === n || "Fallback" === n || "URLTest" === n ? this.$parseEmoji("".concat(n, " - ").concat(t.data.now), 16) : "LoadBalance" === n ? "".concat(n, " - ").concat(t.data.all.length, " 个服务器").concat(1 < t.data.all.length ? "" : "") : n
+                    return "Selector" === n || "Fallback" === n || "URLTest" === n ? this.$parseEmoji("".concat((
+                        (n == "Selector") ? "选择器" :
+                        (n == "Fallback") ? "回退" :
+                        (n == "URLTest") ? "URL 测试" :
+                        n
+                    ), " · ").concat(
+                        (t.data.now == "DIRECT") ? "☆ 直连 ☆" :
+                        (t.data.now == "REJECT") ? "☆ 拒绝 ☆" :
+                        t.data.now
+                    ), 16) : "LoadBalance" === n ? "".concat((
+                        (n == "LoadBalance") ? "负载均衡" :
+                        n
+                    ), " · ").concat(t.data.all.length, " 个服务器").concat(1 < t.data.all.length ? "" : "") : (
+                        (n == "Relay") ? "中继" :
+                        n
+                    )
                 },
                 cancelLatencyTest: function() {
                     0 < this.axiosCancelTokens.length && (this.axiosCancelTokens.forEach((function(e) {
@@ -17197,10 +17275,10 @@ module.exports = function(e) {
                                                     case 3:
                                                         return t.latency = null, e.prev = 4, e.next = 7, n.speedtest(t.name, o || 3e3, s || "http://www.gstatic.com/generate_204");
                                                     case 7:
-                                                        r = e.sent, t.latency = 0 < r ? r + " ms" : "超时", e.next = 14;
+                                                        r = e.sent, t.latency = 0 < r ? r + " ms" : "Timeout", e.next = 14;
                                                         break;
                                                     case 11:
-                                                        e.prev = 11, e.t0 = e.catch(4), t.latency = "超时";
+                                                        e.prev = 11, e.t0 = e.catch(4), t.latency = "Timeout";
                                                     case 14:
                                                     case "end":
                                                         return e.stop()
@@ -17325,7 +17403,7 @@ module.exports = function(e) {
                                                     s = o[0],
                                                     c = o[1],
                                                     p = 0;
-                                                return 0 < c.length ? r = 0 === (p = c[c.length - 1].delay) ? "超时" : "".concat(p, " ms") : r = "", {
+                                                return 0 < c.length ? r = 0 === (p = c[c.length - 1].delay) ? "Timeout" : "".concat(p, " ms") : r = "", {
                                                     name: t,
                                                     provider: s,
                                                     latency: r,
@@ -17333,7 +17411,7 @@ module.exports = function(e) {
                                                 }
                                             }
                                             var f = 0;
-                                            return i && 0 < i.history.length && (r = 0 === (f = i.history[i.history.length - 1].delay) ? "超时" : "".concat(f, " ms")), {
+                                            return i && 0 < i.history.length && (r = 0 === (f = i.history[i.history.length - 1].delay) ? "Timeout" : "".concat(f, " ms")), {
                                                 name: t,
                                                 provider: null,
                                                 latency: r,
@@ -17449,16 +17527,26 @@ module.exports = function(e) {
                 }, [n("div", {
                     staticClass: "proxy-section-name-left",
                     domProps: {
-                        innerHTML: e._s(e.$parseEmoji(t.name, 26))
+                        innerHTML: e._s(e.$parseEmoji(
+                            (t.name == "GLOBAL") ? "☆ 全局 ☆" :
+                            t.name
+                            , 26))
                     }
                 }), e._v(" "), t.data.now ? n("div", {
                     staticClass: "proxy-hint",
                     domProps: {
-                        innerHTML: e._s(e.$parseEmoji(" ｜ " + t.data.now, 20, 2, 0))
+                        innerHTML: e._s(e.$parseEmoji(" · " + (
+                            (t.data.now == "DIRECT") ? "☆ 直连 ☆" :
+                            (t.data.now == "REJECT") ? "☆ 拒绝 ☆" :
+                            t.data.now
+                        ), 20, 2, 0))
                     }
                 }) : n("div", {
                     staticClass: "proxy-hint-loadbalance"
-                }, [e._v("\n              (" + e._s(t.data.type) + ")\n            ")])]), e._v(" "), n("div", {
+                }, [e._v("\n              (" + e._s(
+                    (t.data.type == "LoadBalance") ? "负载均衡" :
+                    t.data.type
+                ) + ")\n            ")])]), e._v(" "), n("div", {
                     staticClass: "proxy-section-right"
                 }, [n("svg", {
                     staticClass: "icon clickable",
@@ -17550,16 +17638,25 @@ module.exports = function(e) {
                     }, [n("div", {
                         staticClass: "item-name",
                         domProps: {
-                            innerHTML: e._s(e.$parseEmoji(r.name, 19, 0, 5))
+                            innerHTML: e._s(e.$parseEmoji(
+                                (r.name == "DIRECT") ? "☆ 直连 ☆" :
+                                (r.name == "REJECT") ? "☆ 拒绝 ☆" :
+                                r.name
+                                , 19, 0, 5))
                         }
                     }), e._v(" "), n("div", {
                         staticClass: "item-hint",
                         domProps: {
-                            innerHTML: e._s(r.provider ? "Provider: " + r.provider.name : e.nodeHint(r))
+                            innerHTML: e._s(r.provider ? "提供器: " + r.provider.name : (
+                                (e.nodeHint(r) == "Direct") ? "直连" :
+                                (e.nodeHint(r) == "Reject") ? "拒绝" :
+                                (e.nodeHint(r) == "LoadBalance") ? "负载均衡" :
+                                e.nodeHint(r)
+                            ))
                         }
                     })]), e._v(" "), n("div", {
                         class: {
-                            offline: "超时" === r.latency, online: !["超时", null, void 0, ""].includes(r.latency), time: !0
+                            offline: "Timeout" === r.latency, online: !["Timeout", null, void 0, ""].includes(r.latency), time: !0
                         },
                         on: {
                             click: [function() {
@@ -17568,7 +17665,11 @@ module.exports = function(e) {
                                 e.stopPropagation()
                             }]
                         }
-                    }, [e._v("\n                  " + e._s(e.checkBtnText(r)) + "\n                ")])])])
+                    }, [e._v("\n                  " + e._s(
+                        (e.checkBtnText(r) == "Check") ? "正在检测" :
+                        (e.checkBtnText(r) == "Timeout") ? "超时" :
+                        e.checkBtnText(r)
+                    ) + "\n                ")])])])
                 })), e._v(" "), e._l(Array(20), (function(t, r) {
                     return n("i", {
                         key: r,
@@ -18059,7 +18160,7 @@ module.exports = function(e) {
                     staticClass: "update-hint"
                 }, [n("div", {
                     staticClass: "type"
-                }, [e._v("\n                    " + e._s(t.vehicleType) + " (" + e._s(t.proxies.length) + "\n                    Proxies) (" + e._s(e.fromNowString(t.updatedAt)) + ")\n                  ")])]), e._v(" "), n("div", {
+                }, [e._v("\n                    " + e._s(t.vehicleType) + " (" + e._s(t.proxies.length) + "\n                    个代理) (" + e._s(e.fromNowString(t.updatedAt)) + ")\n                  ")])]), e._v(" "), n("div", {
                     staticClass: "error-hint"
                 }, [e._v(e._s(t.message))])]), e._v(" "), n("div", {
                     staticClass: "empty"
@@ -18111,7 +18212,7 @@ module.exports = function(e) {
                 })])]) : e._e()])])
             })), 0)] : e._e(), e._v(" "), 0 < e.ruleProviders.length ? [n("div", {
                 staticClass: "title"
-            }, [e._v("Rule Providers")]), e._v(" "), n("div", {
+            }, [e._v("规则提供器")]), e._v(" "), n("div", {
                 staticClass: "items"
             }, e._l(e.ruleProviders, (function(t, r) {
                 return n("div", {
@@ -18127,7 +18228,7 @@ module.exports = function(e) {
                     staticClass: "update-hint"
                 }, [n("div", {
                     staticClass: "type"
-                }, [e._v("\n                    " + e._s(t.vehicleType) + "\n                    " + e._s(t.behavior) + " (" + e._s(t.ruleCount) + " Rules)\n                    (" + e._s(e.fromNowString(t.updatedAt)) + ")\n                  ")])]), e._v(" "), n("div", {
+                }, [e._v("\n                    " + e._s(t.vehicleType) + "\n                    " + e._s(t.behavior) + " (" + e._s(t.ruleCount) + " 个规则)\n                    (" + e._s(e.fromNowString(t.updatedAt)) + ")\n                  ")])]), e._v(" "), n("div", {
                     staticClass: "error-hint"
                 }, [e._v(e._s(t.message))])]), e._v(" "), n("div", {
                     staticClass: "empty"
@@ -18437,7 +18538,7 @@ module.exports = function(e) {
                 staticClass: "section ad-section"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("汉化补丁版本 v0.15.7.0 | 译者: ImFatF1sh")]), e._v(" "), n("div", {
+            }, [e._v("汉化版 v0.15.7.1 · 译者: ImFatF1sh")]), e._v(" "), n("div", {
                 staticClass: "ad-img-list"
             }, e._l(e.adImages, (function(t, r) {
                 return n("div", {
@@ -18685,7 +18786,13 @@ module.exports = function(e) {
                 staticClass: "text"
             }, [n("div", [e._v("请求日志")]), e._v(" "), n("div", {
                 staticClass: "hint"
-            }, [e._v("模式: " + e._s(e.mode))])]), e._v(" "), n("div", {
+            }, [e._v("模式: " + e._s(
+                (e.mode == "global") ? "全局" :
+                (e.mode == "rule") ? "规则" :
+                (e.mode == "direct") ? "直连" :
+                (e.mode == "script") ? "脚本" :
+                e.mode[0].toUpperCase() + e.mode.slice(1)
+            ))])]), e._v(" "), n("div", {
                 staticClass: "btns"
             }, [n("div", {
                 staticClass: "button button-clear",
@@ -18787,7 +18894,7 @@ module.exports = function(e) {
                         downloadTotal: 0,
                         connections: []
                     },
-                    labels: ["上传速度", "下载速度", "上传流量", "下载流量", "时间"],
+                    labels: ["按上传速度", "按下载速度", "按上传流量", "按下载流量", "按时间"],
                     labelSelected: 4,
                     isReverse: !1
                 }
@@ -18926,9 +19033,9 @@ module.exports = function(e) {
                             Destination: (n ? t.destinationIP : t.host || t.destinationIP) + ":" + t.destinationPort,
                             Rule: "".concat(e.rule, " (").concat(e.rulePayload, ")"),
                             Chains: e.chains.slice().reverse().join(" - "),
-                            "Start Time": m()(e.start).format("MM-DD HH:mm:ss")
+                            "开始时间": m()(e.start).format("MM-DD HH:mm:ss")
                         },
-                        title: "Connection Info"
+                        title: "连接信息"
                     })
                 },
                 handleSwitchPauseStatus: function() {
