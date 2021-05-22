@@ -9901,12 +9901,12 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("separator"), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义文件夹路径")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("自定义文件夹位置")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("SimpleInput", {
                 staticClass: "short-input",
                 attrs: {
-                    placeholder: "配置文件目录路径"
+                    placeholder: "配置文件目录"
                 },
                 model: {
                     value: e.settings.profilePath,
@@ -15545,7 +15545,7 @@ module.exports = function(e) {
                 on: {
                     click: e.openHomeDir
                 }
-            }, [e._v("\n        Clash 配置文件目录\n      ")]), e._v(" "), n("div", {
+            }, [e._v("\n        查看配置文件位置\n      ")]), e._v(" "), n("div", {
                 class: ["error-hint-" + e.theme],
                 on: {
                     click: e.openLogsFolder
@@ -15851,7 +15851,7 @@ module.exports = function(e) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     return t.prev = 0, n = ["silent", "error", "warning", "info", "debug"], t.next = 4, e.$select({
-                                        title: "选择 Clash 核心日志等级",
+                                        title: "选择核心日志等级",
                                         message: "如果为静默, 将阻止在下次启动时生成 .log 文件",
                                         items: ["静默", "错误", "警告", "信息", "调试"]
                                     });
@@ -16533,7 +16533,7 @@ module.exports = function(e) {
                                     }
                                     return t.next = 3, e.clashAxiosClient.get("/version");
                                 case 3:
-                                    n = t.sent, (r = n.data) ? (i = r.premium, a = r.version, e.clashCoreVersion = void 0 !== i && void 0 !== a ? "".concat(a, " ").concat(i ? "高级版" : "") : "未知版本") : e.clashCoreVersion = "未知版本";
+                                    n = t.sent, (r = n.data) ? (i = r.premium, a = r.version, e.clashCoreVersion = void 0 !== i && void 0 !== a ? "".concat(a, " ").concat(i ? "高级" : "") : "未知版本") : e.clashCoreVersion = "未知版本";
                                 case 6:
                                 case "end":
                                     return t.stop()
@@ -16597,7 +16597,7 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("更换 Clash 代理端口")]), e._v(" "), n("div", {
+            }, [e._v("更换代理端口")]), e._v(" "), n("div", {
                 staticClass: "item-right"
             }, [n("img", {
                 staticClass: "control-icon",
@@ -16643,7 +16643,7 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("选择 Clash 核心日志等级")]), e._v(" "), n("div", {
+            }, [e._v("选择核心日志等级")]), e._v(" "), n("div", {
                 staticClass: "item-right"
             }, [n("div", {
                 class: "clickable-" + e.theme,
@@ -16676,7 +16676,7 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("Clash 核心版本 (控制器端口)")]), e._v(" "), n("div", {
+            }, [e._v("核心版本 (控制器端口)")]), e._v(" "), n("div", {
                 staticClass: "item-right",
                 class: "clickable-" + e.theme,
                 on: {
@@ -16686,7 +16686,7 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("查看 Clash 配置文件位置")]), e._v(" "), n("div", {
+            }, [e._v("查看配置文件位置")]), e._v(" "), n("div", {
                 staticClass: "item-right",
                 class: "clickable-" + e.theme,
                 on: {
@@ -18576,7 +18576,7 @@ module.exports = function(e) {
                 staticClass: "section ad-section"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("zh_CN v0.15.7.3.2 · 翻译人员: ImFatF1sh")]), e._v(" "), n("div", {
+            }, [e._v("zh_CN v0.15.7.3.3 · 翻译人员: ImFatF1sh")]), e._v(" "), n("div", {
                 staticClass: "ad-img-list"
             }, e._l(e.adImages, (function(t, r) {
                 return n("div", {
