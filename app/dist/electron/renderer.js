@@ -11096,7 +11096,7 @@ module.exports = function(e) {
                     staticClass: "proxy-item left-item"
                 }, [e._v("\n          " + e._s(
                     (t.name == "DIRECT") ? "★ 直接连接 ★" :
-                    (t.name == "REJECT") ? "★ 拒接连接 ★" :
+                    (t.name == "REJECT") ? "★ 拒绝连接 ★" :
                     t.name
                 ) + "\n        ")])
             })), 0), e._v(" "), n("div", {
@@ -11482,7 +11482,7 @@ module.exports = function(e) {
                     domProps: {
                         innerHTML: e._s(e.$parseEmoji((
                             (t == "DIRECT") ? "★ 直接连接 ★" :
-                            (t == "REJECT") ? "★ 拒接连接 ★" :
+                            (t == "REJECT") ? "★ 拒绝连接 ★" :
                             t
                         ), 20))
                     },
@@ -18576,7 +18576,7 @@ module.exports = function(e) {
                 staticClass: "section ad-section"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("zh_CN v0.15.7.3.1 · 翻译人员: ImFatF1sh")]), e._v(" "), n("div", {
+            }, [e._v("zh_CN v0.15.7.3.2 · 翻译人员: ImFatF1sh")]), e._v(" "), n("div", {
                 staticClass: "ad-img-list"
             }, e._l(e.adImages, (function(t, r) {
                 return n("div", {

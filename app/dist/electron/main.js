@@ -111,8 +111,8 @@ module.exports = function(e) {
         var e = s().bounds,
             t = void 0 === e ? {} : e;
         (_ = new m.BrowserWindow(o({
-            height: 603,
-            width: 850,
+            height: 713,
+            width: 978,
             minWidth: 850,
             minHeight: 603,
             backgroundColor: "#f5f5f5",
