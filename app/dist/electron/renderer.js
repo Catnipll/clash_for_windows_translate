@@ -18576,7 +18576,7 @@ module.exports = function(e) {
                 staticClass: "section ad-section"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("汉化版 v0.15.7.3 · 译者: ImFatF1sh")]), e._v(" "), n("div", {
+            }, [e._v("zh_CN v0.15.7.3.1 · 翻译人员: ImFatF1sh")]), e._v(" "), n("div", {
                 staticClass: "ad-img-list"
             }, e._l(e.adImages, (function(t, r) {
                 return n("div", {
