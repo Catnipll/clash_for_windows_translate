@@ -4,9 +4,10 @@
 
 # Clash for Windows 翻译
 
-一个 Clash for Windows 的翻译版本
+一个 Clash for Windows 的翻译版本, 支持 Windows 和 macOS
 
-![预览](https://github.com/zijianjiao2017/clash_for_windows_translate/raw/zh_CN/img/Preview.png)
+![Windows 预览](https://github.com/zijianjiao2017/clash_for_windows_translate/raw/zh_CN/img/Windows_preview.png)
+![macOS 预览](https://github.com/zijianjiao2017/clash_for_windows_translate/raw/zh_CN/img/macOS_preview.png)
 
 ## 先决条件
 * [electron/asar](https://github.com/electron/asar)
