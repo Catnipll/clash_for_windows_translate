@@ -6270,8 +6270,8 @@ module.exports = function(e) {
             var i = Object(v.join)(e, "service", "service.yml");
             Object(m.writeFileSync)(i, Object(b.stringify)({
                 id: "Clash Core Service",
-                name: "Clash Core Service",
-                description: "Clash Core Service started by Clash for Windows",
+                name: "Clash 核心服务",
+                description: "由 Clash for Windows 启动的 Clash 核心服务",
                 executable: "clash-core-service",
                 log: {
                     mode: "none"
@@ -8048,12 +8048,12 @@ module.exports = function(e) {
                 on: {
                     click: e.handleCancel
                 }
-            }, [e._v("Cancel")]), e._v(" "), n("div", {
+            }, [e._v("取消")]), e._v(" "), n("div", {
                 staticClass: "btn btn-ok",
                 on: {
                     click: e.handleDone
                 }
-            }, [e._v("OK")])])], 2)])]) : e._e()
+            }, [e._v("确认")])])], 2)])]) : e._e()
         }), [], !1, null, "7f87e16f", null));
     ve.options.__file = "InputView.vue";
     var me = ve.exports,
@@ -8224,7 +8224,7 @@ module.exports = function(e) {
                 on: {
                     click: e.handleDone
                 }
-            }, [e._v("OK")])])])])]) : e._e()
+            }, [e._v("确认")])])])])]) : e._e()
         }), [], !1, null, "0b92fb6c", null));
     ke.options.__file = "AlertView.vue";
     var _e = ke.exports,
@@ -8833,7 +8833,7 @@ module.exports = function(e) {
                     return this.keyChain.join("+")
                 },
                 hint: function() {
-                    return this.isRecording ? "recording..." : this.placeholder
+                    return this.isRecording ? "正在录制..." : this.placeholder
                 }
             }),
             methods: {
@@ -9212,9 +9212,9 @@ module.exports = function(e) {
                                     return t.prev = 0, n = Object(U.b)().map((function(e) {
                                         return e.name
                                     })), t.next = 4, e.$select({
-                                        title: "Choose outbound interface",
-                                        message: "only works when TAP mode enabled",
-                                        items: [].concat(u()(n), ["[ Reset ]"])
+                                        title: "选择出站接口",
+                                        message: "仅在 TAP 模式启用时工作",
+                                        items: [].concat(u()(n), ["[ 重置 ]"])
                                     });
                                 case 4:
                                     r = t.sent, e.settings.interfaceName = r === n.length ? "" : n[r], t.next = 10;
@@ -9330,23 +9330,23 @@ module.exports = function(e) {
                 class: ["main-setting-view-" + e.theme]
             }, [n("div", {
                 class: ["title", e.isEditingExternal ? "blur" : ""]
-            }, [n("div", [e._v("Settings")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("设置")]), e._v(" "), n("div", {
                 staticClass: "btns"
             }, [n("div", {
                 staticClass: "btn",
                 on: {
                     click: e.handleReset
                 }
-            }, [e._v("Reset All Settings")])])]), e._v(" "), e.settings ? n("div", {
+            }, [e._v("重置全部设置")])])]), e._v(" "), e.settings ? n("div", {
                 ref: "mixin-scroll-content",
                 class: ["content", , e.isEditingExternal ? "blur" : ""]
             }, [n("Section", {
                 attrs: {
-                    title: "General"
+                    title: "通用"
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Settings Editor")]), e._v(" "), n("SelectView", {
+            }, [n("div", [e._v("设置编辑器")]), e._v(" "), n("SelectView", {
                 attrs: {
                     items: ["CFW", "Visual Studio Code", "Sublime Text"]
                 },
@@ -9359,7 +9359,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Notifications")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("通知")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.showNotifications,
                     callback: function(t) {
@@ -9369,7 +9369,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Silent Start")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("静默启动")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.hideAfterStartup,
                     callback: function(t) {
@@ -9379,7 +9379,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Random Controller Port")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("随机控制器端口")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.randomControllerPort,
                     callback: function(t) {
@@ -9389,7 +9389,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Lightweight Mode")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("精简模式")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.lightweightMode,
                     callback: function(t) {
@@ -9399,7 +9399,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Run Time Format")]), e._v(" "), n("SimpleInput", {
+            }, [n("div", [e._v("运行时长格式")]), e._v(" "), n("SimpleInput", {
                 staticClass: "input",
                 attrs: {
                     placeholder: "hh : mm : ss"
@@ -9413,23 +9413,23 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("GUI Log Folder")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("GUI 日志文件夹")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Open"
+                    text: "打开"
                 },
                 on: {
                     click: e.handleOpenGUILog
                 }
             })], 1)]), e._v(" "), n("Section", {
                 attrs: {
-                    title: "Appearance"
+                    title: "外观"
                 }
             }, [e.settings.systemTheme ? e._e() : n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Theme")]), e._v(" "), n("SelectView", {
+            }, [n("div", [e._v("主题")]), e._v(" "), n("SelectView", {
                 attrs: {
-                    items: ["Light", "Dark", "国庆中秋", "Cyberpunk"]
+                    items: ["明亮", "黑暗", "国庆中秋", "Cyberpunk"]
                 },
                 model: {
                     value: e.settings.theme,
@@ -9440,7 +9440,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Follow System Theme")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("跟随系统主题")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.systemTheme,
                     callback: function(t) {
@@ -9450,7 +9450,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Font Family")]), e._v(" "), n("SimpleInput", {
+            }, [n("div", [e._v("字体样式")]), e._v(" "), n("SimpleInput", {
                 attrs: {
                     placeholder: e.fontFamilyPlaceholder
                 },
@@ -9463,12 +9463,12 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), e.isWindows ? n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Default Icon Path")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("默认图标路径")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("SimpleInput", {
                 staticClass: "short-input",
                 attrs: {
-                    placeholder: "ICO(.ico) asset path"
+                    placeholder: "图标 (.ico) 资源路径"
                 },
                 model: {
                     value: e.settings.iconDefault,
@@ -9480,19 +9480,19 @@ module.exports = function(e) {
             }), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Select"
+                    text: "选择"
                 },
                 on: {
                     click: e.handleChooseDefaultIcon
                 }
             })], 1)]) : e._e(), e._v(" "), e.isWindows ? n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("System Proxy On Icon Path")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("已开启系统代理时的图标路径")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("SimpleInput", {
                 staticClass: "short-input",
                 attrs: {
-                    placeholder: "ICO(.ico) asset path"
+                    placeholder: "图标 (.ico) 资源路径"
                 },
                 model: {
                     value: e.settings.iconSystemProxy,
@@ -9504,14 +9504,14 @@ module.exports = function(e) {
             }), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Select"
+                    text: "选择"
                 },
                 on: {
                     click: e.handleChooseSystemProxytOnIcon
                 }
             })], 1)]) : e._e(), e._v(" "), n("separator"), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Enhanced Tray")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("增强型托盘")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.iconSpeed,
                     callback: function(t) {
@@ -9521,11 +9521,11 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), e.settings.iconSpeed ? n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Text")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("文字")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("SimpleInput", {
                 attrs: {
-                    placeholder: "Text to display in tray"
+                    placeholder: "在托盘上显示的文本"
                 },
                 model: {
                     value: e.settings.trayText,
@@ -9536,12 +9536,12 @@ module.exports = function(e) {
                 }
             })], 1)]) : e._e(), e._v(" "), !e.settings.trayText && e.settings.iconSpeed ? n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Script")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("脚本")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("SimpleInput", {
                 staticClass: "short-input",
                 attrs: {
-                    placeholder: "Script to run"
+                    placeholder: "要运行的脚本"
                 },
                 model: {
                     value: e.settings.trayScriptPath,
@@ -9553,19 +9553,19 @@ module.exports = function(e) {
             }), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Select"
+                    text: "选择"
                 },
                 on: {
                     click: e.handleSelectTrayScriptPath
                 }
             })], 1)]) : e._e(), e._v(" "), !e.settings.trayText && e.settings.iconSpeed && e.settings.trayScriptPath ? n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Script Interval")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("脚本间隔时间")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("SimpleInput", {
                 staticClass: "shorter-input",
                 attrs: {
-                    placeholder: "seconds",
+                    placeholder: "秒",
                     suffix: "s",
                     type: "number"
                 },
@@ -9579,14 +9579,14 @@ module.exports = function(e) {
             }), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Manual Run"
+                    text: "手动运行"
                 },
                 on: {
                     click: e.handleTrayScriptManualRun
                 }
             })], 1)]) : e._e(), e._v(" "), e.isWindows && e.settings.iconSpeed ? n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Transparent")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("透明")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("SimpleInput", {
                 staticClass: "shorter-input",
@@ -9594,7 +9594,7 @@ module.exports = function(e) {
                     "margin-right": "10px"
                 },
                 attrs: {
-                    placeholder: "foreground color"
+                    placeholder: "前景色"
                 },
                 model: {
                     value: e.settings.trayColorForeground,
@@ -9613,7 +9613,7 @@ module.exports = function(e) {
                 }
             })], 1)]) : e._e(), e._v(" "), n("separator"), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Show New Version Icon")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("展示新版本图标")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.showNewVersionIcon,
                     callback: function(t) {
@@ -9623,11 +9623,11 @@ module.exports = function(e) {
                 }
             })], 1)], 1), e._v(" "), n("Section", {
                 attrs: {
-                    title: "System Proxy"
+                    title: "系统代理"
                 }
             }, [e.isWindows ? n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Type")]), e._v(" "), n("SelectView", {
+            }, [n("div", [e._v("类型")]), e._v(" "), n("SelectView", {
                 attrs: {
                     items: ["HTTP", "PAC"]
                 },
@@ -9640,27 +9640,27 @@ module.exports = function(e) {
                 }
             })], 1) : e._e(), e._v(" "), e.isWindows && 1 === e.settings.systemProxyTypeIndex ? n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("PAC Content")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("PAC 内容")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Edit"
+                    text: "编辑"
                 },
                 on: {
                     click: e.handleEditPACContent
                 }
             })], 1) : e._e(), e._v(" "), 1 === e.settings.systemProxyTypeIndex ? e._e() : n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Bypass Domain/IPNet")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("绕过域名/IPNet")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Edit"
+                    text: "编辑"
                 },
                 on: {
                     click: e.handleEditBypass
                 }
             })], 1), e._v(" "), e.isWindows && 1 !== e.settings.systemProxyTypeIndex ? n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Specify Protocol")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("指定协议")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.specifyHttpProxyProtocol,
                     callback: function(t) {
@@ -9670,11 +9670,11 @@ module.exports = function(e) {
                 }
             })], 1) : e._e()]), e._v(" "), n("Section", {
                 attrs: {
-                    title: "Profile Mixin"
+                    title: "混合配置文件"
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Type")]), e._v(" "), n("SelectView", {
+            }, [n("div", [e._v("类型")]), e._v(" "), n("SelectView", {
                 attrs: {
                     items: ["YAML", "JavaScript"]
                 },
@@ -9690,7 +9690,7 @@ module.exports = function(e) {
             }, [n("div", [e._v("YAML")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Edit"
+                    text: "编辑"
                 },
                 on: {
                     click: e.handleEditMixinYAML
@@ -9700,18 +9700,18 @@ module.exports = function(e) {
             }, [n("div", [e._v("JavaScript")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Edit"
+                    text: "编辑"
                 },
                 on: {
                     click: e.handleEditMixinJS
                 }
             })], 1)]), e._v(" "), n("Section", {
                 attrs: {
-                    title: "Proxies"
+                    title: "代理"
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Proxy Item Width")]), e._v(" "), n("SimpleInput", {
+            }, [n("div", [e._v("代理项目宽度")]), e._v(" "), n("SimpleInput", {
                 attrs: {
                     placeholder: "290",
                     suffix: "px"
@@ -9725,9 +9725,9 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Order By")]), e._v(" "), n("SelectView", {
+            }, [n("div", [e._v("排序")]), e._v(" "), n("SelectView", {
                 attrs: {
-                    items: ["Default", "Latency", "Alphabet"]
+                    items: ["默认", "根据延迟", "根据 Alphabet"]
                 },
                 model: {
                     value: e.settings.proxyOrder,
@@ -9738,7 +9738,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Latency Test URL")]), e._v(" "), n("SimpleInput", {
+            }, [n("div", [e._v("延迟测试 URL")]), e._v(" "), n("SimpleInput", {
                 attrs: {
                     placeholder: "http://www.gstatic.com/generate_204"
                 },
@@ -9751,7 +9751,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Latency Test Timeout")]), e._v(" "), n("SimpleInput", {
+            }, [n("div", [e._v("延迟测试超时")]), e._v(" "), n("SimpleInput", {
                 attrs: {
                     type: "number",
                     placeholder: "3000",
@@ -9766,7 +9766,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Show Filter")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("显示过滤器")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.showProxyFilter,
                     callback: function(t) {
@@ -9776,7 +9776,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Hide Unselectable Group")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("隐藏不可选择的组")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.hideUnselectableGroup,
                     callback: function(t) {
@@ -9786,13 +9786,13 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("Section", {
                 attrs: {
-                    title: "Connections"
+                    title: "连接"
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Break When Proxy Change")]), e._v(" "), n("SelectView", {
+            }, [n("div", [e._v("当代理变更时断开")]), e._v(" "), n("SelectView", {
                 attrs: {
-                    items: ["None", "Chain", "All"]
+                    items: ["无", "连锁", "全部"]
                 },
                 model: {
                     value: e.settings.connProxy,
@@ -9803,7 +9803,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Break When Profile Change")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("当配置文件变更时断开")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.connProfile,
                     callback: function(t) {
@@ -9813,7 +9813,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Break When Mode Change")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("当模式变更时断开")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.connMode,
                     callback: function(t) {
@@ -9823,9 +9823,9 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Display Chain Type")]), e._v(" "), n("SelectView", {
+            }, [n("div", [e._v("显示连锁类型")]), e._v(" "), n("SelectView", {
                 attrs: {
-                    items: ["Proxy", "Group", "Both"]
+                    items: ["代理", "组", "两者"]
                 },
                 model: {
                     value: e.settings.connChainType,
@@ -9836,72 +9836,72 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("Section", {
                 attrs: {
-                    title: "Outbound"
+                    title: "出站"
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Interface Name")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("接口名称")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [e.detectedInterfaceName ? n("MoreHint", {
                 staticClass: "interface-hint",
                 attrs: {
-                    text: "Detected: " + e.detectedInterfaceName,
+                    text: "已检测: " + e.detectedInterfaceName,
                     clickable: !1
                 }
             }) : e._e(), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: e.settings.interfaceName || "Select"
+                    text: e.settings.interfaceName || "选择"
                 },
                 on: {
                     click: e.handleSelectInterface
                 }
             })], 1)])]), e._v(" "), n("Section", {
                 attrs: {
-                    title: "Child Processes"
+                    title: "子进程"
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Processes")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("进程")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Edit"
+                    text: "编辑"
                 },
                 on: {
                     click: e.handleEditChildProcess
                 }
             })], 1)]), e._v(" "), n("Section", {
                 attrs: {
-                    title: "Profiles"
+                    title: "配置文件"
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Parsers")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("解析器")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Edit"
+                    text: "编辑"
                 },
                 on: {
                     click: e.handleEditProfileParsers
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Console Output")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("控制台输出")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Open File"
+                    text: "打开文件"
                 },
                 on: {
                     click: e.handleOpenConsoleFile
                 }
             })], 1), e._v(" "), n("separator"), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Folder Path")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("文件夹路径")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("SimpleInput", {
                 staticClass: "short-input",
                 attrs: {
-                    placeholder: "Profiles folder path"
+                    placeholder: "配置文件文件夹路径"
                 },
                 model: {
                     value: e.settings.profilePath,
@@ -9913,24 +9913,24 @@ module.exports = function(e) {
             }), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Select"
+                    text: "选择"
                 },
                 on: {
                     click: e.handleChooseProfilePath
                 }
             })], 1)]), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Request Headers")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("请求头")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
-                    text: "Edit"
+                    text: "修改"
                 },
                 on: {
                     click: e.handleEditHeaders
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Select After Updated")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("更新后选择")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.selectAfterUpdated,
                     callback: function(t) {
@@ -9940,16 +9940,16 @@ module.exports = function(e) {
                 }
             })], 1)], 1), e._v(" "), n("Section", {
                 attrs: {
-                    title: "Shortcuts"
+                    title: "快捷键"
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("System Proxy")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("系统代理")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
                 attrs: {
-                    placeholder: "Record"
+                    placeholder: "录制"
                 },
                 model: {
                     value: e.settings.shortcutSystemProxy,
@@ -9960,12 +9960,12 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Mixin")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("混合")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
                 attrs: {
-                    placeholder: "Record"
+                    placeholder: "录制"
                 },
                 model: {
                     value: e.settings.shortcutMixin,
@@ -9976,12 +9976,12 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("separator"), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Global Mode")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("全局模式")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
                 attrs: {
-                    placeholder: "Record"
+                    placeholder: "录制"
                 },
                 model: {
                     value: e.settings.shortcutGlobalMode,
@@ -9992,12 +9992,12 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Rule Mode")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("规则模式")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
                 attrs: {
-                    placeholder: "Record"
+                    placeholder: "录制"
                 },
                 model: {
                     value: e.settings.shortcutRuleMode,
@@ -10008,12 +10008,12 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Direct Mode")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("直连模式")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
                 attrs: {
-                    placeholder: "Record"
+                    placeholder: "录制"
                 },
                 model: {
                     value: e.settings.shortcutDirectMode,
@@ -10024,12 +10024,12 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Script Mode")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("脚本模式")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
                 attrs: {
-                    placeholder: "Record"
+                    placeholder: "录制"
                 },
                 model: {
                     value: e.settings.shortcutScriptMode,
@@ -10040,12 +10040,12 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("separator"), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Show/Hide Dashboard")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("展示/隐藏仪表盘")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
                 attrs: {
-                    placeholder: "Record"
+                    placeholder: "录制"
                 },
                 model: {
                     value: e.settings.shortcutShowHideDashboard,
@@ -10056,12 +10056,12 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Run Tray Script")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("运行托盘脚本")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
                 attrs: {
-                    placeholder: "Record"
+                    placeholder: "录制"
                 },
                 model: {
                     value: e.settings.shortcutRunTrayScript,
@@ -10079,21 +10079,21 @@ module.exports = function(e) {
                         return e.handleQuit()
                     }
                 }
-            }, [e._v("Quit")]), e._v(" "), n("div", {
+            }, [e._v("退出")]), e._v(" "), n("div", {
                 staticClass: "btn clickable btn-force-quit",
                 on: {
                     click: function() {
                         return e.handleQuit(!0)
                     }
                 }
-            }, [e._v("\n        Force Quit\n      ")])])], 1) : e._e(), e._v(" "), e.isEditingExternal ? n("div", {
+            }, [e._v("\n        强制退出\n      ")])])], 1) : e._e(), e._v(" "), e.isEditingExternal ? n("div", {
                 staticClass: "edit-hint"
-            }, [n("div", [e._v("\n      " + e._s(["", "Visual Studio Code", "Sublime Text"][e.settings.editor]) + " is\n      launching for editing.\n    ")]), e._v(" "), n("div", [e._v("Close the editing file to Save.")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("\n      " + e._s(["", "Visual Studio Code", "Sublime Text"][e.settings.editor]) + " 正在\n      启动以编辑.\n    ")]), e._v(" "), n("div", [e._v("关闭正在编辑的文件以保存.")]), e._v(" "), n("div", {
                 staticClass: "btn",
                 on: {
                     click: e.cancelExternalEdit
                 }
-            }, [e._v("Cancel")])]) : e._e()])
+            }, [e._v("取消")])]) : e._e()])
         }), [], !1, null, "4fe34613", null));
     J.options.__file = "SettingView.vue", t.default = J.exports
 }, function(e, t, n) {
@@ -10371,7 +10371,7 @@ module.exports = function(e) {
                 staticClass: "input-view"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v(e._s(e.data ? "Edit" : "New") + " Proxy Group")]), e._v(" "), n("input", {
+            }, [e._v(e._s(e.data ? "编辑" : "新建") + " 代理组")]), e._v(" "), n("input", {
                 directives: [{
                     name: "model",
                     rawName: "v-model",
@@ -10380,7 +10380,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Group Name"
+                    placeholder: "组名称"
                 },
                 domProps: {
                     value: e.groupName
@@ -10448,7 +10448,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Interval ( Second )"
+                    placeholder: "间隔时间 (秒)"
                 },
                 domProps: {
                     value: e.groupInterval
@@ -10462,7 +10462,7 @@ module.exports = function(e) {
                 staticClass: "input-view"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v(e._s(e.data ? "Edit" : "New") + " Proxy")]), e._v(" "), n("input", {
+            }, [e._v(e._s(e.data ? "编辑" : "新建") + " 代理")]), e._v(" "), n("input", {
                 directives: [{
                     name: "model",
                     rawName: "v-model",
@@ -10471,7 +10471,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Proxy Name"
+                    placeholder: "代理名称"
                 },
                 domProps: {
                     value: e.proxyName
@@ -10520,7 +10520,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Server"
+                    placeholder: "服务器"
                 },
                 domProps: {
                     value: e.proxyServer
@@ -10539,7 +10539,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Port"
+                    placeholder: "端口"
                 },
                 domProps: {
                     value: e.proxyPort
@@ -10558,7 +10558,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Password"
+                    placeholder: "密码"
                 },
                 domProps: {
                     value: e.proxyPassword
@@ -10639,7 +10639,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Obfs (Optional, tls or http)"
+                    placeholder: "Obfs (可选, tls 或 http)"
                 },
                 domProps: {
                     value: e.proxyObfs
@@ -10658,7 +10658,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Obfs-host (Optional)"
+                    placeholder: "Obfs-host (可选)"
                 },
                 domProps: {
                     value: e.proxyObfshost
@@ -10749,7 +10749,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "User Name (Optional)"
+                    placeholder: "用户名 (可选)"
                 },
                 domProps: {
                     value: e.proxyUsername
@@ -10768,7 +10768,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Password (Optional)"
+                    placeholder: "密码 (可选)"
                 },
                 domProps: {
                     value: e.proxyPassword
@@ -10787,7 +10787,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "ws path"
+                    placeholder: "ws 路径"
                 },
                 domProps: {
                     value: e.proxyWsPath
@@ -10806,7 +10806,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "ws headers (JSON)"
+                    placeholder: "ws 头 (JSON)"
                 },
                 domProps: {
                     value: e.proxyWsHeaders
@@ -10874,7 +10874,7 @@ module.exports = function(e) {
                 attrs: {
                     for: "vmess-skip-cert-verify"
                 }
-            }, [e._v("Skip Cert Verify")])])]) : e._e()]) : e._e(), e._v(" "), n("div", {
+            }, [e._v("跳过证书验证")])])]) : e._e()]) : e._e(), e._v(" "), n("div", {
                 staticClass: "btns"
             }, [n("div", {
                 staticClass: "btn cancel",
@@ -10883,12 +10883,12 @@ module.exports = function(e) {
                         return e.$emit("inputCancel")
                     }
                 }
-            }, [e._v("Cancel")]), e._v(" "), n("div", {
+            }, [e._v("取消")]), e._v(" "), n("div", {
                 staticClass: "btn confirm",
                 on: {
                     click: e.confirmInput
                 }
-            }, [e._v("OK")])])])
+            }, [e._v("确认")])])])
         }), [], !1, null, "8a057c1e", null);
     D.options.__file = "AppendProxyView.vue";
     var I = D.exports,
@@ -10915,7 +10915,7 @@ module.exports = function(e) {
                     }],
                     addType: -1,
                     addData: null,
-                    saveBtn: "Save"
+                    saveBtn: "保存"
                 }
             },
             computed: function(e) {
@@ -10997,7 +10997,7 @@ module.exports = function(e) {
                 editGroup: function(e, t) {
                     var n = e.type;
                     return ["url-test", "fallback", "select", "load-balance"].includes(n) ? (this.addType = 0, e._index = t, void(this.addData = e)) : void this.$alert({
-                        content: "Could not edit proxy gorup type [".concat(n, "].")
+                        content: "无法编辑代理组类型 [".concat(n, "].")
                     })
                 },
                 newProxy: function() {
@@ -11006,7 +11006,7 @@ module.exports = function(e) {
                 editProxy: function(e, t) {
                     var n = e.type;
                     return ["ss", "vmess", "http", "socks"].includes(n) ? (this.addType = 1, e._index = t, void(this.addData = e)) : void this.$alert({
-                        content: "Could not edit proxy type [".concat(n, "].")
+                        content: "无法编辑代理类型 [".concat(n, "].")
                     })
                 },
                 loadData: function() {
@@ -11017,7 +11017,7 @@ module.exports = function(e) {
                     } catch (t) {}
                 },
                 saveData: function() {
-                    if ("Save" === this.saveBtn) try {
+                    if ("保存" === this.saveBtn) try {
                         var e = L.a.join(this.profilesPath, this.profileName);
                         $.a.writeFileSync(e, _.a.stringify(this.conf)), this.$emit("done")
                     } catch (e) {
@@ -11039,7 +11039,8 @@ module.exports = function(e) {
                 staticClass: "floating"
             }, [n("div", {
                 staticClass: "hint"
-            }, [e._v("Drag to sort or add to the list on the right.")]), e._v(" "), n("div", {
+            }, [e._v("\n" +
+                "拖动以排序或添加到右侧的列表中.")]), e._v(" "), n("div", {
                 staticClass: "floating-right"
             }, [n("div", {
                 staticClass: "main-btn save",
@@ -11053,7 +11054,7 @@ module.exports = function(e) {
                         return e.$emit("cancel")
                     }
                 }
-            }, [e._v("Cancel")])])]), e._v(" "), e.conf ? n("div", {
+            }, [e._v("取消")])])]), e._v(" "), e.conf ? n("div", {
                 staticClass: "drag"
             }, [n("div", {
                 staticClass: "proxy"
@@ -11085,12 +11086,12 @@ module.exports = function(e) {
                 }, [e._v("\n          " + e._s(t.name) + "\n        ")])
             })), 0), e._v(" "), n("div", {
                 staticClass: "section-title"
-            }, [n("h2", [e._v("Proxy Groups")]), e._v(" "), n("div", {
+            }, [n("h2", [e._v("代理组")]), e._v(" "), n("div", {
                 staticClass: "add-icon",
                 on: {
                     click: e.newGroup
                 }
-            }, [e._v("Add")])]), e._v(" "), n("draggable", {
+            }, [e._v("新建")])]), e._v(" "), n("draggable", {
                 staticClass: "dragArea",
                 attrs: {
                     group: {
@@ -11149,12 +11150,12 @@ module.exports = function(e) {
                 })])])
             })), 0), e._v(" "), n("div", {
                 staticClass: "section-title"
-            }, [n("h2", [e._v("Proxies")]), e._v(" "), n("div", {
+            }, [n("h2", [e._v("代理")]), e._v(" "), n("div", {
                 staticClass: "add-icon",
                 on: {
                     click: e.newProxy
                 }
-            }, [e._v("Add")])]), e._v(" "), n("draggable", {
+            }, [e._v("新建")])]), e._v(" "), n("draggable", {
                 staticClass: "dragArea",
                 attrs: {
                     group: {
@@ -11294,7 +11295,7 @@ module.exports = function(e) {
                 n = e._self._c || t;
             return n("div", {
                 staticClass: "section-title"
-            }, [n("h2", [e._v("Special Proxies")])])
+            }, [n("h2", [e._v("特殊代理")])])
         }], !1, null, "b5438d0a", null));
     U.options.__file = "ConfigView.vue";
     var H = U.exports,
@@ -11381,14 +11382,14 @@ module.exports = function(e) {
                 }
             }, [n("div", {
                 class: ["model-title-" + e.theme]
-            }, [n("div", [e._v("Create a new rule")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("创建一个新的规则")]), e._v(" "), n("div", {
                 staticClass: "rule-floating-btns"
             }, [n("div", {
                 staticClass: "rule-floating-ok",
                 on: {
                     click: e.inputDone
                 }
-            }, [e._v("Add")]), e._v(" "), n("div", {
+            }, [e._v("新建")]), e._v(" "), n("div", {
                 staticClass: "rule-floating-cancel",
                 on: {
                     click: function() {
@@ -11467,7 +11468,7 @@ module.exports = function(e) {
                     listData: [],
                     memoryData: [],
                     showAlterModel: !1,
-                    saveBtnText: "Save",
+                    saveBtnText: "保存",
                     axiosSource: null,
                     filterKeywords: "",
                     providers: {}
@@ -11502,10 +11503,10 @@ module.exports = function(e) {
                                     }
                                     return n.prev = 2, n.next = 5, t.clashAxiosClient.put("/providers/rules/".concat(encodeURIComponent(i)));
                                 case 5:
-                                    a = n.sent, 204 === a.status ? (t.loadData(), Object(S.c)("Success", "RULE-SET [".concat(i, "] has been updated!"))) : Object(S.c)("Failed", "RULE-SET [".concat(i, "] update failed(Server Error)!")), n.next = 13;
+                                    a = n.sent, 204 === a.status ? (t.loadData(), Object(S.c)("成功", "RULE-SET [".concat(i, "] 已被更新!"))) : Object(S.c)("失败", "RULE-SET [".concat(i, "] 更新失败 (服务器错误)!")), n.next = 13;
                                     break;
                                 case 10:
-                                    n.prev = 10, n.t0 = n.catch(2), Object(S.c)("Failed", "RULE-SET [".concat(i, "] update failed(Network Error)!"));
+                                    n.prev = 10, n.t0 = n.catch(2), Object(S.c)("失败", "RULE-SET [".concat(i, "] 更新失败 (网络错误)!"));
                                 case 13:
                                 case "end":
                                     return n.stop()
@@ -11574,7 +11575,7 @@ module.exports = function(e) {
                                         e.$emit("error"), e.saveBtnText = "Fail"
                                     }
                                     setTimeout((function() {
-                                        e.saveBtnText = "Save"
+                                        e.saveBtnText = "保存"
                                     }), 3e3);
                                 case 2:
                                 case "end":
@@ -11650,7 +11651,7 @@ module.exports = function(e) {
                 staticClass: "header"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("Top 100 matching rules(" + e._s(e.memoryData.length) + ").")]), e._v(" "), n("div", {
+            }, [e._v("前 100 个匹配的规则(共 " + e._s(e.memoryData.length) + " 个).")]), e._v(" "), n("div", {
                 staticClass: "header-btns"
             }, [n("div", {
                 staticClass: "btn btn-add md-button",
@@ -11659,7 +11660,7 @@ module.exports = function(e) {
                         e.showAlterModel = !0
                     }
                 }
-            }, [e._v("\n        Add\n      ")]), e._v(" "), n("div", {
+            }, [e._v("\n        新建\n      ")]), e._v(" "), n("div", {
                 staticClass: "btn btn-save md-button",
                 on: {
                     click: e.applyRules
@@ -11671,7 +11672,7 @@ module.exports = function(e) {
                         return e.$emit("cancel")
                     }
                 }
-            }, [e._v("\n        Cancel\n      ")])])]), e._v(" "), n("div", {
+            }, [e._v("\n        取消\n      ")])])]), e._v(" "), n("div", {
                 staticClass: "filter-view"
             }, [n("input", {
                 directives: [{
@@ -11682,7 +11683,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "fiter by keywords"
+                    placeholder: "按关键字筛选"
                 },
                 domProps: {
                     value: e.filterKeywords
@@ -11714,7 +11715,7 @@ module.exports = function(e) {
                     class: ["url", e.providerOfPayload(t.payload) ? "rule-set" : ""]
                 }, [e._v("\n          " + e._s(t.payload) + "\n        ")]), e._v(" "), n("div", {
                     class: ["rule-" + e.theme]
-                }, [e._v("\n          " + e._s(t.type) + "\n          "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            Rules: " + e._s(e.providerOfPayload(t.payload).ruleCount) + "\n          ")]) : e._e(), e._v(" "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            Last Updated:\n            " + e._s(e.fromNow(e.providerOfPayload(t.payload).updatedAt)) + "\n          ")]) : e._e(), e._v(" "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            " + e._s(e.providerOfPayload(t.payload).vehicleType) + "\n            " + e._s(e.providerOfPayload(t.payload).behavior) + "\n          ")]) : e._e()])]), e._v(" "), n("div", {
+                }, [e._v("\n          " + e._s(t.type) + "\n          "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            Rules: " + e._s(e.providerOfPayload(t.payload).ruleCount) + "\n          ")]) : e._e(), e._v(" "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            最后更新:\n            " + e._s(e.fromNow(e.providerOfPayload(t.payload).updatedAt)) + "\n          ")]) : e._e(), e._v(" "), e.providerOfPayload(t.payload) ? n("div", [e._v("\n            " + e._s(e.providerOfPayload(t.payload).vehicleType) + "\n            " + e._s(e.providerOfPayload(t.payload).behavior) + "\n          ")]) : e._e()])]), e._v(" "), n("div", {
                     staticClass: "right-main"
                 }, [n("div", {
                     staticClass: "right",
@@ -11907,7 +11908,7 @@ module.exports = function(e) {
             data: function() {
                 return {
                     btnType: 0,
-                    resultHint: "Download from a URL",
+                    resultHint: "从一个 URL 下载",
                     editProfileName: "",
                     editProfileType: -1,
                     fileWatcher: null,
@@ -11960,10 +11961,10 @@ module.exports = function(e) {
                     }
                 },
                 getBtnText: function() {
-                    return 3 === this.btnType ? "Downloading" : 1 === this.btnType ? "Error!" : 2 === this.btnType ? "Success!" : "Download"
+                    return 3 === this.btnType ? "正在下载" : 1 === this.btnType ? "错误!" : 2 === this.btnType ? "成功!" : "下载"
                 },
                 getRightBtnText: function() {
-                    return "Direct Mode"
+                    return "直连模式"
                 },
                 getRightBtnClass: function() {
                     return {
@@ -12042,9 +12043,9 @@ module.exports = function(e) {
                                     return r = t.matchingParserCount(e), i = r.map((function(e, n) {
                                         return "".concat(n + 1, ". ").concat(t.parserHint(e))
                                     })).join("<br />"), n.next = 4, t.$select({
-                                        title: "Found ".concat(r.length, " matching parsers"),
+                                        title: "找到 ".concat(r.length, " 个匹配的解析器"),
                                         message: "".concat(i),
-                                        items: ["Edit Parsers", "OK"]
+                                        items: ["编辑解析器", "确认"]
                                     });
                                 case 4:
                                     0 === n.sent && t.$router.replace({
@@ -12088,12 +12089,12 @@ module.exports = function(e) {
                             for (;;) switch (n.prev = n.next) {
                                 case 0:
                                     return r = [{
-                                        name: "Name",
+                                        name: "名称",
                                         key: "filename",
-                                        placeholder: "Input a new file name",
+                                        placeholder: "输入一个新的文件名",
                                         required: !0
                                     }], n.prev = 1, n.next = 4, t.$input({
-                                        title: "Copy profile",
+                                        title: "复制配置文件",
                                         data: r
                                     });
                                 case 4:
@@ -12117,9 +12118,9 @@ module.exports = function(e) {
                         return v.a.wrap((function(n) {
                             for (;;) switch (n.prev = n.next) {
                                 case 0:
-                                    return r = p({}, t.pfs.files[e]), "Edit profile information", i = r.interval, a = void 0 === i ? 0 : i, o = [{
+                                    return r = p({}, t.pfs.files[e]), "编辑配置文件信息", i = r.interval, a = void 0 === i ? 0 : i, o = [{
                                         key: "name",
-                                        name: "Name",
+                                        name: "名称",
                                         required: !0,
                                         value: r.name
                                     }, {
@@ -12128,13 +12129,13 @@ module.exports = function(e) {
                                         value: r.url
                                     }, {
                                         key: "interval",
-                                        name: "Update Interval (hour)",
+                                        name: "更新间隔时间 (小时)",
                                         validate: function(e) {
-                                            return /^\d+$/.test(e) ? "" : "Update Interval must be an integer"
+                                            return /^\d+$/.test(e) ? "" : "更新间隔时间必须是一个整数"
                                         },
                                         value: a
                                     }], n.prev = 4, n.next = 7, t.$input({
-                                        title: "Edit profile information",
+                                        title: "编辑配置文件信息",
                                         data: o
                                     });
                                 case 7:
@@ -12265,7 +12266,7 @@ module.exports = function(e) {
                                 return t.name === e && "" === t.url
                             }));
                         if (-1 < i && i < r.files.length) return void this.$alert({
-                            content: "Local file already exist.",
+                            content: "本地文件已经存在.",
                             title: "Error"
                         });
                         this.appendProfile({
@@ -12296,8 +12297,8 @@ module.exports = function(e) {
                                 case 0:
                                     return r = t.pfs.files[e], i = r.name, r.url, n.next = 3, t.$showDialog({
                                         type: "warning",
-                                        message: 'Are you sure to delete "'.concat(i, '"?'),
-                                        buttons: ["Yes", "No"]
+                                        message: '确认要删除 "'.concat(i, '"?'),
+                                        buttons: ["是", "否"]
                                     });
                                 case 3:
                                     if (a = n.sent, 0 === a.response) {
@@ -12345,9 +12346,9 @@ module.exports = function(e) {
                                     }
                                     return n.next = 11, t.$showDialog({
                                         type: "error",
-                                        message: "Could not switch to this profile!",
+                                        message: "无法切换到这个配置文件!",
                                         detail: a || "",
-                                        buttons: ["OK", "Edit in Text Mode"]
+                                        buttons: ["确认", "在文本模式下编辑"]
                                     });
                                 case 11:
                                     o = n.sent, 1 === o.response && t.openProfile(t.pfs.files[e]), t.changeProfilesIndex({
@@ -12415,11 +12416,11 @@ module.exports = function(e) {
                     this.editProfileName = e.time, this.editProfileType = 1
                 },
                 parseDomain: function(e) {
-                    var t = "local file";
+                    var t = "本地文件";
                     try {
                         var n = new URL(e),
                             r = n.host;
-                        return "file:" === n.protocol ? t : r || "empty host"
+                        return "file:" === n.protocol ? t : r || "空的主机"
                     } catch (t) {}
                     return t
                 },
@@ -12429,7 +12430,7 @@ module.exports = function(e) {
                         var n = oe.statSync(se.join(this.profilesPath, t)).mtime;
                         return w()(n).fromNow()
                     } catch (t) {
-                        return "missing file"
+                        return "文件丢失"
                     }
                 },
                 updateConfig: function(e) {
@@ -12595,7 +12596,7 @@ module.exports = function(e) {
                 attrs: {
                     spellcheck: "false",
                     type: "text",
-                    placeholder: "Download from a URL"
+                    placeholder: "从一个 URL 下载"
                 },
                 domProps: {
                     value: e.subUrl
@@ -12637,12 +12638,12 @@ module.exports = function(e) {
                 on: {
                     click: e.handleUpdateAllProfiles
                 }
-            }, [e._v("\n          Update All\n        ")]), e._v(" "), n("div", {
+            }, [e._v("\n          更新全部\n        ")]), e._v(" "), n("div", {
                 staticClass: "confirm confirm-right",
                 on: {
                     click: e.handleImport
                 }
-            }, [e._v("Import")])])]), e._v(" "), n("draggable", {
+            }, [e._v("导入")])])]), e._v(" "), n("draggable", {
                 class: ["list-view-" + e.theme],
                 attrs: {
                     delay: 300,
@@ -12714,7 +12715,7 @@ module.exports = function(e) {
                         xmlns: "http://www.w3.org/2000/svg",
                         viewBox: "0 0 24 24"
                     }
-                }, [n("title", [e._v("Edit in text mode")]), e._v(" "), n("path", {
+                }, [n("title", [e._v("在文本模式下编辑")]), e._v(" "), n("path", {
                     attrs: {
                         d: "M0 0h24v24H0V0z",
                         fill: "none"
@@ -12735,7 +12736,7 @@ module.exports = function(e) {
                         xmlns: "http://www.w3.org/2000/svg",
                         viewBox: "0 0 24 24"
                     }
-                }, [n("title", [e._v("Edit policies")]), e._v(" "), n("path", {
+                }, [n("title", [e._v("编辑策略")]), e._v(" "), n("path", {
                     attrs: {
                         d: "M0 0h24v24H0V0z",
                         fill: "none"
@@ -12756,7 +12757,7 @@ module.exports = function(e) {
                         xmlns: "http://www.w3.org/2000/svg",
                         viewBox: "0 0 24 24"
                     }
-                }, [n("title", [e._v("Edit rules")]), e._v(" "), n("path", {
+                }, [n("title", [e._v("编辑规则")]), e._v(" "), n("path", {
                     attrs: {
                         d: "M0 0h24v24H0V0z",
                         fill: "none"
@@ -12777,7 +12778,7 @@ module.exports = function(e) {
                         xmlns: "http://www.w3.org/2000/svg",
                         viewBox: "0 0 24 24"
                     }
-                }, [n("title", [e._v("Duplicate profile")]), e._v(" "), n("path", {
+                }, [n("title", [e._v("克隆配置文件")]), e._v(" "), n("path", {
                     attrs: {
                         d: "M0 0h24v24H0V0z",
                         fill: "none"
@@ -12873,7 +12874,7 @@ module.exports = function(e) {
                         xmlns: "http://www.w3.org/2000/svg",
                         viewBox: "0 0 24 24"
                     }
-                }, [n("title", [e._v("Parsers info")]), e._v(" "), n("path", {
+                }, [n("title", [e._v("解析器信息")]), e._v(" "), n("path", {
                     attrs: {
                         d: "M0 0h24v24H0V0z",
                         fill: "none"
@@ -12894,7 +12895,7 @@ module.exports = function(e) {
                         xmlns: "http://www.w3.org/2000/svg",
                         viewBox: "0 0 24 24"
                     }
-                }, [n("title", [e._v("Change information")]), e._v(" "), n("path", {
+                }, [n("title", [e._v("修改信息")]), e._v(" "), n("path", {
                     attrs: {
                         d: "M0 0h24v24H0V0z",
                         fill: "none"
@@ -12921,7 +12922,7 @@ module.exports = function(e) {
                         xmlns: "http://www.w3.org/2000/svg",
                         viewBox: "0 0 24 24"
                     }
-                }, [n("title", [e._v("Update this profile")]), e._v(" "), n("path", {
+                }, [n("title", [e._v("更新这个配置文件")]), e._v(" "), n("path", {
                     attrs: {
                         d: "M0 0h24v24H0V0z",
                         fill: "none"
@@ -14150,7 +14151,7 @@ module.exports = function(e) {
                     return (void 0 === e ? "" : e) || this.detectedInterfaceName
                 },
                 statusHint: function() {
-                    return 0 < this.pkgDownloadProgress && 1 > this.pkgDownloadProgress ? "Download progress: ".concat((100 * this.pkgDownloadProgress).toFixed(2), "%") : this.clashStatus === D.a.CONNECTED ? "Connected" : this.clashStatus === D.a.DISCONNECTED ? "Disconnected" : void 0
+                    return 0 < this.pkgDownloadProgress && 1 > this.pkgDownloadProgress ? "下载进度: ".concat((100 * this.pkgDownloadProgress).toFixed(2), "%") : this.clashStatus === D.a.CONNECTED ? "已连接" : this.clashStatus === D.a.DISCONNECTED ? "未连接" : void 0
                 },
                 statusIcon: function() {
                     return {
@@ -14283,7 +14284,7 @@ module.exports = function(e) {
                                 case 36:
                                     return t.abrupt("return", {
                                         success: !1,
-                                        message: "TUN mode enable but no interface-name in this YAML"
+                                        message: "TUN 模式已启用, 但是在这个 YAML 中没有接口名称"
                                     });
                                 case 37:
                                     if (!Object(I.h)()) {
@@ -14295,7 +14296,7 @@ module.exports = function(e) {
                                         break
                                     }
                                     ne.a.access(ie.a.join(e.clashPath, "wintun.dll"), ne.a.constants.F_OK, (function(e) {
-                                        e && Object(le.c)("TUN mode enabled but wintun.dll is missing!", "click to open document", !1, {
+                                        e && Object(le.c)("TUN 模式已启用, 但是缺少 wintun.dll!", "点击以打开文档", !1, {
                                             url: "https://docs.cfw.lbyczf.com/contents/tun.html"
                                         })
                                     })), t.next = 57;
@@ -14328,7 +14329,7 @@ module.exports = function(e) {
                                 case 56:
                                     return t.abrupt("return", {
                                         success: !1,
-                                        message: "TAP mode enable but no interface-name in this YAML"
+                                        message: "TAP 模式已启用, 但是在这个 YAML 中没有接口名称"
                                     });
                                 case 57:
                                     return G = (W = g)["proxy-providers"], q = W["rule-providers"], K = 0 < Object.keys(null != G ? G : {}).length || 0 < Object.keys(null != q ? q : {}).length, Y = e.confData, X = Y["log-level"], J = Y.ipv6, t.next = 62, e.clashAxiosClient.put("/configs", {
@@ -14343,16 +14344,16 @@ module.exports = function(e) {
                                         timeout: K ? 0 : 1e4
                                     });
                                 case 62:
-                                    if (Q = t.sent, te = Q.status, re = Q.data, r = 204 === te, ae = re.message, i = ae || "Switching profile failed with status: ".concat(te), r && (K ? !e.menuItems.find((function(e) {
-                                            return "Providers" === e.title
+                                    if (Q = t.sent, te = Q.status, re = Q.data, r = 204 === te, ae = re.message, i = ae || "切换配置文件失败, 状态: ".concat(te), r && (K ? !e.menuItems.find((function(e) {
+                                            return "提供器" === e.title
                                         })) && e.setMenuItems({
                                             items: [].concat(y()(e.menuItems), [{
-                                                title: "Providers",
+                                                title: "提供器",
                                                 path: "/home/provider"
                                             }])
                                         }) : e.setMenuItems({
                                             items: e.menuItems.filter((function(e) {
-                                                return "Providers" !== e.title
+                                                return "提供器" !== e.title
                                             }))
                                         })), r)
                                         if (N) {
@@ -15055,7 +15056,7 @@ module.exports = function(e) {
                                                         url: i
                                                     });
                                                 case 5:
-                                                    a = t.sent, o = a.success, s = a.message, c = a.targetIndex, Object(le.c)("Profile", o ? "Profile had been downloaded successfully." : s), o && (e.changeProfileIndex({
+                                                    a = t.sent, o = a.success, s = a.message, c = a.targetIndex, Object(le.c)("配置文件", o ? "配置文件已成功下载." : s), o && (e.changeProfileIndex({
                                                         index: c
                                                     }), e.refreshProfile());
                                                 case 11:
@@ -15160,7 +15161,7 @@ module.exports = function(e) {
                                     setTimeout(B, 500 + 500 * t)
                                 })), setInterval(B, 3e3), t.next = 73, e.handlerRestartClash();
                             case 73:
-                                T.a.put(W.a.IS_LIGHTWEIGHT_MODE_CLOSE, !1), e.showStartup || (e.showStartup = !0, Object(le.c)("Clash is running in the background", "Enjoy your free time!")), e.detectInterfaceName(), e.spawnUserDefindExes(), e.checkForUpdate().then((function() {})).catch((function(e) {
+                                T.a.put(W.a.IS_LIGHTWEIGHT_MODE_CLOSE, !1), e.showStartup || (e.showStartup = !0, Object(le.c)("Clash 正在后台运行", "享受你的自由时间!")), e.detectInterfaceName(), e.spawnUserDefindExes(), e.checkForUpdate().then((function() {})).catch((function(e) {
                                     return console.error(e)
                                 })), setInterval(e.checkForUpdate, 216e5), e.preDownloadAds().then((function() {})).catch((function(e) {
                                     return console.error(e)
@@ -15424,9 +15425,9 @@ module.exports = function(e) {
                                     return t.next = 2, e.$showDialog({
                                         title: "Clash for Windows",
                                         type: "warning",
-                                        message: "Please confirm",
-                                        detail: "config.yaml and country.mmdb will be removed.",
-                                        buttons: ["Yes", "No"]
+                                        message: "请确认",
+                                        detail: "config.yaml 和 country.mmdb 将被移除.",
+                                        buttons: ["是", "否"]
                                     });
                                 case 2:
                                     n = t.sent, 0 === n.response && e.$parent.autoFix();
@@ -15488,14 +15489,14 @@ module.exports = function(e) {
                 on: {
                     click: e.openLogsFolder
                 }
-            }, [e._v("\n        Logs Folder\n      ")]), e._v(" "), n("div", {
+            }, [e._v("\n        日志文件夹\n      ")]), e._v(" "), n("div", {
                 class: ["error-hint-" + e.theme],
                 on: {
                     click: e.autoFix
                 }
             }, [e._v("\n        Try to repair\n      ")])])]) : n("div", {
                 staticClass: "loading-hint"
-            }, [e._v("Loading...")])])
+            }, [e._v("正在载入...")])])
         }), [], !1, null, "df69c500", null);
     Y.options.__file = "ErrorView.vue";
     var X = Y.exports,
@@ -15647,7 +15648,7 @@ module.exports = function(e) {
                 }
             })), Object(v.mapGetters)(["resourcesPath", "filesPath", "mixedPort", "clashAxiosClient", "controllerPort"])), {}, {
                 autoLaunchHint: function() {
-                    return Object(S.g)() ? "Start with macOS" : Object(S.h)() ? "Start with Windows" : void 0
+                    return Object(S.g)() ? "跟随 macOS 启动" : Object(S.h)() ? "跟随 Windows 启动" : void 0
                 },
                 isShowNewIcon: function() {
                     var e = this.settings.showNewVersionIcon,
@@ -15668,9 +15669,9 @@ module.exports = function(e) {
                         return l.a.wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
-                                    return t.prev = 0, n = ["Install", "Uninstall"], e.serviceNeedUpdate && n.push("Update"), t.next = 5, e.$select({
-                                        title: "Service management",
-                                        message: "It might take a while.<br/>The APP will be relaunched automatically.<br/><br/>Current status: ".concat(e.isLocalMode ? "Inactive" : "Active"),
+                                    return t.prev = 0, n = ["安装", "卸载"], e.serviceNeedUpdate && n.push("Update"), t.next = 5, e.$select({
+                                        title: "服务管理",
+                                        message: "可能需要一些时间.<br/>应用程序将自动重新启动.<br/><br/>当前状态: ".concat(e.isLocalMode ? "未激活" : "已激活"),
                                         items: n
                                     });
                                 case 5:
@@ -15789,8 +15790,8 @@ module.exports = function(e) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     return t.prev = 0, n = ["silent", "error", "warning", "info", "debug"], t.next = 4, e.$select({
-                                        title: "Change Log Level",
-                                        message: "silent will prevent .log file to generate on next startup",
+                                        title: "更换日志等级",
+                                        message: "静默会阻止在下次启动时生成 .log 文件",
                                         items: n
                                     });
                                 case 4:
@@ -15869,8 +15870,8 @@ module.exports = function(e) {
                                     }
                                     return t.next = 14, e.$showDialog({
                                         type: "error",
-                                        message: "Make sure you have ".concat(e.serviceNeedUpdate ? "updated" : "installed", " Service Mode to control system proxy."),
-                                        buttons: ["".concat(e.serviceNeedUpdate ? "Update" : "Install", " Now"), "Later"]
+                                        message: "确保你".concat(e.serviceNeedUpdate ? "已更新" : "已安装", "服务模式以控制系统代理."),
+                                        buttons: ["".concat(e.serviceNeedUpdate ? "新更" : "装安", "在现"), "后稍"]
                                     });
                                 case 14:
                                     if (r = t.sent, 0 !== r.response) {
@@ -15943,9 +15944,9 @@ module.exports = function(e) {
                                         break
                                     }
                                     return t.prev = 1, t.next = 4, e.$select({
-                                        title: "TAP device management",
-                                        message: 'An adapter named "cfw-tap" will route your data into clash.<br /><br />If the installation box pops up, keep clicking "Next" until the installation is complete.',
-                                        items: ["Install", "Remove", "Customize"]
+                                        title: "TAP 设备管理",
+                                        message: '一个名为 "cfw-tap" 的适配器将把流量路由至 clash.<br /><br />若安装窗口弹出, 点击 "下一步" 直到安装完成.',
+                                        items: ["安装", "移除", "自定义"]
                                     });
                                 case 4:
                                     if (0 !== (n = t.sent)) {
@@ -15954,10 +15955,10 @@ module.exports = function(e) {
                                     }
                                     return t.prev = 6, t.next = 9, e.$parent.setupTapDevice(!0);
                                 case 9:
-                                    Object(ne.c)("Success", "cfw-tap device had been installed", !0), e.isMixinEnable && e.$parent.refreshProfile(), t.next = 16;
+                                    Object(ne.c)("成功", "cfw-tap 设备已被安装", !0), e.isMixinEnable && e.$parent.refreshProfile(), t.next = 16;
                                     break;
                                 case 13:
-                                    t.prev = 13, t.t0 = t.catch(6), Object(ne.c)("Failed", "counld not install cfw-tap device.", !0);
+                                    t.prev = 13, t.t0 = t.catch(6), Object(ne.c)("失败", "无法安装 cfw-tap 设备.", !0);
                                 case 16:
                                     t.next = 43;
                                     break;
@@ -15968,10 +15969,10 @@ module.exports = function(e) {
                                     }
                                     return t.prev = 19, t.next = 22, e.$parent.setupTapDevice(!1);
                                 case 22:
-                                    Object(ne.c)("Success", "cfw-tap device had been removed", !0), t.next = 28;
+                                    Object(ne.c)("成功", "cfw-tap设备已被移除", !0), t.next = 28;
                                     break;
                                 case 25:
-                                    t.prev = 25, t.t1 = t.catch(19), Object(ne.c)("Failed", "counld not remove cfw-tap device.", !0);
+                                    t.prev = 25, t.t1 = t.catch(19), Object(ne.c)("失败", "无法删除 cfw-tap 设备.", !0);
                                 case 28:
                                     t.next = 43;
                                     break;
@@ -15981,24 +15982,24 @@ module.exports = function(e) {
                                         break
                                     }
                                     return i = null !== (r = W.a.get(B.a.TAP_INFO)) && void 0 !== r ? r : {}, a = i.ip, o = i.subnet, s = i.gateway, c = [{
-                                        name: "IP Address",
+                                        name: "IP 地址",
                                         key: "ip",
                                         placeholder: "10.0.0.1",
                                         value: null != a ? a : ""
                                     }, {
-                                        name: "Subnet Mask",
+                                        name: "子网掩码",
                                         key: "subnet",
                                         placeholder: "255.255.255.0",
                                         value: null != o ? o : ""
                                     }, {
-                                        name: "Default Gateway",
+                                        name: "默认网关",
                                         key: "gateway",
                                         placeholder: "10.0.0.0",
                                         value: null != s ? s : ""
                                     }], t.prev = 33, t.next = 36, e.$input({
-                                        title: "TAP device",
+                                        title: "TAP 设备",
                                         data: c,
-                                        hint: "You need to reinstall the TAP device after you change these fields!"
+                                        hint: "在这些字段变更以后, 你需要重新安装 TAP 设备!"
                                     });
                                 case 36:
                                     d = t.sent, W.a.put(B.a.TAP_INFO, d), t.next = 42;
@@ -16043,9 +16044,9 @@ module.exports = function(e) {
                                         break
                                     }
                                     return t.next = 8, e.$select({
-                                        title: "Open terminal with proxy set up",
-                                        message: "Select a terminal",
-                                        items: ["CMD", "Powershell", "Windows Terminal", "Copy Commands Only"]
+                                        title: "打开已设置好代理的终端",
+                                        message: "选择一个终端",
+                                        items: ["CMD", "Powershell", "Windows Terminal", "仅复制指令"]
                                     });
                                 case 8:
                                     3 === (n = t.sent) ? e.handlePortClick() : (r = ["cmd", "powershell", "wt"], Object(C.exec)("start ".concat(r[n]), {
@@ -16077,17 +16078,17 @@ module.exports = function(e) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     return n = [{
-                                        name: "New Port",
+                                        name: "新的端口",
                                         key: "port",
                                         placeholder: e.port,
                                         value: "",
                                         validate: function(e) {
-                                            return /^\d+$/.test(e) && 0 <= 1 * e && 65353 >= 1 * e ? "" : "Port must be an integer between 0 to 65353"
+                                            return /^\d+$/.test(e) && 0 <= 1 * e && 65353 >= 1 * e ? "" : "端口必须是 0 到 65353 之间的整数"
                                         }
                                     }], t.prev = 1, t.next = 4, e.$input({
-                                        title: "Change Mixed Port",
+                                        title: "更换混合端口",
                                         data: n,
-                                        hint: "mixed = http + socks"
+                                        hint: "混合 = http + socks"
                                     });
                                 case 4:
                                     if (r = t.sent, !(i = r.port)) {
@@ -16153,9 +16154,9 @@ module.exports = function(e) {
                                                             break
                                                         }
                                                         return t.next = 5, e.$select({
-                                                            title: "".concat(a, " had been released"),
+                                                            title: "".concat(a, " 已发布"),
                                                             message: o.replace(/\n/g, "<br />"),
-                                                            items: [c ? "" : "Update", "Download", "Copy URL", "Cancel"]
+                                                            items: [c ? "" : "更新", "下载", "复制 URL", "取消"]
                                                         });
                                                     case 5:
                                                         if (0 !== (u = t.sent)) {
@@ -16172,8 +16173,8 @@ module.exports = function(e) {
                                                         }
                                                         return t.next = 14, e.$showDialog({
                                                             type: "info",
-                                                            message: "Update installed successfully, do you want to restart the APP?",
-                                                            buttons: ["Yes", "No"]
+                                                            message: "更新安装成功, 要重新启动应用程序吗?",
+                                                            buttons: ["是", "否"]
                                                         });
                                                     case 14:
                                                         h = t.sent, 0 === h.response && e.reloadElectron();
@@ -16184,8 +16185,8 @@ module.exports = function(e) {
                                                         }
                                                         return t.next = 20, e.$showDialog({
                                                             type: "info",
-                                                            message: "Package downloaded successfully, do you want to execute it?",
-                                                            buttons: ["Yes", "No"]
+                                                            message: "安装包下载成功，要执行它吗?",
+                                                            buttons: ["是", "否"]
                                                         });
                                                     case 20:
                                                         if (v = t.sent, 0 !== v.response) {
@@ -16239,8 +16240,8 @@ module.exports = function(e) {
                                                         break;
                                                     case 33:
                                                         e.$alert({
-                                                            title: "You are awesome",
-                                                            content: "The current version is up to date."
+                                                            title: "太棒了",
+                                                            content: "当前版本是最新的."
                                                         });
                                                     case 34:
                                                     case "end":
@@ -16286,8 +16287,8 @@ module.exports = function(e) {
                                         break
                                     }
                                     return t.prev = 5, t.next = 8, e.$select({
-                                        title: "Copy proxy setting commands",
-                                        message: "Select a terminal",
+                                        title: "复制代理设置命令",
+                                        message: "选择一个终端",
                                         items: ["CMD", "Powershell"]
                                     });
                                 case 8:
@@ -16296,7 +16297,7 @@ module.exports = function(e) {
                                 case 12:
                                     t.prev = 12, t.t0 = t.catch(5);
                                 case 14:
-                                    n && (e.$electron.clipboard.writeText(n), Object(ne.c)("Commands have been copied to Clipboad!", n, !0));
+                                    n && (e.$electron.clipboard.writeText(n), Object(ne.c)("命令已被复制到剪贴板!", n, !0));
                                 case 15:
                                 case "end":
                                     return t.stop()
@@ -16327,8 +16328,8 @@ module.exports = function(e) {
                                         break
                                     }
                                     return e.$alert({
-                                        content: "Updating GeoIP database is not allowed in CFW, please do it manually.",
-                                        title: "Note"
+                                        content: "不允许在 CFW 中更新 GeoIP 数据库, 请手动操作.",
+                                        title: "注意"
                                     }), t.abrupt("return");
                                 case 3:
                                     if (n = e.geoipUpdateTime, !/^Updating/.test(e.geoipUpdateTime)) {
@@ -16338,7 +16339,7 @@ module.exports = function(e) {
                                     return t.abrupt("return");
                                 case 6:
                                     return r = [{
-                                        name: "MaxMind User License Key",
+                                        name: "MaxMind 用户许可证密钥",
                                         key: "token",
                                         placeholder: "",
                                         value: W.a.get(B.a.GEOIP_TOKEN) || ""
@@ -16348,9 +16349,9 @@ module.exports = function(e) {
                                         placeholder: "",
                                         value: W.a.get(B.a.GEOIP_URL) || "https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb"
                                     }], t.prev = 7, t.next = 10, e.$input({
-                                        title: "Update GeoIP database",
+                                        title: "更新 GeoIP 数据库",
                                         data: r,
-                                        hint: "Input fields are alternative"
+                                        hint: "输入字段是可选的"
                                     });
                                 case 10:
                                     if (i = t.sent, a = i.url, o = void 0 === a ? "" : a, s = i.token, c = void 0 === s ? "" : s, W.a.put(B.a.GEOIP_TOKEN, c), W.a.put(B.a.GEOIP_URL, o), e.clashPath) {
@@ -16363,10 +16364,10 @@ module.exports = function(e) {
                                         x.a.ftruncateSync(x.a.openSync(t, "r+"), n), e.$parent.handlerRestartClash()
                                     }, c ? (e.geoipUpdateTime = "Updating... (0%)", u = g.a.join(e.$electron.remote.app.getPath("temp")), g.a.join(u, "cfw_geoip.tag.gz"), (p = _.a.stream("https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=".concat(c, "&suffix=tar.gz"))).on("downloadProgress", (function(t) {
                                         var n;
-                                        n = 1 === t.percent ? "Restarting core..." : "Updating... (".concat(l(100 * t.percent), "%)"), e.geoipUpdateTime = n
+                                        n = 1 === t.percent ? "正在重新启动核心..." : "正在更新... (".concat(l(100 * t.percent), "%)"), e.geoipUpdateTime = n
                                     })), p.on("error", (function(t) {
                                         e.$alert({
-                                            content: "Download GeoIP database failed with error: ".concat(t.name)
+                                            content: "下载 GeoIP 数据库失败, 错误: ".concat(t.name)
                                         }), e.geoipUpdateTime = n
                                     })), f = g.a.join(e.clashPath, "Country.mmdb"), h = H.a.extract(), v = 0, h.on("entry", (function(e, t, n) {
                                         t.on("end", (function() {
@@ -16380,10 +16381,10 @@ module.exports = function(e) {
                                         var n = "",
                                             r = t.percent,
                                             i = t.total;
-                                        1 === r ? (b = i, n = "Restarting core...") : n = "Updating... (".concat(l(100 * t.percent), "%)"), e.geoipUpdateTime = n
+                                        1 === r ? (b = i, n = "正在重新启动核心...") : n = "正在更新... (".concat(l(100 * t.percent), "%)"), e.geoipUpdateTime = n
                                     })), m.on("error", (function(t) {
                                         e.$alert({
-                                            content: "Download GeoIP database failed with error: ".concat(t.name)
+                                            content: "下载 GeoIP 数据库失败, 错误: ".concat(t.name)
                                         }), e.geoipUpdateTime = n
                                     })), y = g.a.join(e.clashPath, "Country.mmdb"), (w = x.a.createWriteStream(y, {
                                         flags: "r+"
@@ -16447,7 +16448,7 @@ module.exports = function(e) {
                                     }
                                     return t.next = 3, e.clashAxiosClient.get("/version");
                                 case 3:
-                                    n = t.sent, (r = n.data) ? (i = r.premium, a = r.version, e.clashCoreVersion = void 0 !== i && void 0 !== a ? "".concat(a, " ").concat(i ? "Premium" : "") : "Unknown") : e.clashCoreVersion = "Unknown";
+                                    n = t.sent, (r = n.data) ? (i = r.premium, a = r.version, e.clashCoreVersion = void 0 !== i && void 0 !== a ? "".concat(a, " ").concat(i ? "高级版" : "") : "未知版本") : e.clashCoreVersion = "未知版本";
                                 case 6:
                                 case "end":
                                     return t.stop()
@@ -16505,13 +16506,13 @@ module.exports = function(e) {
                 }
             }, [e._v("\n        " + e._s(e.version) + "\n        "), e.isShowNewIcon ? n("div", {
                 staticClass: "new-version-tag"
-            }, [e._v("New")]) : e._e()])])]), e._v(" "), e.isLaunching ? e._e() : n("div", {
+            }, [e._v("新")]) : e._e()])])]), e._v(" "), e.isLaunching ? e._e() : n("div", {
                 staticClass: "content"
             }, [n("div", {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("Port")]), e._v(" "), n("div", {
+            }, [e._v("端口")]), e._v(" "), n("div", {
                 staticClass: "item-right"
             }, [n("img", {
                 staticClass: "control-icon",
@@ -16542,7 +16543,7 @@ module.exports = function(e) {
                 }
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("Allow LAN")]), e._v(" "), n("div", {
+            }, [e._v("允许局域网")]), e._v(" "), n("div", {
                 staticClass: "item-right"
             }, [n("switch-view", {
                 attrs: {
@@ -16557,7 +16558,7 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("Log Level")]), e._v(" "), n("div", {
+            }, [e._v("日志等级")]), e._v(" "), n("div", {
                 staticClass: "item-right"
             }, [n("div", {
                 class: "clickable-" + e.theme,
@@ -16583,7 +16584,7 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("Clash Core")]), e._v(" "), n("div", {
+            }, [e._v("Clash 核心")]), e._v(" "), n("div", {
                 staticClass: "item-right",
                 class: "clickable-" + e.theme,
                 on: {
@@ -16593,13 +16594,13 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("Home Directory")]), e._v(" "), n("div", {
+            }, [e._v("主目录")]), e._v(" "), n("div", {
                 staticClass: "item-right",
                 class: "clickable-" + e.theme,
                 on: {
                     click: e.handleHomeDirectoryOpen
                 }
-            }, [e._v("\n        Open Folder\n      ")])]), e._v(" "), e.isWindows ? e._e() : n("div", {
+            }, [e._v("\n        打开文件夹\n      ")])]), e._v(" "), e.isWindows ? e._e() : n("div", {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
@@ -16624,29 +16625,29 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("UWP Loopback")]), e._v(" "), n("div", {
+            }, [e._v("UWP 回环")]), e._v(" "), n("div", {
                 class: ["item-right", "clickable-" + e.theme],
                 on: {
                     click: function(t) {
                         return e.spawnLoopback(t)
                     }
                 }
-            }, [e._v("\n        Launch Helper\n      ")])]) : e._e(), e._v(" "), e.isWindows ? n("div", {
+            }, [e._v("\n        启动助手\n      ")])]) : e._e(), e._v(" "), e.isWindows ? n("div", {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("TAP Device")]), e._v(" "), n("div", {
+            }, [e._v("TAP 设备")]), e._v(" "), n("div", {
                 class: ["item-right", "clickable-" + e.theme],
                 on: {
                     click: function(t) {
                         return e.installTapDevice(t)
                     }
                 }
-            }, [e._v("\n        Manage\n      ")])]) : e._e(), e._v(" "), n("div", {
+            }, [e._v("\n        管理\n      ")])]) : e._e(), e._v(" "), n("div", {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("Service Mode")]), e._v(" "), n("svg", {
+            }, [e._v("服务模式")]), e._v(" "), n("svg", {
                 staticStyle: {
                     "margin-left": "5px",
                     "margin-top": "2px"
@@ -16676,15 +16677,15 @@ module.exports = function(e) {
                 on: {
                     click: e.installService
                 }
-            }, [e._v("\n        Manage\n      ")])]), e._v(" "), n("div", {
+            }, [e._v("\n        管理\n      ")])]), e._v(" "), n("div", {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [n("div", [e._v("Mixin")]), e._v(" "), n("info-icon", [e._v("\n          Mixin allows you to overwrite the original configuration file.\n          "), n("a", {
+            }, [n("div", [e._v("混合")]), e._v(" "), n("info-icon", [e._v("\n          混合允许你覆盖原始配置文件.\n          "), n("a", {
                 attrs: {
                     href: "https://docs.cfw.lbyczf.com/contents/mixin.html"
                 }
-            }, [e._v("Docs")])])], 1), e._v(" "), n("switch-view", {
+            }, [e._v("文档")])])], 1), e._v(" "), n("switch-view", {
                 attrs: {
                     on: e.isMixinEnable
                 },
@@ -16695,7 +16696,7 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("System Proxy")]), e._v(" "), n("switch-view", {
+            }, [e._v("系统代理")]), e._v(" "), n("switch-view", {
                 attrs: {
                     on: e.isSystemProxyOn
                 },
@@ -16990,7 +16991,7 @@ module.exports = function(e) {
                 checkBtnText: function(e) {
                     var t = e.provider,
                         n = e.latency;
-                    return t ? n || "" : n || "Check"
+                    return t ? n || "" : n || "正在测试"
                 },
                 handleSingleSpeedtest: function(e, t) {
                     var n = this;
@@ -17016,7 +17017,7 @@ module.exports = function(e) {
                                         return e.name === i
                                     }))) && ((u = l.data.all.find((function(e) {
                                         return e.name === a
-                                    }))) && (u.latency = o + (/\d/.test(o) ? " ms" : "Timeout")));
+                                    }))) && (u.latency = o + (/\d/.test(o) ? " ms" : "超时")));
                                 case 17:
                                 case "end":
                                     return r.stop()
@@ -17077,7 +17078,7 @@ module.exports = function(e) {
                     }));
                     if (!t) return "";
                     var n = t.data.type;
-                    return "Selector" === n || "Fallback" === n || "URLTest" === n ? this.$parseEmoji("".concat(n, " - ").concat(t.data.now), 16) : "LoadBalance" === n ? "".concat(n, " - ").concat(t.data.all.length, " server").concat(1 < t.data.all.length ? "s" : "") : n
+                    return "Selector" === n || "Fallback" === n || "URLTest" === n ? this.$parseEmoji("".concat(n, " - ").concat(t.data.now), 16) : "LoadBalance" === n ? "".concat(n, " - ").concat(t.data.all.length, " 个服务器").concat(1 < t.data.all.length ? "" : "") : n
                 },
                 cancelLatencyTest: function() {
                     0 < this.axiosCancelTokens.length && (this.axiosCancelTokens.forEach((function(e) {
@@ -17196,10 +17197,10 @@ module.exports = function(e) {
                                                     case 3:
                                                         return t.latency = null, e.prev = 4, e.next = 7, n.speedtest(t.name, o || 3e3, s || "http://www.gstatic.com/generate_204");
                                                     case 7:
-                                                        r = e.sent, t.latency = 0 < r ? r + " ms" : "Timeout", e.next = 14;
+                                                        r = e.sent, t.latency = 0 < r ? r + " ms" : "超时", e.next = 14;
                                                         break;
                                                     case 11:
-                                                        e.prev = 11, e.t0 = e.catch(4), t.latency = "Timeout";
+                                                        e.prev = 11, e.t0 = e.catch(4), t.latency = "超时";
                                                     case 14:
                                                     case "end":
                                                         return e.stop()
@@ -17324,7 +17325,7 @@ module.exports = function(e) {
                                                     s = o[0],
                                                     c = o[1],
                                                     p = 0;
-                                                return 0 < c.length ? r = 0 === (p = c[c.length - 1].delay) ? "Timeout" : "".concat(p, " ms") : r = "", {
+                                                return 0 < c.length ? r = 0 === (p = c[c.length - 1].delay) ? "超时" : "".concat(p, " ms") : r = "", {
                                                     name: t,
                                                     provider: s,
                                                     latency: r,
@@ -17332,7 +17333,7 @@ module.exports = function(e) {
                                                 }
                                             }
                                             var f = 0;
-                                            return i && 0 < i.history.length && (r = 0 === (f = i.history[i.history.length - 1].delay) ? "Timeout" : "".concat(f, " ms")), {
+                                            return i && 0 < i.history.length && (r = 0 === (f = i.history[i.history.length - 1].delay) ? "超时" : "".concat(f, " ms")), {
                                                 name: t,
                                                 provider: null,
                                                 latency: r,
@@ -17558,7 +17559,7 @@ module.exports = function(e) {
                         }
                     })]), e._v(" "), n("div", {
                         class: {
-                            offline: "Timeout" === r.latency, online: !["Timeout", null, void 0, ""].includes(r.latency), time: !0
+                            offline: "超时" === r.latency, online: !["超时", null, void 0, ""].includes(r.latency), time: !0
                         },
                         on: {
                             click: [function() {
@@ -17587,7 +17588,7 @@ module.exports = function(e) {
                 }, [n("div")])
             })), 0)]) : e._e(), e._v(" "), 0 === e.proxyInMode.length && "direct" !== this.currentMode ? n("div", {
                 staticClass: "empty-hint"
-            }, [n("div", [e._v("No proxy group in this profile")]), e._v(" "), n("div", [e._v("\n        Go to\n        "), n("span", {
+            }, [n("div", [e._v("这个配置文件中没有代理组")]), e._v(" "), n("div", [e._v("\n        到\n        "), n("span", {
                 on: {
                     click: function() {
                         return e.$router.replace({
@@ -17595,7 +17596,7 @@ module.exports = function(e) {
                         })
                     }
                 }
-            }, [e._v("Profiles")]), e._v("\n        to import/switch a profile\n      ")])]) : e._e()], 2), e._v(" "), e.settings.showProxyFilter ? n("div", {
+            }, [e._v("配置文件")]), e._v("\n        中导入/切换一个配置文件\n      ")])]) : e._e()], 2), e._v(" "), e.settings.showProxyFilter ? n("div", {
                 staticClass: "filter-keyword"
             }, [n("transition", {
                 attrs: {
@@ -18022,7 +18023,7 @@ module.exports = function(e) {
             }, [n("Button", {
                 staticClass: "btn",
                 attrs: {
-                    text: "Update All",
+                    text: "更新全部",
                     isLoading: !1
                 },
                 on: {
@@ -18031,7 +18032,7 @@ module.exports = function(e) {
             }), e._v(" "), n("Button", {
                 staticClass: "btn",
                 attrs: {
-                    text: "Health Check All",
+                    text: "全部健康检查",
                     isLoading: !1
                 },
                 on: {
@@ -18042,7 +18043,7 @@ module.exports = function(e) {
                 staticClass: "content"
             }, [0 < e.providers.length ? [n("div", {
                 staticClass: "title"
-            }, [e._v("Proxy Providers")]), e._v(" "), n("div", {
+            }, [e._v("代理提供器")]), e._v(" "), n("div", {
                 staticClass: "items"
             }, e._l(e.providers, (function(t, r) {
                 return n("div", {
@@ -18228,7 +18229,7 @@ module.exports = function(e) {
                     expression: "isDefault"
                 }],
                 staticClass: "placeholder ad-img twinkling"
-            }, [n("div", [e._v("Image is on the way")])]), e._v(" "), n("img", {
+            }, [n("div", [e._v("图片正在路上")])]), e._v(" "), n("img", {
                 directives: [{
                     name: "show",
                     rawName: "v-show",
@@ -18326,7 +18327,7 @@ module.exports = function(e) {
                 staticClass: "section"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("Relevance")]), e._v(" "), n("div", {
+            }, [e._v("相关链接")]), e._v(" "), n("div", {
                 staticClass: "chat-list"
             }, [n("div", {
                 class: ["chat-item-" + e.theme],
@@ -18335,18 +18336,18 @@ module.exports = function(e) {
                         return e.select(2)
                     }
                 }
-            }, [e._v("Github")]), e._v(" "), n("div", {
+            }, [e._v("GitHub")]), e._v(" "), n("div", {
                 class: ["chat-item-" + e.theme],
                 on: {
                     click: function() {
                         return e.select(5)
                     }
                 }
-            }, [e._v("Document")])])]), e._v(" "), n("div", {
+            }, [e._v("文档")])])]), e._v(" "), n("div", {
                 staticClass: "section"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("Credits")]), e._v(" "), n("div", {
+            }, [e._v("鸣谢")]), e._v(" "), n("div", {
                 staticClass: "chat-list"
             }, [n("div", {
                 class: ["chat-item-" + e.theme],
@@ -18436,7 +18437,7 @@ module.exports = function(e) {
                 staticClass: "section ad-section"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("Advertisement")]), e._v(" "), n("div", {
+            }, [e._v("汉化补丁版本 v0.15.7.0 | 译者: ImFatF1sh")]), e._v(" "), n("div", {
                 staticClass: "ad-img-list"
             }, e._l(e.adImages, (function(t, r) {
                 return n("div", {
@@ -18462,7 +18463,7 @@ module.exports = function(e) {
                 staticClass: "section"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v("Developer")]), e._v(" "), n("div", {
+            }, [e._v("开发者")]), e._v(" "), n("div", {
                 staticClass: "content"
             }, [e._v("404 Frror")])])
         }], !1, null, "7422cd3a", null));
@@ -18534,7 +18535,7 @@ module.exports = function(e) {
                 }
             })), Object(v.mapGetters)(["clashWSClient"])), {}, {
                 buttonText: function() {
-                    return this.client && 1 === this.client.readyState ? "Stop" : "Start"
+                    return this.client && 1 === this.client.readyState ? "停止" : "开始"
                 },
                 buttonStyle: function() {
                     var e = ["button"];
@@ -18543,7 +18544,7 @@ module.exports = function(e) {
             }),
             methods: i(i({}, Object(v.mapActions)(["getMode"])), {}, {
                 copyPayload: function(e) {
-                    this.$electron.clipboard.writeText(e.url), Object(h.c)("Copied to Clipboad!", e.url)
+                    this.$electron.clipboard.writeText(e.url), Object(h.c)("已复制到剪切板!", e.url)
                 },
                 randomBGC: function(e) {
                     if ("light" === this.theme) {
@@ -18682,16 +18683,16 @@ module.exports = function(e) {
                 staticClass: "title"
             }, [n("div", {
                 staticClass: "text"
-            }, [n("div", [e._v("Request Logs")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("请求日志")]), e._v(" "), n("div", {
                 staticClass: "hint"
-            }, [e._v("mode: " + e._s(e.mode))])]), e._v(" "), n("div", {
+            }, [e._v("模式: " + e._s(e.mode))])]), e._v(" "), n("div", {
                 staticClass: "btns"
             }, [n("div", {
                 staticClass: "button button-clear",
                 on: {
                     click: e.handleClear
                 }
-            }, [e._v("Clear")]), e._v(" "), n("div", {
+            }, [e._v("清空")]), e._v(" "), n("div", {
                 class: e.buttonStyle,
                 on: {
                     click: e.handleBtnClick
@@ -18701,7 +18702,7 @@ module.exports = function(e) {
                 class: ["log-list-" + e.theme]
             }, [0 === e.listData.length ? n("div", {
                 staticClass: "empty-list"
-            }, [n("div", [e._v("Empty log list")]), e._v(" "), n("div", [e._v("Refresh your browser to make requests.")])]) : e._l(e.listData.slice(-200), (function(t) {
+            }, [n("div", [e._v("空的日志列表")]), e._v(" "), n("div", [e._v("刷新你的浏览器以制造请求.")])]) : e._l(e.listData.slice(-200), (function(t) {
                 return n("div", {
                     key: t.id,
                     class: ["log-item-" + e.theme],
@@ -18786,7 +18787,7 @@ module.exports = function(e) {
                         downloadTotal: 0,
                         connections: []
                     },
-                    labels: ["Upload Speed", "Download Speed", "Upload Traffic", "Download Traffic", "Time"],
+                    labels: ["上传速度", "下载速度", "上传流量", "下载流量", "时间"],
                     labelSelected: 4,
                     isReverse: !1
                 }
@@ -18982,7 +18983,7 @@ module.exports = function(e) {
                 staticClass: "header"
             }, [n("div", {
                 staticClass: "title"
-            }, [n("div", [e._v("\n        Connections\n        "), n("span", [e._v("(" + e._s(e.orderedConnections.length) + ")")])]), e._v(" "), n("div", {
+            }, [n("div", [e._v("\n        连接\n        "), n("span", [e._v("(共 " + e._s(e.orderedConnections.length) + " 个)")])]), e._v(" "), n("div", {
                 on: {
                     click: e.handleReverseChange
                 }
@@ -19016,7 +19017,7 @@ module.exports = function(e) {
                 staticClass: "search-box",
                 attrs: {
                     type: "text",
-                    placeholder: "search"
+                    placeholder: "搜索"
                 },
                 domProps: {
                     value: e.searchText
@@ -19055,9 +19056,9 @@ module.exports = function(e) {
                 on: {
                     click: e.handleSwitchPauseStatus
                 }
-            }, [e._v("\n        " + e._s(e.isPause ? "Resume" : "Pause") + "\n      ")]), e._v(" "), n("div", {
+            }, [e._v("\n        " + e._s(e.isPause ? "继续" : "暂停") + "\n      ")]), e._v(" "), n("div", {
                 staticClass: "total-hint"
-            }, [e._v("\n        " + e._s("Total: ↑" + e.traffic(e.data.uploadTotal, 1) + " ↓" + e.traffic(e.data.downloadTotal, 1)) + "\n      ")])])]), e._v(" "), n("div", {
+            }, [e._v("\n        " + e._s("总计: ↑" + e.traffic(e.data.uploadTotal, 1) + " ↓" + e.traffic(e.data.downloadTotal, 1)) + "\n      ")])])]), e._v(" "), n("div", {
                 staticClass: "control-view"
             }, [n("div", {
                 staticClass: "labels"
@@ -19076,7 +19077,7 @@ module.exports = function(e) {
                 on: {
                     click: e.handleCloseAllConnections
                 }
-            }, [e._v("\n      Close All\n    ")])]), e._v(" "), n("div", {
+            }, [e._v("\n      关闭全部\n    ")])]), e._v(" "), n("div", {
                 class: ["scroll-view-" + e.theme]
             }, e._l(e.orderedConnections, (function(t) {
                 return n("div", {
@@ -19219,25 +19220,25 @@ module.exports = function(e) {
             isLocalMode: !0,
             isLaunching: !0,
             menuItems: [{
-                title: "General",
+                title: "通用",
                 path: "/home/general"
             }, {
-                title: "Proxies",
+                title: "代理",
                 path: "/home/proxy"
             }, {
-                title: "Profiles",
+                title: "配置",
                 path: "/home/server"
             }, {
-                title: "Logs",
+                title: "日志",
                 path: "/home/log"
             }, {
-                title: "Connections",
+                title: "连接",
                 path: "/home/connection"
             }, {
-                title: "Settings",
+                title: "设置",
                 path: "/home/setting"
             }, {
-                title: "Feedback",
+                title: "反馈",
                 path: "/home/about"
             }],
             updateDownloadProgress: null,

@@ -160,8 +160,8 @@ module.exports = function(e) {
                             return o = {
                                 type: "error",
                                 title: "Clash for Windows",
-                                message: "Dashboard has crashed!",
-                                buttons: ["Reload", "Exit"]
+                                message: "仪表盘崩溃啦!",
+                                buttons: ["重新载入", "退出"]
                             }, e.next = 7, m.dialog.showMessageBox(_, o);
                         case 7:
                             i = e.sent, 0 === i.response ? (m.app.relaunch(), m.app.exit(0)) : m.app.quit();
@@ -176,43 +176,43 @@ module.exports = function(e) {
             }
         }()), _.setTouchBar(new g({
             items: [new b({
-                label: "General",
+                label: "通用",
                 backgroundColor: "#505050",
                 click: function() {
                     _.webContents.send("menu-item-change", "general")
                 }
             }), new b({
-                label: "Proxies",
+                label: "代理",
                 backgroundColor: "#505050",
                 click: function() {
                     _.webContents.send("menu-item-change", "proxy")
                 }
             }), new b({
-                label: "Profiles",
+                label: "配置文件",
                 backgroundColor: "#505050",
                 click: function() {
                     _.webContents.send("menu-item-change", "server")
                 }
             }), new b({
-                label: "Logs",
+                label: "日志",
                 backgroundColor: "#505050",
                 click: function() {
                     _.webContents.send("menu-item-change", "log")
                 }
             }), new b({
-                label: "Connections",
+                label: "连接",
                 backgroundColor: "#505050",
                 click: function() {
                     _.webContents.send("menu-item-change", "connection")
                 }
             }), new b({
-                label: "Settings",
+                label: "设置",
                 backgroundColor: "#505050",
                 click: function() {
                     _.webContents.send("menu-item-change", "setting")
                 }
             }), new b({
-                label: "Feedback",
+                label: "反馈",
                 backgroundColor: "#505050",
                 click: function() {
                     _.webContents.send("menu-item-change", "about")
@@ -251,19 +251,19 @@ module.exports = function(e) {
             })), r.show()
         }));
         var u = m.Menu.buildFromTemplate([{
-            label: "Dashboard",
+            label: "仪表盘",
             click: function() {
                 return _.show()
             }
         }, {
-            label: "Run Tray Script",
+            label: "运行托盘脚本",
             click: function() {
                 return _.webContents.send("run-tray-script")
             }
         }, {
             type: "separator"
         }, {
-            label: "System Proxy",
+            label: "系统代理",
             type: "checkbox",
             id: "system-proxy",
             enabled: !1,
@@ -272,7 +272,7 @@ module.exports = function(e) {
                 _.webContents.send("system-proxy-changed", t)
             }
         }, {
-            label: "Mixin",
+            label: "混合",
             type: "checkbox",
             id: "mixin",
             enabled: !1,
@@ -283,11 +283,11 @@ module.exports = function(e) {
         }, {
             type: "separator"
         }, {
-            label: "Proxy Mode",
+            label: "代理模式",
             id: "mode",
             enabled: !1
         }, {
-            label: "Global",
+            label: "全局",
             type: "radio",
             id: "mode-global",
             enabled: !1,
@@ -295,7 +295,7 @@ module.exports = function(e) {
                 return _.webContents.send("mode-changed", "global")
             }
         }, {
-            label: "Rule",
+            label: "规则",
             type: "radio",
             id: "mode-rule",
             enabled: !1,
@@ -303,7 +303,7 @@ module.exports = function(e) {
                 return _.webContents.send("mode-changed", "rule")
             }
         }, {
-            label: "Direct",
+            label: "直连",
             type: "radio",
             id: "mode-direct",
             enabled: !1,
@@ -311,7 +311,7 @@ module.exports = function(e) {
                 return _.webContents.send("mode-changed", "direct")
             }
         }, {
-            label: "Script",
+            label: "脚本",
             type: "radio",
             id: "mode-script",
             click: function() {
@@ -320,14 +320,14 @@ module.exports = function(e) {
         }, {
             type: "separator"
         }, {
-            label: "More",
+            label: "更多",
             submenu: [{
-                label: "Toggle DevTools",
+                label: "展示/隐藏开发者工具",
                 click: function() {
                     _.webContents.toggleDevTools()
                 }
             }, {
-                label: "Force Quit",
+                label: "强制退出",
                 click: function() {
                     m.app.isQuiting = !0, m.app.quit()
                 }
@@ -335,7 +335,7 @@ module.exports = function(e) {
         }, {
             type: "separator"
         }, {
-            label: "Quit",
+            label: "退出",
             click: function() {
                 return _.webContents.send("app-exit")
             }
@@ -445,7 +445,7 @@ module.exports = function(e) {
             }, {
                 type: "separator"
             }, {
-                label: "Quit Clash for Windows",
+                label: "退出 Clash for Windows",
                 accelerator: "Command+Q",
                 click: function() {
                     _.webContents.send("app-exit")
@@ -460,7 +460,7 @@ module.exports = function(e) {
         }, {
             role: "help",
             submenu: [{
-                label: "Github",
+                label: "GitHub",
                 click: function() {
                     var e = f()(l.a.mark((function e() {
                         var t, r;
