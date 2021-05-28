@@ -161,7 +161,7 @@ module.exports = function(e) {
                                 type: "error",
                                 title: "Clash for Windows",
                                 message: "仪表盘崩溃了!",
-                                buttons: ["重新载入", "退出"]
+                                buttons: ["重新载入仪表盘", "退出应用程序"]
                             }, e.next = 7, m.dialog.showMessageBox(_, o);
                         case 7:
                             i = e.sent, 0 === i.response ? (m.app.relaunch(), m.app.exit(0)) : m.app.quit();

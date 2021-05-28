@@ -10084,14 +10084,14 @@ module.exports = function(e) {
                         return e.handleQuit()
                     }
                 }
-            }, [e._v("退出")]), e._v(" "), n("div", {
+            }, [e._v("退出应用程序")]), e._v(" "), n("div", {
                 staticClass: "btn clickable btn-force-quit",
                 on: {
                     click: function() {
                         return e.handleQuit(!0)
                     }
                 }
-            }, [e._v("\n        强制退出\n      ")])])], 1) : e._e(), e._v(" "), e.isEditingExternal ? n("div", {
+            }, [e._v("\n        强制退出应用程序\n      ")])])], 1) : e._e(), e._v(" "), e.isEditingExternal ? n("div", {
                 staticClass: "edit-hint"
             }, [n("div", [e._v("\n      " + e._s(["", "Visual Studio Code", "Sublime Text"][e.settings.editor]) + " 正在\n      启动以编辑.\n    ")]), e._v(" "), n("div", [e._v("关闭正在编辑的文件以保存.")]), e._v(" "), n("div", {
                 staticClass: "btn",
@@ -11481,6 +11481,7 @@ module.exports = function(e) {
                     },
                     domProps: {
                         innerHTML: e._s(e.$parseEmoji((
+                            (t == "GLOBAL") ? "★ 全局代理 ★" :
                             (t == "DIRECT") ? "★ 直接连接 ★" :
                             (t == "REJECT") ? "★ 拒绝连接 ★" :
                             t
@@ -16587,7 +16588,7 @@ module.exports = function(e) {
             }, [e._v("Clash for Windows")]), e._v(" "), n("div", {
                 staticClass: "version",
                 domProps: {
-                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.15.8.0)")
+                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.15.8.0.1)")
                 },
                 on: {
                     click: e.openGithubRelease
@@ -17568,6 +17569,8 @@ module.exports = function(e) {
                     domProps: {
                         innerHTML: e._s(e.$parseEmoji(
                             (t.name == "GLOBAL") ? "★ 全局代理 ★" :
+                            (t.name == "DIRECT") ? "★ 直接连接 ★" :
+                            (t.name == "REJECT") ? "★ 拒绝连接 ★" :
                             t.name
                             , 26))
                     }
@@ -19030,7 +19033,12 @@ module.exports = function(e) {
                         r = this.settings.connChainType,
                         i = void 0 === r ? 0 : r,
                         a = n.length;
-                    return [0, 2].includes(i) && 1 <= a ? this.$parseEmoji(n[0], 18) : ""
+                    return [0, 2].includes(i) && 1 <= a ? this.$parseEmoji((
+                        (n[0] == "GLOBAL") ? "★ 全局代理 ★" :
+                        (n[0] == "DIRECT") ? "★ 直接直连 ★" :
+                        (n[0] == "REJECT") ? "★ 拒绝连接 ★" :
+                        n[0]
+                    ), 18) : ""
                 },
                 connectionGroup: function(e) {
                     var t = e.chains,
@@ -19038,7 +19046,12 @@ module.exports = function(e) {
                         r = this.settings.connChainType,
                         i = void 0 === r ? 0 : r,
                         a = n.length;
-                    return 2 === i && 1 === a ? "" : [1, 2].includes(i) && 1 <= a ? this.$parseEmoji(n[a - 1], 18) : ""
+                    return 2 === i && 1 === a ? "" : [1, 2].includes(i) && 1 <= a ? this.$parseEmoji((
+                        (n[a - 1] == "GLOBAL") ? "★ 全局代理 ★" :
+                        (n[a - 1] == "DIRECT") ? "★ 直接直连 ★" :
+                        (n[a - 1] == "REJECT") ? "★ 拒绝连接 ★" :
+                        n[a - 1]
+                    ), 18) : ""
                 },
                 handleReverseChange: function() {
                     this.isReverse = !this.isReverse, f.a.put(h.a.CONNECTION_ORDER_REVERSE, this.isReverse)
@@ -19288,16 +19301,12 @@ module.exports = function(e) {
                     staticClass: "conn2"
                 }, [e._v(e._s(
                     (t.metadata.type == "HTTP Connect") ? "☆ HTTP 连接 ☆" :
+                    (t.metadata.type == "Socks5") ? "☆ Socks5 连接 ☆" :
                     t.metadata.type
                 ))]), e._v(" "), e.connectionGroup(t) ? n("div", {
                     staticClass: "conn3",
                     domProps: {
-                        innerHTML: e._s(
-                            (e.connectionGroup(t) == "GLOBAL") ? "★ 全局代理 ★" :
-                            (e.connectionGroup(t) == "DIRECT") ? "★ 直接直连 ★" :
-                            (e.connectionGroup(t) == "REJECT") ? "★ 拒绝连接 ★" :
-                            e.connectionGroup(t)
-                        )
+                        innerHTML: e._s(e.connectionGroup(t))
                     }
                 }) : e._e(), e._v(" "), e.connectionEndpoint(t) ? n("div", {
                     staticClass: "conn4",
