@@ -4,7 +4,7 @@
 
 # Clash for Windows 翻译
 
-一个 Clash for Windows 的翻译版本, 支持 Windows 和 macOS
+Clash for Windows 的翻译版本, 支持 Windows 和 macOS
 
 ![Windows 预览](https://github.com/zijianjiao2017/clash_for_windows_translate/raw/zh_CN/img/Windows_preview.png)
 ![macOS 预览](https://github.com/zijianjiao2017/clash_for_windows_translate/raw/zh_CN/img/macOS_preview.png)
@@ -15,7 +15,7 @@
 * [tdewolff/minify](https://github.com/tdewolff/minify)
 * [cnSchwarzer/bsdiff-win](https://github.com/cnSchwarzer/bsdiff-win)
 
-## 应用一个补丁
+## 应用补丁
 * 注意: 在修补资源之前进行备份
 ````bash
 bspatch original.asar translated.asar patch.dat
@@ -36,7 +36,7 @@ minify --type=js -o app/dist/electron/renderer.js app/dist/electron/renderer.js
 asar pack app translated.asar
 ````
 
-## 生成一个补丁
+## 生成补丁
 ````bash
 bsdiff original.asar translated.asar patch.dat
 ````

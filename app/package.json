@@ -2,7 +2,7 @@
   "name": "clash_win",
   "version": "0.15.8",
   "author": "Fndroid",
-  "description": "A Windows client based on Clash",
+  "description": "基于 Clash 的 Windows 客户端",
   "license": "MIT",
   "main": "./dist/electron/main.js",
   "dependencies": {

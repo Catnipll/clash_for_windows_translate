@@ -287,7 +287,7 @@ module.exports = function(e) {
         }, {
             type: "separator"
         }, {
-            label: "代理模式",
+            label: "更换代理模式",
             id: "mode",
             enabled: !1
         }, {
@@ -324,14 +324,14 @@ module.exports = function(e) {
         }, {
             type: "separator"
         }, {
-            label: "更多",
+            label: "更多选项",
             submenu: [{
                 label: "展示 / 隐藏开发者工具",
                 click: function() {
                     _.webContents.toggleDevTools()
                 }
             }, {
-                label: "强制退出",
+                label: "强制退出应用程序",
                 click: function() {
                     m.app.isQuiting = !0, m.app.quit()
                 }
@@ -339,7 +339,7 @@ module.exports = function(e) {
         }, {
             type: "separator"
         }, {
-            label: "退出",
+            label: "退出应用程序",
             click: function() {
                 return _.webContents.send("app-exit")
             }

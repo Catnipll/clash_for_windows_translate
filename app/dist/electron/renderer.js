@@ -7973,7 +7973,7 @@ module.exports = function(e) {
                 handleDone: function() {
                     if (0 < this.data.filter((function(e) {
                             return e.required && "" === e.value
-                        })).length) this.error = "所需的键 (*) 必须有一个值";
+                        })).length) this.error = "要求必须填写带 * 的键";
                     else {
                         var e = this.data.find((function(e) {
                             return e.hasOwnProperty("validate") && "" !== e.validate(e.value)
@@ -9374,7 +9374,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("是否静默启动")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("静默启动开关")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.hideAfterStartup,
                     callback: function(t) {
@@ -9404,7 +9404,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义运行时间格式")]), e._v(" "), n("SimpleInput", {
+            }, [n("div", [e._v("自定义的运行时间格式")]), e._v(" "), n("SimpleInput", {
                 staticClass: "input",
                 attrs: {
                     placeholder: "hh : mm : ss"
@@ -9455,7 +9455,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义字体样式")]), e._v(" "), n("SimpleInput", {
+            }, [n("div", [e._v("自定义的字体样式")]), e._v(" "), n("SimpleInput", {
                 attrs: {
                     placeholder: e.fontFamilyPlaceholder
                 },
@@ -9526,7 +9526,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), e.settings.iconSpeed ? n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义文字")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("自定义的文字")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("SimpleInput", {
                 attrs: {
@@ -9541,7 +9541,7 @@ module.exports = function(e) {
                 }
             })], 1)]) : e._e(), e._v(" "), !e.settings.trayText && e.settings.iconSpeed ? n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义脚本")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("自定义的脚本")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("SimpleInput", {
                 staticClass: "short-input",
@@ -9618,7 +9618,7 @@ module.exports = function(e) {
                 }
             })], 1)]) : e._e(), e._v(" "), n("separator"), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("是否展示新版本图标")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("是否展示新的版本图标")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.showNewVersionIcon,
                     callback: function(t) {
@@ -9655,7 +9655,7 @@ module.exports = function(e) {
                 }
             })], 1) : e._e(), e._v(" "), 1 === e.settings.systemProxyTypeIndex ? e._e() : n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义绕过域名 / IPNet")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("自定义的域名 / IPNet 绕过")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
                     text: "编辑"
@@ -9692,7 +9692,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义 YAML")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("自定义的 YAML")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
                     text: "编辑"
@@ -9702,7 +9702,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义 JavaScript")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("自定义的 JavaScript")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
                     text: "编辑"
@@ -9716,7 +9716,7 @@ module.exports = function(e) {
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义代理项宽度")]), e._v(" "), n("SimpleInput", {
+            }, [n("div", [e._v("自定义的代理项宽度")]), e._v(" "), n("SimpleInput", {
                 attrs: {
                     placeholder: "290",
                     suffix: "px"
@@ -9730,9 +9730,9 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义节点排序方式")]), e._v(" "), n("SelectView", {
+            }, [n("div", [e._v("自定义的节点排列方式")]), e._v(" "), n("SelectView", {
                 attrs: {
-                    items: ["按定义顺序", "按延迟升序排列", "按名称字母表排列"]
+                    items: ["按定义顺序", "按延迟升序排列", "按字母表排列"]
                 },
                 model: {
                     value: e.settings.proxyOrder,
@@ -9743,7 +9743,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义延迟测试地址")]), e._v(" "), n("SimpleInput", {
+            }, [n("div", [e._v("自定义的延迟测试地址")]), e._v(" "), n("SimpleInput", {
                 attrs: {
                     placeholder: "http://www.gstatic.com/generate_204"
                 },
@@ -9756,7 +9756,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义延迟测试超时")]), e._v(" "), n("SimpleInput", {
+            }, [n("div", [e._v("自定义的延迟测试超时")]), e._v(" "), n("SimpleInput", {
                 attrs: {
                     type: "number",
                     placeholder: "3000",
@@ -9830,7 +9830,7 @@ module.exports = function(e) {
                 staticClass: "item"
             }, [n("div", [e._v("选择显示的链类型")]), e._v(" "), n("SelectView", {
                 attrs: {
-                    items: ["代理", "策略组", "两者"]
+                    items: ["代理", "策略组", "两者都是"]
                 },
                 model: {
                     value: e.settings.connChainType,
@@ -9863,11 +9863,11 @@ module.exports = function(e) {
                 }
             })], 1)])]), e._v(" "), n("Section", {
                 attrs: {
-                    title: "启动后自动启动"
+                    title: "应用程序启动后自启动"
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义其他应用")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("自定义的其他应用")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
                     text: "编辑"
@@ -9881,7 +9881,7 @@ module.exports = function(e) {
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义解析器")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("自定义的解析器")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
                     text: "编辑"
@@ -9901,7 +9901,7 @@ module.exports = function(e) {
                 }
             })], 1), e._v(" "), n("separator"), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义文件夹位置")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("自定义的文件夹位置")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("SimpleInput", {
                 staticClass: "short-input",
@@ -9925,7 +9925,7 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义下载请求头")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("自定义的下载请求头")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
                     text: "修改"
@@ -9945,11 +9945,11 @@ module.exports = function(e) {
                 }
             })], 1)], 1), e._v(" "), n("Section", {
                 attrs: {
-                    title: "自定义快捷键"
+                    title: "自定义的快捷键"
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("系统代理")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("启用 / 禁用系统代理")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
@@ -9965,7 +9965,7 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("注入配置")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("启用 / 禁用注入配置")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
@@ -9981,7 +9981,7 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("separator"), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("全局模式")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("启用全局模式")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
@@ -9997,7 +9997,7 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("规则模式")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("启用规则模式")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
@@ -10013,7 +10013,7 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("直连模式")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("启用直连模式")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
@@ -10029,7 +10029,7 @@ module.exports = function(e) {
                 }
             })], 1)]), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("脚本模式")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("启用脚本模式")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("KeyCapture", {
                 staticClass: "input",
@@ -10650,7 +10650,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Obfs (可选, tls 或者 http)"
+                    placeholder: "Obfs (可选, tls / http)"
                 },
                 domProps: {
                     value: e.proxyObfs
@@ -11051,7 +11051,7 @@ module.exports = function(e) {
             }, [n("div", {
                 staticClass: "hint"
             }, [e._v("\n" +
-                "拖动以排序或者添加到右侧的列表中.")]), e._v(" "), n("div", {
+                "拖动以调整顺序 / 添加至右侧的列表中.")]), e._v(" "), n("div", {
                 staticClass: "floating-right"
             }, [n("div", {
                 staticClass: "main-btn save",
@@ -11403,7 +11403,7 @@ module.exports = function(e) {
                 }
             }, [n("div", {
                 class: ["model-title-" + e.theme]
-            }, [n("div", [e._v("创建一个新的规则")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("创建新的规则")]), e._v(" "), n("div", {
                 staticClass: "rule-floating-btns"
             }, [n("div", {
                 staticClass: "rule-floating-ok",
@@ -11471,7 +11471,7 @@ module.exports = function(e) {
                 ) + "\n              ")])
             })), 0), e._v(" "), n("div", {
                 staticClass: "rule-section-title"
-            }, [e._v("代理或者策略")]), e._v(" "), n("div", {
+            }, [e._v("代理 / 策略")]), e._v(" "), n("div", {
                 staticClass: "rule-proxy-group"
             }, e._l(e.proxyGroups, (function(t, r) {
                 return n("div", {
@@ -12146,7 +12146,7 @@ module.exports = function(e) {
                                     return r = [{
                                         name: "名称",
                                         key: "filename",
-                                        placeholder: "输入一个新的文件名",
+                                        placeholder: "输入新的文件名",
                                         required: !0
                                     }], n.prev = 1, n.next = 4, t.$input({
                                         title: "克隆配置文件",
@@ -12186,7 +12186,7 @@ module.exports = function(e) {
                                         key: "interval",
                                         name: "更新间隔时间 (小时)",
                                         validate: function(e) {
-                                            return /^\d+$/.test(e) ? "" : "更新间隔时间必须是一个整数"
+                                            return /^\d+$/.test(e) ? "" : "更新间隔时间必须为整数"
                                         },
                                         value: a
                                     }], n.prev = 4, n.next = 7, t.$input({
@@ -12401,7 +12401,7 @@ module.exports = function(e) {
                                     }
                                     return n.next = 11, t.$showDialog({
                                         type: "error",
-                                        message: "无法更换到这个配置文件!",
+                                        message: "无法更换至这个配置文件!",
                                         detail: a || "",
                                         buttons: ["确认", "在文本模式下编辑"]
                                     });
@@ -12861,7 +12861,7 @@ module.exports = function(e) {
                         width: "24px",
                         fill: "none"
                     }
-                }, [n("title", [e._v("转到地址")]), e._v(" "), n("g", [n("rect", {
+                }, [n("title", [e._v("转至地址")]), e._v(" "), n("g", [n("rect", {
                     attrs: {
                         fill: "none",
                         height: "24",
@@ -15222,7 +15222,7 @@ module.exports = function(e) {
                                     setTimeout(B, 500 + 500 * t)
                                 })), setInterval(B, 3e3), t.next = 73, e.handlerRestartClash();
                             case 73:
-                                T.a.put(W.a.IS_LIGHTWEIGHT_MODE_CLOSE, !1), e.showStartup || (e.showStartup = !0, Object(le.c)("Clash for Windows 正在后台运行", "请享受您的自由时间!")), e.detectInterfaceName(), e.spawnUserDefindExes(), e.checkForUpdate().then((function() {})).catch((function(e) {
+                                T.a.put(W.a.IS_LIGHTWEIGHT_MODE_CLOSE, !1), e.showStartup || (e.showStartup = !0, Object(le.c)("Clash for Windows 正在后台运行", "请享受您的自由时光!")), e.detectInterfaceName(), e.spawnUserDefindExes(), e.checkForUpdate().then((function() {})).catch((function(e) {
                                     return console.error(e)
                                 })), setInterval(e.checkForUpdate, 216e5), e.preDownloadAds().then((function() {})).catch((function(e) {
                                     return console.error(e)
@@ -16006,7 +16006,7 @@ module.exports = function(e) {
                                     }
                                     return t.prev = 1, t.next = 4, e.$select({
                                         title: "安装虚拟网卡驱动",
-                                        message: '一个名为 "cfw-tap" 的适配器将把流量路由至 Clash.<br /><br />若安装窗口弹出, 保持单击 "下一步" 直到安装完成.',
+                                        message: '名为 "cfw-tap" 的适配器将把流量路由至 Clash.<br /><br />若安装窗口弹出, 保持单击 "下一步" 直至安装完成.',
                                         items: ["安装", "移除", "自定义"]
                                     });
                                 case 4:
@@ -16106,7 +16106,7 @@ module.exports = function(e) {
                                     }
                                     return t.next = 8, e.$select({
                                         title: "打开已设置好代理的终端",
-                                        message: "选择一个终端",
+                                        message: "选择终端",
                                         items: ["CMD", "Powershell", "Windows Terminal", "仅复制指令"]
                                     });
                                 case 8:
@@ -16144,7 +16144,7 @@ module.exports = function(e) {
                                         placeholder: e.port,
                                         value: "",
                                         validate: function(e) {
-                                            return /^\d+$/.test(e) && 0 <= 1 * e && 65353 >= 1 * e ? "" : "端口必须是 0 到 65353 之间的整数"
+                                            return /^\d+$/.test(e) && 0 <= 1 * e && 65353 >= 1 * e ? "" : "端口必须为 0 至 65353 之间的整数"
                                         }
                                     }], t.prev = 1, t.next = 4, e.$input({
                                         title: "更换混合端口",
@@ -16349,7 +16349,7 @@ module.exports = function(e) {
                                     }
                                     return t.prev = 5, t.next = 8, e.$select({
                                         title: "复制代理设置命令",
-                                        message: "选择一个终端",
+                                        message: "选择终端",
                                         items: ["CMD", "Powershell"]
                                     });
                                 case 8:
@@ -16358,7 +16358,7 @@ module.exports = function(e) {
                                 case 12:
                                     t.prev = 12, t.t0 = t.catch(5);
                                 case 14:
-                                    n && (e.$electron.clipboard.writeText(n), Object(ne.c)("命令已复制到剪贴板!", n, !0));
+                                    n && (e.$electron.clipboard.writeText(n), Object(ne.c)("命令已复制至剪贴板!", n, !0));
                                 case 15:
                                 case "end":
                                     return t.stop()
@@ -16586,12 +16586,15 @@ module.exports = function(e) {
                 }
             }, [e._v("Clash for Windows")]), e._v(" "), n("div", {
                 staticClass: "version",
+                domProps: {
+                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.15.8.0)")
+                },
                 on: {
                     click: e.openGithubRelease
                 }
-            }, [e._v("\n        " + e._s(e.version) + "\n        "), e.isShowNewIcon ? n("div", {
+            }, [e._v(" "), e.isShowNewIcon ? n("div", {
                 staticClass: "new-version-tag"
-            }, [e._v("新")]) : e._e()])])]), e._v(" "), e.isLaunching ? e._e() : n("div", {
+            }, [e._v("发现新的版本!")]) : e._e()])])]), e._v(" "), e.isLaunching ? e._e() : n("div", {
                 staticClass: "content"
             }, [n("div", {
                 class: ["item-" + e.theme]
@@ -16661,7 +16664,7 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [e._v("是否启用 IPv6")]), e._v(" "), n("div", {
+            }, [e._v("IPv6 开关")]), e._v(" "), n("div", {
                 staticClass: "item-right"
             }, [n("switch-view", {
                 attrs: {
@@ -16773,7 +16776,7 @@ module.exports = function(e) {
                 class: ["item-" + e.theme]
             }, [n("div", {
                 staticClass: "item-left"
-            }, [n("div", [e._v("注入配置")]), e._v(" "), n("info-icon", [e._v("\n          注入配置可以让您覆盖原始的配置.\n          "), n("a", {
+            }, [n("div", [e._v("是否注入配置")]), e._v(" "), n("info-icon", [e._v("\n          注入配置可以让您覆写原始的配置.\n          "), n("a", {
                 attrs: {
                     href: "https://docs.cfw.lbyczf.com/contents/mixin.html"
                 }
@@ -16979,10 +16982,10 @@ module.exports = function(e) {
                         }
                     }
                 }, [e._v("\n      " + e._s(
-                    (t == "global") ? "全局" :
-                    (t == "rule") ? "规则" :
-                    (t == "direct") ? "直连" :
-                    (t == "script") ? "脚本" :
+                    (t == "global") ? "全局模式" :
+                    (t == "rule") ? "规则模式" :
+                    (t == "direct") ? "直连模式" :
+                    (t == "script") ? "脚本模式" :
                     e.upperCaseFirstLetter(t)
                 ) + "\n    ")])
             })), 0)])
@@ -17727,7 +17730,7 @@ module.exports = function(e) {
                 }, [n("div")])
             })), 0)]) : e._e(), e._v(" "), 0 === e.proxyInMode.length && "direct" !== this.currentMode ? n("div", {
                 staticClass: "empty-hint"
-            }, [n("div", [e._v("这个配置文件中没有代理策略组")]), e._v(" "), n("div", [e._v("\n        转到\n        "), n("span", {
+            }, [n("div", [e._v("这个配置文件中没有代理策略组")]), e._v(" "), n("div", [e._v("\n        转至\n        "), n("span", {
                 on: {
                     click: function() {
                         return e.$router.replace({
@@ -17735,7 +17738,7 @@ module.exports = function(e) {
                         })
                     }
                 }
-            }, [e._v("配置")]), e._v("\n        中导入/更换配置文件\n      ")])]) : e._e()], 2), e._v(" "), e.settings.showProxyFilter ? n("div", {
+            }, [e._v("配置文件")]), e._v("\n        选项卡中导入 / 更换配置文件\n      ")])]) : e._e()], 2), e._v(" "), e.settings.showProxyFilter ? n("div", {
                 staticClass: "filter-keyword"
             }, [n("transition", {
                 attrs: {
@@ -18575,8 +18578,11 @@ module.exports = function(e) {
             }, [e._v("winsw")])])]), e._v(" "), n("div", {
                 staticClass: "section ad-section"
             }, [n("div", {
-                staticClass: "title"
-            }, [e._v("zh_CN v0.15.7.3.3 · 翻译人员: ImFatF1sh")]), e._v(" "), n("div", {
+                staticClass: "title",
+                domProps: {
+                    innerHTML: e._s("翻译补丁 by ImFatF1sh\n<br/>\n<br/>\n广告位")
+                }
+            }, [e._v(" ")]), e._v(" "), n("div", {
                 staticClass: "ad-img-list"
             }, e._l(e.adImages, (function(t, r) {
                 return n("div", {
@@ -18683,7 +18689,7 @@ module.exports = function(e) {
             }),
             methods: i(i({}, Object(v.mapActions)(["getMode"])), {}, {
                 copyPayload: function(e) {
-                    this.$electron.clipboard.writeText(e.url), Object(h.c)("已复制到剪切板!", e.url)
+                    this.$electron.clipboard.writeText(e.url), Object(h.c)("已复制至剪切板!", e.url)
                 },
                 randomBGC: function(e) {
                     if ("light" === this.theme) {
@@ -18824,12 +18830,12 @@ module.exports = function(e) {
                 staticClass: "text"
             }, [n("div", [e._v("网络请求日志")]), e._v(" "), n("div", {
                 staticClass: "hint"
-            }, [e._v("模式: " + e._s(
-                (e.mode == "global") ? "全局" :
-                (e.mode == "rule") ? "规则" :
-                (e.mode == "direct") ? "直连" :
-                (e.mode == "script") ? "脚本" :
-                e.mode[0].toUpperCase() + e.mode.slice(1)
+            }, [e._v(e._s(
+                (e.mode == "global") ? "(全局模式)" :
+                (e.mode == "rule") ? "(规则模式)" :
+                (e.mode == "direct") ? "(直连模式)" :
+                (e.mode == "script") ? "(脚本模式)" :
+                "模式: " + e.mode[0].toUpperCase() + e.mode.slice(1)
             ))])]), e._v(" "), n("div", {
                 staticClass: "btns"
             }, [n("div", {
@@ -18969,7 +18975,7 @@ module.exports = function(e) {
                         downloadTotal: 0,
                         connections: []
                     },
-                    labels: ["按上传速度", "按下载速度", "按上传流量", "按下载流量", "按时间"],
+                    labels: ["按上传速度排列", "按下载速度排列", "按上传流量排列", "按下载流量排列", "按时间排列"],
                     labelSelected: 4,
                     isReverse: !1
                 }
@@ -19410,25 +19416,25 @@ module.exports = function(e) {
             isLocalMode: !0,
             isLaunching: !0,
             menuItems: [{
-                title: "常规",
+                title: "常规设置",
                 path: "/home/general"
             }, {
-                title: "代理",
+                title: "代理设置",
                 path: "/home/proxy"
             }, {
-                title: "配置",
+                title: "配置文件",
                 path: "/home/server"
             }, {
-                title: "日志",
+                title: "请求日志",
                 path: "/home/log"
             }, {
-                title: "连接",
+                title: "连接列表",
                 path: "/home/connection"
             }, {
-                title: "设置",
+                title: "更多设置",
                 path: "/home/setting"
             }, {
-                title: "反馈",
+                title: "关于应用",
                 path: "/home/about"
             }],
             updateDownloadProgress: null,
