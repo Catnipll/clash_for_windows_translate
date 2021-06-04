@@ -347,7 +347,7 @@ module.exports = function(e) {
         })(e, t), l && l(e, t)
     };
     var u, p, f, h, v = !0,
-        m = "c5fb13ecc2d1a8309b7b",
+        m = "a5684d9e575cca99210b",
         g = 1e4,
         b = {},
         x = [],
@@ -396,7 +396,7 @@ module.exports = function(e) {
         return m
     }, t(231)(d.s = 231)
 }([function(e, t, n) {
-    e.exports = n(120)
+    e.exports = n(117)
 }, function(e) {
     function t(e, t, n, r, i, a, o) {
         try {
@@ -891,10 +891,10 @@ module.exports = function(e) {
 }, function(e) {
     e.exports = require("lodash")
 }, function(e, t, n) {
-    var r = n(117),
-        i = n(118),
-        a = n(98),
-        o = n(119);
+    var r = n(114),
+        i = n(115),
+        a = n(99),
+        o = n(116);
     e.exports = function(e) {
         return r(e) || i(e) || a(e) || o()
     }
@@ -4832,10 +4832,10 @@ module.exports = function(e) {
         return ns.call(this, e, t)
     }, tt.compile = Qo, t.a = tt
 }, function(e, t, n) {
-    var r = n(114),
-        i = n(115),
-        a = n(98),
-        o = n(116);
+    var r = n(131),
+        i = n(132),
+        a = n(99),
+        o = n(133);
     e.exports = function(e, t) {
         return r(e) || i(e, t) || a(e, t) || o()
     }
@@ -4919,8 +4919,8 @@ module.exports = function(e) {
     var o = n(85),
         s = n.n(o),
         c = n(19),
-        d = (n.n(c), n(32)),
-        l = (n.n(d), n(33)),
+        d = (n.n(c), n(31)),
+        l = (n.n(d), n(32)),
         u = (n.n(l), n(6)),
         p = function() {
             var e = [],
@@ -5057,6 +5057,10 @@ module.exports = function(e) {
                 return e.apply(this, arguments)
             }
         }()
+}, function(e) {
+    e.exports = require("os")
+}, function(e) {
+    e.exports = require("net")
 }, function(e, t, n) {
     "use strict";
 
@@ -5261,11 +5265,7 @@ module.exports = function(e) {
         },
         $ = n(15);
     n.d(t, "a", (function() {
-        return L
-    })), n.d(t, "c", (function() {
         return R
-    })), n.d(t, "b", (function() {
-        return z
     }));
     var M = n(91),
         L = function(e) {
@@ -5525,10 +5525,6 @@ module.exports = function(e) {
                 return (-1 === i ? 1 / 0 : i) - (-1 === a ? 1 / 0 : a)
             }), k.a.stringify(s(s({}, T), _), n)
         }
-}, function(e) {
-    e.exports = require("os")
-}, function(e) {
-    e.exports = require("net")
 }, function(e, t, n) {
     var r = n(113);
     "string" == typeof r && (r = [
@@ -5536,37 +5532,37 @@ module.exports = function(e) {
     ]), r.locals && (e.exports = r.locals);
     (0, n(9).default)("2a49b59d", r, !0, {})
 }, function(e, t, n) {
-    var r = n(122);
+    var r = n(119);
     "string" == typeof r && (r = [
         [e.i, r, ""]
     ]), r.locals && (e.exports = r.locals);
     (0, n(9).default)("6c6ba3a5", r, !0, {})
 }, function(e, t, n) {
-    var r = n(124);
+    var r = n(121);
     "string" == typeof r && (r = [
         [e.i, r, ""]
     ]), r.locals && (e.exports = r.locals);
     (0, n(9).default)("7995ba9b", r, !0, {})
 }, function(e, t, n) {
-    var r = n(126);
+    var r = n(123);
     "string" == typeof r && (r = [
         [e.i, r, ""]
     ]), r.locals && (e.exports = r.locals);
     (0, n(9).default)("b37178ba", r, !0, {})
 }, function(e, t, n) {
-    var r = n(128);
+    var r = n(125);
     "string" == typeof r && (r = [
         [e.i, r, ""]
     ]), r.locals && (e.exports = r.locals);
     (0, n(9).default)("fffa1f0a", r, !0, {})
 }, function(e, t, n) {
-    var r = n(130);
+    var r = n(127);
     "string" == typeof r && (r = [
         [e.i, r, ""]
     ]), r.locals && (e.exports = r.locals);
     (0, n(9).default)("755b086a", r, !0, {})
 }, function(e, t, n) {
-    var r = n(132);
+    var r = n(129);
     "string" == typeof r && (r = [
         [e.i, r, ""]
     ]), r.locals && (e.exports = r.locals);
@@ -5576,7 +5572,7 @@ module.exports = function(e) {
     "string" == typeof r && (r = [
         [e.i, r, ""]
     ]), r.locals && (e.exports = r.locals);
-    (0, n(9).default)("7ab35bcc", r, !0, {})
+    (0, n(9).default)("0485e242", r, !0, {})
 }, function(e, t, n) {
     var r = n(139);
     "string" == typeof r && (r = [
@@ -5588,7 +5584,7 @@ module.exports = function(e) {
     "string" == typeof r && (r = [
         [e.i, r, ""]
     ]), r.locals && (e.exports = r.locals);
-    (0, n(9).default)("7d047745", r, !0, {})
+    (0, n(9).default)("665e421d", r, !0, {})
 }, function(e, t, n) {
     var r = n(143);
     "string" == typeof r && (r = [
@@ -5738,13 +5734,13 @@ module.exports = function(e) {
     "string" == typeof r && (r = [
         [e.i, r, ""]
     ]), r.locals && (e.exports = r.locals);
-    (0, n(9).default)("58486344", r, !0, {})
+    (0, n(9).default)("cea6419a", r, !0, {})
 }, function(e, t, n) {
     var r = n(194);
     "string" == typeof r && (r = [
         [e.i, r, ""]
     ]), r.locals && (e.exports = r.locals);
-    (0, n(9).default)("8e585f72", r, !0, {})
+    (0, n(9).default)("d43a5e5c", r, !0, {})
 }, function(e, t, n) {
     var r = n(196);
     "string" == typeof r && (r = [
@@ -6010,7 +6006,7 @@ module.exports = function(e) {
 }, function(e, t, n) {
     "use strict";
     n.r(t);
-    var r = n(133),
+    var r = n(130),
         i = {};
     r.keys().forEach((function(e) {
         "./index.js" === e || (i[e.replace(/(\.\/|\.js)/g, "")] = r(e).default)
@@ -6023,20 +6019,20 @@ module.exports = function(e) {
     e.exports = require("vue-router")
 }, function(e) {
     e.exports = require("velocity-animate")
+}, function(e) {
+    e.exports = function(e, t) {
+        (null == t || t > e.length) && (t = e.length);
+        for (var n = 0, r = Array(t); n < t; n++) r[n] = e[n];
+        return r
+    }
 }, function(e, t, n) {
-    var r = n(99);
+    var r = n(98);
     e.exports = function(e, t) {
         if (e) {
             if ("string" == typeof e) return r(e, t);
             var n = Object.prototype.toString.call(e).slice(8, -1);
             return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(e) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? r(e, t) : void 0
         }
-    }
-}, function(e) {
-    e.exports = function(e, t) {
-        (null == t || t > e.length) && (t = e.length);
-        for (var n = 0, r = Array(t); n < t; n++) r[n] = e[n];
-        return r
     }
 }, function(e) {
     e.exports = require("get-port")
@@ -6152,7 +6148,7 @@ module.exports = function(e) {
                 return i.a.wrap((function(e) {
                     for (;;) switch (e.prev = e.next) {
                         case 0:
-                            return e.prev = 0, t = l.a.state.app.clashPath, n = Object(f.join)(t, "service"), Object(h.existsSync)(n) || Object(h.mkdirSync)(n), r = Object(f.join)(t, "service", "clash-core-service"), Object(h.copyFileSync)(Object(f.join)(w(), "clash-core-service"), Object(f.join)(r)), a = "/Library/LaunchDaemons/com.lbyczf.cfw.helper.plist", e.next = 9, y('echo "'.concat(b.replace("helperPath", r), '" > ').concat(a, " ; launchctl load ").concat(a));
+                            return e.prev = 0, t = l.a.state.app.clashPath, n = Object(f.join)(t, "service"), Object(h.existsSync)(n) || Object(h.mkdirSync)(n), r = Object(f.join)(t, "service", "clash-core-service"), Object(h.copyFileSync)(Object(f.join)(w(), "clash-core-service"), Object(f.join)(r)), a = "/Library/LaunchDaemons/com.lbyczf.cfw.helper.plist", e.next = 9, y('echo "'.concat(b.replace("helperPath", r), '" > ').concat(a, " ; launchctl load -w ").concat(a));
                         case 9:
                             return e.abrupt("return", !0);
                         case 12:
@@ -6210,7 +6206,7 @@ module.exports = function(e) {
                 return i.a.wrap((function(e) {
                     for (;;) switch (e.prev = e.next) {
                         case 0:
-                            return e.prev = 0, t = l.a.state.app.clashPath, n = Object(f.join)(t, "service"), Object(h.existsSync)(n) || Object(h.mkdirSync)(n), r = Object(f.join)(t, "service", "clash-core-service"), Object(h.copyFileSync)(Object(f.join)(w(), "clash-core-service"), Object(f.join)(r)), a = "/Library/LaunchDaemons/com.lbyczf.cfw.helper.plist", e.next = 9, y("launchctl unload ".concat(a, ' ; echo "').concat(b.replace("helperPath", r), '" > ').concat(a, " ; launchctl load ").concat(a));
+                            return e.prev = 0, t = l.a.state.app.clashPath, n = Object(f.join)(t, "service"), Object(h.existsSync)(n) || Object(h.mkdirSync)(n), r = Object(f.join)(t, "service", "clash-core-service"), Object(h.copyFileSync)(Object(f.join)(w(), "clash-core-service"), Object(f.join)(r)), a = "/Library/LaunchDaemons/com.lbyczf.cfw.helper.plist", e.next = 9, y("launchctl unload ".concat(a, ' ; echo "').concat(b.replace("helperPath", r), '" > ').concat(a, " ; launchctl load -w ").concat(a));
                         case 9:
                             return e.abrupt("return", !0);
                         case 12:
@@ -6480,37 +6476,8 @@ module.exports = function(e) {
     n.n(r).a
 }, function(e, t, n) {
     (e.exports = n(8)(!1)).push([e.i, ".clickable,.clickable *{cursor:pointer}", ""])
-}, function(e) {
-    e.exports = function(e) {
-        if (Array.isArray(e)) return e
-    }
-}, function(e) {
-    e.exports = function(e, t) {
-        if ("undefined" != typeof Symbol && Symbol.iterator in Object(e)) {
-            var n = [],
-                r = !0,
-                i = !1,
-                a = void 0;
-            try {
-                for (var o, s = e[Symbol.iterator](); !(r = (o = s.next()).done) && (n.push(o.value), !t || n.length !== t); r = !0);
-            } catch (e) {
-                i = !0, a = e
-            } finally {
-                try {
-                    r || null == s.return || s.return()
-                } finally {
-                    if (i) throw a
-                }
-            }
-            return n
-        }
-    }
-}, function(e) {
-    e.exports = function() {
-        throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
-    }
 }, function(e, t, n) {
-    var r = n(99);
+    var r = n(98);
     e.exports = function(e) {
         if (Array.isArray(e)) return r(e)
     }
@@ -6889,7 +6856,36 @@ module.exports = function(e) {
     };
     r.keys = function() {
         return Object.keys(a)
-    }, r.resolve = i, e.exports = r, r.id = 133
+    }, r.resolve = i, e.exports = r, r.id = 130
+}, function(e) {
+    e.exports = function(e) {
+        if (Array.isArray(e)) return e
+    }
+}, function(e) {
+    e.exports = function(e, t) {
+        if ("undefined" != typeof Symbol && Symbol.iterator in Object(e)) {
+            var n = [],
+                r = !0,
+                i = !1,
+                a = void 0;
+            try {
+                for (var o, s = e[Symbol.iterator](); !(r = (o = s.next()).done) && (n.push(o.value), !t || n.length !== t); r = !0);
+            } catch (e) {
+                i = !0, a = e
+            } finally {
+                try {
+                    r || null == s.return || s.return()
+                } finally {
+                    if (i) throw a
+                }
+            }
+            return n
+        }
+    }
+}, function(e) {
+    e.exports = function() {
+        throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
+    }
 }, function(e) {
     e.exports = require("koa")
 }, function(e) {
@@ -6899,7 +6895,7 @@ module.exports = function(e) {
     var r = n(41);
     n.n(r).a
 }, function(e, t, n) {
-    (e.exports = n(8)(!1)).push([e.i, ".theme-light[data-v-359c7ad7]{background-color:#fff;color:#000}.theme-dark[data-v-359c7ad7]{background-color:#2c2a38;color:#fff}.theme-red[data-v-359c7ad7]{background-color:#f8b74f;color:#d33928}.theme-2077[data-v-359c7ad7]{background-color:#136377;color:#fcec0c}.wrapper[data-v-359c7ad7]{height:100vh;width:100vw;overflow:hidden}", ""])
+    (e.exports = n(8)(!1)).push([e.i, ".theme-light[data-v-6ff665ce]{background-color:#fff;color:#000}.theme-dark[data-v-6ff665ce]{background-color:#2c2a38;color:#fff}.theme-red[data-v-6ff665ce]{background-color:#f8b74f;color:#d33928}.theme-2077[data-v-6ff665ce]{background-color:#136377;color:#fcec0c}.wrapper[data-v-6ff665ce]{height:100vh;width:100vw;overflow:hidden}", ""])
 }, function(e, t, n) {
     "use strict";
     var r = n(42);
@@ -6911,7 +6907,7 @@ module.exports = function(e) {
     var r = n(43);
     n.n(r).a
 }, function(e, t, n) {
-    (e.exports = n(8)(!1)).push([e.i, "main[data-v-359c7ad7]{display:flex;justify-content:space-between}.left-side[data-v-359c7ad7]{display:flex;flex-direction:column;width:170px;height:calc(100vh - 25px)}.right-side[data-v-359c7ad7]{z-index:1;flex-grow:1;width:calc(100vw - 170px);height:calc(100vh - 25px)}.welcome[data-v-359c7ad7]{color:#555;font-size:23px;margin-bottom:10px}.title[data-v-359c7ad7]{color:#2c3e50;font-size:20px;font-weight:700;margin-bottom:6px}.title.alt[data-v-359c7ad7]{font-size:18px;margin-bottom:10px}.doc p[data-v-359c7ad7]{color:#000;margin-bottom:10px}.doc button[data-v-359c7ad7]{font-size:.8em;cursor:pointer;outline:none;padding:.75em 2em;border-radius:2em;display:inline-block;color:#fff;background-color:#4fc08d;transition:all .15s ease;box-sizing:border-box;border:1px solid #4fc08d}.doc button.alt[data-v-359c7ad7]{color:#42b983;background-color:transparent}.clash-status-main[data-v-359c7ad7]{display:flex;align-items:center;position:absolute;height:40px;bottom:0;width:170px;left:0;justify-content:center;z-index:2}.clash-status-hint[data-v-359c7ad7]{margin-left:6px;font-size:.75em;letter-spacing:0;cursor:pointer}.clash-status-icon[data-v-359c7ad7]{width:12px;height:12px;border-radius:10px}.clash-running[data-v-359c7ad7]{background-color:#41b883}.clash-set-dns[data-v-359c7ad7]{background-color:#e7d91a}.clash-stopped[data-v-359c7ad7]{background-color:red}.cloud[data-v-359c7ad7]{position:fixed;bottom:110px;left:calc(50% + 80px);transform:translateX(-50%);width:40%;pointer-events:none}.opacicy[data-v-359c7ad7]{opacity:.2}.latern[data-v-359c7ad7]{position:fixed;opacity:.7;top:30px;left:125px;width:50px;pointer-events:none}", ""])
+    (e.exports = n(8)(!1)).push([e.i, "main[data-v-6ff665ce]{display:flex;justify-content:space-between}.left-side[data-v-6ff665ce]{display:flex;flex-direction:column;width:170px;height:calc(100vh - 25px)}.right-side[data-v-6ff665ce]{z-index:1;flex-grow:1;width:calc(100vw - 170px);height:calc(100vh - 25px)}.welcome[data-v-6ff665ce]{color:#555;font-size:23px;margin-bottom:10px}.title[data-v-6ff665ce]{color:#2c3e50;font-size:20px;font-weight:700;margin-bottom:6px}.title.alt[data-v-6ff665ce]{font-size:18px;margin-bottom:10px}.doc p[data-v-6ff665ce]{color:#000;margin-bottom:10px}.doc button[data-v-6ff665ce]{font-size:.8em;cursor:pointer;outline:none;padding:.75em 2em;border-radius:2em;display:inline-block;color:#fff;background-color:#4fc08d;transition:all .15s ease;box-sizing:border-box;border:1px solid #4fc08d}.doc button.alt[data-v-6ff665ce]{color:#42b983;background-color:transparent}.clash-status-main[data-v-6ff665ce]{display:flex;align-items:center;position:absolute;height:40px;bottom:0;width:170px;left:0;justify-content:center;z-index:2}.clash-status-hint[data-v-6ff665ce]{margin-left:6px;font-size:.75em;letter-spacing:0;cursor:pointer}.clash-status-icon[data-v-6ff665ce]{width:12px;height:12px;border-radius:10px}.clash-running[data-v-6ff665ce]{background-color:#41b883}.clash-set-dns[data-v-6ff665ce]{background-color:#e7d91a}.clash-stopped[data-v-6ff665ce]{background-color:red}.cloud[data-v-6ff665ce]{position:fixed;bottom:110px;left:calc(50% + 80px);transform:translateX(-50%);width:40%;pointer-events:none}.opacicy[data-v-6ff665ce]{opacity:.2}.latern[data-v-6ff665ce]{position:fixed;opacity:.7;top:30px;left:125px;width:50px;pointer-events:none}", ""])
 }, function(e, t, n) {
     "use strict";
     var r = n(44);
@@ -7063,13 +7059,13 @@ module.exports = function(e) {
     var r = n(68);
     n.n(r).a
 }, function(e, t, n) {
-    (e.exports = n(8)(!1)).push([e.i, ".card-light[data-v-4ae55cfc]{background-color:#fff;border-bottom:1px solid #dcdcdc}.card-dark[data-v-4ae55cfc],.card-light[data-v-4ae55cfc]{position:fixed;padding:0 35px;height:80px;width:calc(100vw - 170px);display:flex;justify-content:space-between}.card-dark[data-v-4ae55cfc]{background-color:#2c2a38;border-bottom:1px solid #554f4f}.card-red[data-v-4ae55cfc]{background-color:#f8b74f;border-bottom:1px solid rgba(218,20,30,.247059)}.card-2077[data-v-4ae55cfc],.card-red[data-v-4ae55cfc]{position:fixed;padding:0 35px;height:80px;width:calc(100vw - 170px);display:flex;justify-content:space-between}.card-2077[data-v-4ae55cfc]{background-color:#136377;border-bottom:1px solid rgba(6,145,180,.521569)}.list-item-light[data-v-4ae55cfc]{background-color:#fff;margin:4px 6px;display:flex;justify-content:space-between;position:relative;align-items:center;width:550px;flex-grow:1}.list-item-light .item-subinfo[data-v-4ae55cfc]{font-size:12px;color:gray}.list-item-light .indicator[data-v-4ae55cfc]{margin-right:4px;width:4px;height:calc(100% - 4px);border-radius:10px;background-color:rgba(75,75,75,.185)}.list-item-light .item-info[data-v-4ae55cfc]{padding:6px 10px;background-color:rgba(41,41,41,.05);display:flex;justify-content:space-between;align-items:center;flex-grow:1;max-width:calc(100% - 8px);border-radius:3px;height:100%}.list-item-light .item-info .item-name[data-v-4ae55cfc]{cursor:pointer;margin-left:5px;flex-grow:1;width:calc(100% - 290px)}.list-item-light .item-info .item-name .item-name-bottom[data-v-4ae55cfc]{font-size:14px;cursor:pointer;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:gray}.list-item-light .item-info .item-edit-zone[data-v-4ae55cfc]{width:270px;display:flex;justify-content:space-between}.list-item-light .item-icon[data-v-4ae55cfc]{width:30px;height:30px;border-radius:5px;display:flex;align-items:center;justify-content:center;transition:background-color .3s;cursor:pointer}.list-item-light .item-icon [data-v-4ae55cfc]{cursor:pointer}.list-item-light .item-icon[data-v-4ae55cfc]:hover{background-color:hsla(0,0%,74%,.534)}.list-item-light .item-icon>svg[data-v-4ae55cfc]{width:18px;height:18px;fill:#000}.list-item-light .item-disabled[data-v-4ae55cfc]{cursor:not-allowed}.list-item-light .item-disabled>svg[data-v-4ae55cfc]{fill:gray}.list-item-dark[data-v-4ae55cfc]{background-color:#2c2a38;margin:4px 6px;display:flex;justify-content:space-between;position:relative;align-items:center;width:550px;flex-grow:1}.list-item-dark .item-subinfo[data-v-4ae55cfc]{font-size:12px;color:#a7a7a7}.list-item-dark .indicator[data-v-4ae55cfc]{margin-right:4px;width:4px;height:calc(100% - 4px);border-radius:10px;background-color:hsla(0,0%,78%,.185)}.list-item-dark .item-info[data-v-4ae55cfc]{padding:6px 10px;background-color:hsla(0,0%,100%,.05);display:flex;justify-content:space-between;align-items:center;flex-grow:1;max-width:calc(100% - 8px);border-radius:3px;height:100%}.list-item-dark .item-info .item-name[data-v-4ae55cfc]{cursor:pointer;margin-left:5px;flex-grow:1;width:calc(100% - 290px)}.list-item-dark .item-info .item-name .item-name-bottom[data-v-4ae55cfc]{font-size:14px;cursor:pointer;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:#a7a7a7}.list-item-dark .item-info .item-edit-zone[data-v-4ae55cfc]{width:270px;display:flex;justify-content:space-between}.list-item-dark .item-icon[data-v-4ae55cfc]{width:30px;height:30px;border-radius:5px;display:flex;align-items:center;justify-content:center;transition:background-color .3s;cursor:pointer}.list-item-dark .item-icon [data-v-4ae55cfc]{cursor:pointer}.list-item-dark .item-icon[data-v-4ae55cfc]:hover{background-color:hsla(0,0%,74%,.534)}.list-item-dark .item-icon>svg[data-v-4ae55cfc]{width:18px;height:18px;fill:#fff}.list-item-dark .item-disabled[data-v-4ae55cfc]{cursor:not-allowed}.list-item-dark .item-disabled>svg[data-v-4ae55cfc]{fill:gray}.list-item-red[data-v-4ae55cfc]{background-color:#f8b74f;margin:4px 6px;display:flex;justify-content:space-between;position:relative;align-items:center;width:550px;flex-grow:1}.list-item-red .item-subinfo[data-v-4ae55cfc]{font-size:12px;color:#995e00}.list-item-red .indicator[data-v-4ae55cfc]{margin-right:4px;width:4px;height:calc(100% - 4px);border-radius:10px;background-color:#f39908}.list-item-red .item-info[data-v-4ae55cfc]{padding:6px 10px;background-color:#fdc975;display:flex;justify-content:space-between;align-items:center;flex-grow:1;max-width:calc(100% - 8px);border-radius:3px;height:100%}.list-item-red .item-info .item-name[data-v-4ae55cfc]{cursor:pointer;margin-left:5px;flex-grow:1;width:calc(100% - 290px)}.list-item-red .item-info .item-name .item-name-bottom[data-v-4ae55cfc]{font-size:14px;cursor:pointer;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:#995e00}.list-item-red .item-info .item-edit-zone[data-v-4ae55cfc]{width:270px;display:flex;justify-content:space-between}.list-item-red .item-icon[data-v-4ae55cfc]{width:30px;height:30px;border-radius:5px;display:flex;align-items:center;justify-content:center;transition:background-color .3s;cursor:pointer}.list-item-red .item-icon [data-v-4ae55cfc]{cursor:pointer}.list-item-red .item-icon[data-v-4ae55cfc]:hover{background-color:hsla(0,0%,74%,.534)}.list-item-red .item-icon>svg[data-v-4ae55cfc]{width:18px;height:18px;fill:#d33928}.list-item-red .item-disabled[data-v-4ae55cfc]{cursor:not-allowed}.list-item-red .item-disabled>svg[data-v-4ae55cfc]{fill:gray}.list-item-2077[data-v-4ae55cfc]{background-color:#136377;margin:4px 6px;display:flex;justify-content:space-between;position:relative;align-items:center;width:550px;flex-grow:1}.list-item-2077 .item-subinfo[data-v-4ae55cfc]{font-size:12px;color:#bbb33f}.list-item-2077 .indicator[data-v-4ae55cfc]{margin-right:4px;width:4px;height:calc(100% - 4px);border-radius:10px;background-color:rgba(6,49,70,.411)}.list-item-2077 .item-info[data-v-4ae55cfc]{padding:6px 10px;background-color:rgba(9,115,141,.917647);display:flex;justify-content:space-between;align-items:center;flex-grow:1;max-width:calc(100% - 8px);border-radius:3px;height:100%}.list-item-2077 .item-info .item-name[data-v-4ae55cfc]{cursor:pointer;margin-left:5px;flex-grow:1;width:calc(100% - 290px)}.list-item-2077 .item-info .item-name .item-name-bottom[data-v-4ae55cfc]{font-size:14px;cursor:pointer;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:#bbb33f}.list-item-2077 .item-info .item-edit-zone[data-v-4ae55cfc]{width:270px;display:flex;justify-content:space-between}.list-item-2077 .item-icon[data-v-4ae55cfc]{width:30px;height:30px;border-radius:5px;display:flex;align-items:center;justify-content:center;transition:background-color .3s;cursor:pointer}.list-item-2077 .item-icon [data-v-4ae55cfc]{cursor:pointer}.list-item-2077 .item-icon[data-v-4ae55cfc]:hover{background-color:hsla(0,0%,74%,.534)}.list-item-2077 .item-icon>svg[data-v-4ae55cfc]{width:18px;height:18px;fill:#fcec0c}.list-item-2077 .item-disabled[data-v-4ae55cfc]{cursor:not-allowed}.list-item-2077 .item-disabled>svg[data-v-4ae55cfc]{fill:gray}.item-cur-light .indicator[data-v-4ae55cfc]{background-color:#41b883}.item-cur-dark .indicator[data-v-4ae55cfc]{background-color:#0a0}.item-cur-red .indicator[data-v-4ae55cfc]{background-color:rgba(27,180,6,.788235)}.item-cur-2077 .indicator[data-v-4ae55cfc]{background-color:#f8ed53}.main[data-v-4ae55cfc]{display:flex;flex-direction:column;height:100%}#main-server-view[data-v-4ae55cfc]{height:100%}.list-view-light[data-v-4ae55cfc]{margin-top:80px;height:calc(100% - 80px);width:100%;overflow-y:scroll;display:flex;flex-wrap:wrap;padding:10px 20px 20px 30px;align-content:flex-start}.list-view-light[data-v-4ae55cfc]::-webkit-scrollbar{width:16px}.list-view-light[data-v-4ae55cfc]::-webkit-scrollbar-thumb{background-color:#cac8c6;border-radius:100px;border:3px solid #fff}.list-view-light>[data-v-4ae55cfc]{-webkit-user-drag:element}.list-view-light i[data-v-4ae55cfc]{width:550px;margin:0 6px;flex-grow:1;height:0}.list-view-dark[data-v-4ae55cfc]{margin-top:80px;height:calc(100% - 80px);width:100%;overflow-y:scroll;display:flex;flex-wrap:wrap;padding:10px 20px 20px 30px;align-content:flex-start}.list-view-dark[data-v-4ae55cfc]::-webkit-scrollbar{width:16px}.list-view-dark[data-v-4ae55cfc]::-webkit-scrollbar-thumb{background-color:#4d4d5a;border-radius:100px;border:3px solid #2c2a38}.list-view-dark>[data-v-4ae55cfc]{-webkit-user-drag:element}.list-view-dark i[data-v-4ae55cfc]{width:550px;margin:0 6px;flex-grow:1;height:0}.list-view-red[data-v-4ae55cfc]{margin-top:80px;height:calc(100% - 80px);width:100%;overflow-y:scroll;display:flex;flex-wrap:wrap;padding:10px 20px 20px 30px;align-content:flex-start}.list-view-red[data-v-4ae55cfc]::-webkit-scrollbar{width:16px}.list-view-red[data-v-4ae55cfc]::-webkit-scrollbar-thumb{background-color:rgba(183,46,41,.643137);border-radius:100px;border:3px solid #f8b74f}.list-view-red>[data-v-4ae55cfc]{-webkit-user-drag:element}.list-view-red i[data-v-4ae55cfc]{width:550px;margin:0 6px;flex-grow:1;height:0}.list-view-2077[data-v-4ae55cfc]{margin-top:80px;height:calc(100% - 80px);width:100%;overflow-y:scroll;display:flex;flex-wrap:wrap;padding:10px 20px 20px 30px;align-content:flex-start}.list-view-2077[data-v-4ae55cfc]::-webkit-scrollbar{width:16px}.list-view-2077[data-v-4ae55cfc]::-webkit-scrollbar-thumb{background-color:rgba(238,222,0,.796078);border-radius:100px;border:3px solid #136377}.list-view-2077>[data-v-4ae55cfc]{-webkit-user-drag:element}.list-view-2077 i[data-v-4ae55cfc]{width:550px;margin:0 6px;flex-grow:1;height:0}.input-container[data-v-4ae55cfc]{display:flex;flex-grow:1;overflow:hidden;padding-right:5px;justify-content:space-between}.input-container input[data-v-4ae55cfc]{border-top-left-radius:3px;border-bottom-left-radius:3px}.input-container svg[data-v-4ae55cfc]{border-top-right-radius:3px;border-bottom-right-radius:3px}", ""])
+    (e.exports = n(8)(!1)).push([e.i, ".card-light[data-v-05a72b3e]{background-color:#fff;border-bottom:1px solid #dcdcdc}.card-dark[data-v-05a72b3e],.card-light[data-v-05a72b3e]{position:fixed;padding:0 35px;height:80px;width:calc(100vw - 170px);display:flex;justify-content:space-between}.card-dark[data-v-05a72b3e]{background-color:#2c2a38;border-bottom:1px solid #554f4f}.card-red[data-v-05a72b3e]{background-color:#f8b74f;border-bottom:1px solid rgba(218,20,30,.247059)}.card-2077[data-v-05a72b3e],.card-red[data-v-05a72b3e]{position:fixed;padding:0 35px;height:80px;width:calc(100vw - 170px);display:flex;justify-content:space-between}.card-2077[data-v-05a72b3e]{background-color:#136377;border-bottom:1px solid rgba(6,145,180,.521569)}.list-item-light[data-v-05a72b3e]{background-color:#fff;margin:4px 6px;display:flex;justify-content:space-between;position:relative;align-items:center;width:550px;flex-grow:1}.list-item-light .item-subinfo[data-v-05a72b3e]{background-color:#5db88f;text-align:center;font-size:12px;width:fit-content;padding:0 8px;color:#fff;position:relative;border-radius:5px}.list-item-light .item-subinfo .percent[data-v-05a72b3e]{border-radius:5px;width:100%;top:0;left:0;position:absolute;height:100%;background-color:#f57983}.list-item-light .indicator[data-v-05a72b3e]{margin-right:4px;width:4px;height:calc(100% - 4px);border-radius:10px;background-color:rgba(75,75,75,.185)}.list-item-light .item-info[data-v-05a72b3e]{padding:6px 10px;background-color:rgba(41,41,41,.05);display:flex;justify-content:space-between;align-items:center;flex-grow:1;max-width:calc(100% - 8px);border-radius:3px;height:100%}.list-item-light .item-info .item-name[data-v-05a72b3e]{cursor:pointer;margin-left:5px;flex-grow:1;width:calc(100% - 290px)}.list-item-light .item-info .item-name .item-name-bottom[data-v-05a72b3e]{font-size:14px;cursor:pointer;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:gray}.list-item-light .item-info .item-edit-zone[data-v-05a72b3e]{width:270px;display:flex;justify-content:space-between}.list-item-light .item-icon[data-v-05a72b3e]{width:30px;height:30px;border-radius:5px;display:flex;align-items:center;justify-content:center;transition:background-color .3s;cursor:pointer}.list-item-light .item-icon [data-v-05a72b3e]{cursor:pointer}.list-item-light .item-icon[data-v-05a72b3e]:hover{background-color:hsla(0,0%,74%,.534)}.list-item-light .item-icon>svg[data-v-05a72b3e]{width:18px;height:18px;fill:#000}.list-item-light .item-disabled[data-v-05a72b3e]{cursor:not-allowed}.list-item-light .item-disabled>svg[data-v-05a72b3e]{fill:gray}.list-item-dark[data-v-05a72b3e]{background-color:#2c2a38;margin:4px 6px;display:flex;justify-content:space-between;position:relative;align-items:center;width:550px;flex-grow:1}.list-item-dark .item-subinfo[data-v-05a72b3e]{background-color:#44725d;text-align:center;font-size:12px;width:fit-content;padding:0 8px;color:#b4b4b4;position:relative;border-radius:5px}.list-item-dark .item-subinfo .percent[data-v-05a72b3e]{border-radius:5px;width:100%;top:0;left:0;position:absolute;height:100%;background-color:#92484e}.list-item-dark .indicator[data-v-05a72b3e]{margin-right:4px;width:4px;height:calc(100% - 4px);border-radius:10px;background-color:hsla(0,0%,78%,.185)}.list-item-dark .item-info[data-v-05a72b3e]{padding:6px 10px;background-color:hsla(0,0%,100%,.05);display:flex;justify-content:space-between;align-items:center;flex-grow:1;max-width:calc(100% - 8px);border-radius:3px;height:100%}.list-item-dark .item-info .item-name[data-v-05a72b3e]{cursor:pointer;margin-left:5px;flex-grow:1;width:calc(100% - 290px)}.list-item-dark .item-info .item-name .item-name-bottom[data-v-05a72b3e]{font-size:14px;cursor:pointer;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:#a7a7a7}.list-item-dark .item-info .item-edit-zone[data-v-05a72b3e]{width:270px;display:flex;justify-content:space-between}.list-item-dark .item-icon[data-v-05a72b3e]{width:30px;height:30px;border-radius:5px;display:flex;align-items:center;justify-content:center;transition:background-color .3s;cursor:pointer}.list-item-dark .item-icon [data-v-05a72b3e]{cursor:pointer}.list-item-dark .item-icon[data-v-05a72b3e]:hover{background-color:hsla(0,0%,74%,.534)}.list-item-dark .item-icon>svg[data-v-05a72b3e]{width:18px;height:18px;fill:#fff}.list-item-dark .item-disabled[data-v-05a72b3e]{cursor:not-allowed}.list-item-dark .item-disabled>svg[data-v-05a72b3e]{fill:gray}.list-item-red[data-v-05a72b3e]{background-color:#f8b74f;margin:4px 6px;display:flex;justify-content:space-between;position:relative;align-items:center;width:550px;flex-grow:1}.list-item-red .item-subinfo[data-v-05a72b3e]{background-color:#4e856c;text-align:center;font-size:12px;width:fit-content;padding:0 8px;color:#d1d1d1;position:relative;border-radius:5px}.list-item-red .item-subinfo .percent[data-v-05a72b3e]{border-radius:5px;width:100%;top:0;left:0;position:absolute;height:100%;background-color:#b3585f}.list-item-red .indicator[data-v-05a72b3e]{margin-right:4px;width:4px;height:calc(100% - 4px);border-radius:10px;background-color:#f39908}.list-item-red .item-info[data-v-05a72b3e]{padding:6px 10px;background-color:#fdc975;display:flex;justify-content:space-between;align-items:center;flex-grow:1;max-width:calc(100% - 8px);border-radius:3px;height:100%}.list-item-red .item-info .item-name[data-v-05a72b3e]{cursor:pointer;margin-left:5px;flex-grow:1;width:calc(100% - 290px)}.list-item-red .item-info .item-name .item-name-bottom[data-v-05a72b3e]{font-size:14px;cursor:pointer;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:#995e00}.list-item-red .item-info .item-edit-zone[data-v-05a72b3e]{width:270px;display:flex;justify-content:space-between}.list-item-red .item-icon[data-v-05a72b3e]{width:30px;height:30px;border-radius:5px;display:flex;align-items:center;justify-content:center;transition:background-color .3s;cursor:pointer}.list-item-red .item-icon [data-v-05a72b3e]{cursor:pointer}.list-item-red .item-icon[data-v-05a72b3e]:hover{background-color:hsla(0,0%,74%,.534)}.list-item-red .item-icon>svg[data-v-05a72b3e]{width:18px;height:18px;fill:#d33928}.list-item-red .item-disabled[data-v-05a72b3e]{cursor:not-allowed}.list-item-red .item-disabled>svg[data-v-05a72b3e]{fill:gray}.list-item-2077[data-v-05a72b3e]{background-color:#136377;margin:4px 6px;display:flex;justify-content:space-between;position:relative;align-items:center;width:550px;flex-grow:1}.list-item-2077 .item-subinfo[data-v-05a72b3e]{background-color:#4e8a6f;text-align:center;font-size:12px;width:fit-content;padding:0 8px;color:#fff;position:relative;border-radius:5px}.list-item-2077 .item-subinfo .percent[data-v-05a72b3e]{border-radius:5px;width:100%;top:0;left:0;position:absolute;height:100%;background-color:#b4555d}.list-item-2077 .indicator[data-v-05a72b3e]{margin-right:4px;width:4px;height:calc(100% - 4px);border-radius:10px;background-color:rgba(6,49,70,.411)}.list-item-2077 .item-info[data-v-05a72b3e]{padding:6px 10px;background-color:rgba(9,115,141,.917647);display:flex;justify-content:space-between;align-items:center;flex-grow:1;max-width:calc(100% - 8px);border-radius:3px;height:100%}.list-item-2077 .item-info .item-name[data-v-05a72b3e]{cursor:pointer;margin-left:5px;flex-grow:1;width:calc(100% - 290px)}.list-item-2077 .item-info .item-name .item-name-bottom[data-v-05a72b3e]{font-size:14px;cursor:pointer;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:#bbb33f}.list-item-2077 .item-info .item-edit-zone[data-v-05a72b3e]{width:270px;display:flex;justify-content:space-between}.list-item-2077 .item-icon[data-v-05a72b3e]{width:30px;height:30px;border-radius:5px;display:flex;align-items:center;justify-content:center;transition:background-color .3s;cursor:pointer}.list-item-2077 .item-icon [data-v-05a72b3e]{cursor:pointer}.list-item-2077 .item-icon[data-v-05a72b3e]:hover{background-color:hsla(0,0%,74%,.534)}.list-item-2077 .item-icon>svg[data-v-05a72b3e]{width:18px;height:18px;fill:#fcec0c}.list-item-2077 .item-disabled[data-v-05a72b3e]{cursor:not-allowed}.list-item-2077 .item-disabled>svg[data-v-05a72b3e]{fill:gray}.item-cur-light .indicator[data-v-05a72b3e]{background-color:#41b883}.item-cur-dark .indicator[data-v-05a72b3e]{background-color:#0a0}.item-cur-red .indicator[data-v-05a72b3e]{background-color:rgba(27,180,6,.788235)}.item-cur-2077 .indicator[data-v-05a72b3e]{background-color:#f8ed53}.main[data-v-05a72b3e]{display:flex;flex-direction:column;height:100%}#main-server-view[data-v-05a72b3e]{height:100%}.list-view-light[data-v-05a72b3e]{margin-top:80px;height:calc(100% - 80px);width:100%;overflow-y:scroll;display:flex;flex-wrap:wrap;padding:10px 20px 20px 30px;align-content:flex-start}.list-view-light[data-v-05a72b3e]::-webkit-scrollbar{width:16px}.list-view-light[data-v-05a72b3e]::-webkit-scrollbar-thumb{background-color:#cac8c6;border-radius:100px;border:3px solid #fff}.list-view-light>[data-v-05a72b3e]{-webkit-user-drag:element}.list-view-light i[data-v-05a72b3e]{width:550px;margin:0 6px;flex-grow:1;height:0}.list-view-dark[data-v-05a72b3e]{margin-top:80px;height:calc(100% - 80px);width:100%;overflow-y:scroll;display:flex;flex-wrap:wrap;padding:10px 20px 20px 30px;align-content:flex-start}.list-view-dark[data-v-05a72b3e]::-webkit-scrollbar{width:16px}.list-view-dark[data-v-05a72b3e]::-webkit-scrollbar-thumb{background-color:#4d4d5a;border-radius:100px;border:3px solid #2c2a38}.list-view-dark>[data-v-05a72b3e]{-webkit-user-drag:element}.list-view-dark i[data-v-05a72b3e]{width:550px;margin:0 6px;flex-grow:1;height:0}.list-view-red[data-v-05a72b3e]{margin-top:80px;height:calc(100% - 80px);width:100%;overflow-y:scroll;display:flex;flex-wrap:wrap;padding:10px 20px 20px 30px;align-content:flex-start}.list-view-red[data-v-05a72b3e]::-webkit-scrollbar{width:16px}.list-view-red[data-v-05a72b3e]::-webkit-scrollbar-thumb{background-color:rgba(183,46,41,.643137);border-radius:100px;border:3px solid #f8b74f}.list-view-red>[data-v-05a72b3e]{-webkit-user-drag:element}.list-view-red i[data-v-05a72b3e]{width:550px;margin:0 6px;flex-grow:1;height:0}.list-view-2077[data-v-05a72b3e]{margin-top:80px;height:calc(100% - 80px);width:100%;overflow-y:scroll;display:flex;flex-wrap:wrap;padding:10px 20px 20px 30px;align-content:flex-start}.list-view-2077[data-v-05a72b3e]::-webkit-scrollbar{width:16px}.list-view-2077[data-v-05a72b3e]::-webkit-scrollbar-thumb{background-color:rgba(238,222,0,.796078);border-radius:100px;border:3px solid #136377}.list-view-2077>[data-v-05a72b3e]{-webkit-user-drag:element}.list-view-2077 i[data-v-05a72b3e]{width:550px;margin:0 6px;flex-grow:1;height:0}.input-container[data-v-05a72b3e]{display:flex;flex-grow:1;overflow:hidden;padding-right:5px;justify-content:space-between}.input-container input[data-v-05a72b3e]{border-top-left-radius:3px;border-bottom-left-radius:3px}.input-container svg[data-v-05a72b3e]{border-top-right-radius:3px;border-bottom-right-radius:3px}", ""])
 }, function(e, t, n) {
     "use strict";
     var r = n(69);
     n.n(r).a
 }, function(e, t, n) {
-    (e.exports = n(8)(!1)).push([e.i, "input[data-v-4ae55cfc]{cursor:text;width:calc(100vw - 230px);height:45px;font-size:1em;border:1px solid rgba(50,50,50,.2);padding:0 10px}input[data-v-4ae55cfc]:focus{outline:none;box-shadow:0 0 2px 1px rgba(50,50,50,.2)}.remote-view[data-v-4ae55cfc]{display:flex;align-items:center;justify-content:space-around}.local-view[data-v-4ae55cfc]{right:0;margin:0 2vw 20px 1vw}.list-view[data-v-4ae55cfc]>:last-child{margin-bottom:25px}.item-name-top[data-v-4ae55cfc]{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:16px}.item-name-top>div[data-v-4ae55cfc]{max-width:calc((80vw - 80px) / 2 - 65px);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.item-time[data-v-4ae55cfc]{font-size:14px;cursor:pointer}.item-expired[data-v-4ae55cfc]{color:#fa4949}.item-parser[data-v-4ae55cfc]{font-size:.8em}.item-time-now[data-v-4ae55cfc]{color:#9eff71}.btns-container[data-v-4ae55cfc]{display:flex;align-items:center;width:fit-content;justify-content:space-between}.confirm[data-v-4ae55cfc]{height:45px;color:#fff;cursor:pointer;line-height:45px;text-align:center;background-color:#7e7b7b;border-radius:3px;padding-left:10px;padding-right:10px;font-size:.85em;box-shadow:0 2px 20px 2px rgba(50,50,50,.1);width:fit-content;white-space:nowrap}.confirm-left[data-v-4ae55cfc]{padding:auto 30px}.confirm-right[data-v-4ae55cfc]{margin-left:10px}.confirm-copy[data-v-4ae55cfc]{border-radius:5px}.btn-error[data-v-4ae55cfc]{background-color:#ec2658}.btn-success[data-v-4ae55cfc]{background-color:#8ade4e}.btn-loading[data-v-4ae55cfc]{box-shadow:2px 2px 5px 1px rgba(50,50,50,.1)}.hint-normal[data-v-4ae55cfc]{text-align:center;font-size:1em;font-weight:500}.hint-error[data-v-4ae55cfc]{color:#ec2658}.copy-icon[data-v-4ae55cfc]{flex-shrink:0;height:45px;width:45px;padding:10px;background-color:#5e798b;cursor:pointer;box-shadow:0 0 2px 1px rgba(50,50,50,.2)}.rotating[data-v-4ae55cfc]{animation:downloading-data-v-4ae55cfc 1s infinite;animation-timing-function:linear}@keyframes downloading-data-v-4ae55cfc{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}", ""])
+    (e.exports = n(8)(!1)).push([e.i, "input[data-v-05a72b3e]{cursor:text;width:calc(100vw - 230px);height:45px;font-size:1em;border:1px solid rgba(50,50,50,.2);padding:0 10px}input[data-v-05a72b3e]:focus{outline:none;box-shadow:0 0 2px 1px rgba(50,50,50,.2)}.remote-view[data-v-05a72b3e]{display:flex;align-items:center;justify-content:space-around}.local-view[data-v-05a72b3e]{right:0;margin:0 2vw 20px 1vw}.list-view[data-v-05a72b3e]>:last-child{margin-bottom:25px}.item-name-top[data-v-05a72b3e]{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:16px}.item-name-top>div[data-v-05a72b3e]{max-width:calc((80vw - 80px) / 2 - 65px);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.item-time[data-v-05a72b3e]{font-size:14px;cursor:pointer}.item-expired[data-v-05a72b3e]{color:#fa4949}.item-parser[data-v-05a72b3e]{font-size:.8em}.item-time-now[data-v-05a72b3e]{color:#9eff71}.btns-container[data-v-05a72b3e]{display:flex;align-items:center;width:fit-content;justify-content:space-between}.confirm[data-v-05a72b3e]{height:45px;color:#fff;cursor:pointer;line-height:45px;text-align:center;background-color:#7e7b7b;border-radius:3px;padding-left:10px;padding-right:10px;font-size:.85em;box-shadow:0 2px 20px 2px rgba(50,50,50,.1);width:fit-content;white-space:nowrap}.confirm-left[data-v-05a72b3e]{padding:auto 30px}.confirm-right[data-v-05a72b3e]{margin-left:10px}.confirm-copy[data-v-05a72b3e]{border-radius:5px}.btn-error[data-v-05a72b3e]{background-color:#ec2658}.btn-success[data-v-05a72b3e]{background-color:#8ade4e}.btn-loading[data-v-05a72b3e]{box-shadow:2px 2px 5px 1px rgba(50,50,50,.1)}.hint-normal[data-v-05a72b3e]{text-align:center;font-size:1em;font-weight:500}.hint-error[data-v-05a72b3e]{color:#ec2658}.copy-icon[data-v-05a72b3e]{flex-shrink:0;height:45px;width:45px;padding:10px;background-color:#5e798b;cursor:pointer;box-shadow:0 0 2px 1px rgba(50,50,50,.2)}.rotating[data-v-05a72b3e]{animation:downloading-data-v-05a72b3e 1s infinite;animation-timing-function:linear}@keyframes downloading-data-v-05a72b3e{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}", ""])
 }, function(e, t, n) {
     "use strict";
     var r = n(70);
@@ -10257,7 +10253,7 @@ module.exports = function(e) {
         w = n.n(y),
         k = n(14),
         _ = n.n(k),
-        O = n(31),
+        O = n(33),
         S = n(15),
         C = n(5),
         P = n(27),
@@ -12496,7 +12492,7 @@ module.exports = function(e) {
                         return v.a.wrap((function(n) {
                             for (;;) switch (n.prev = n.next) {
                                 case 0:
-                                    return r = e.url, i = e.cancelToken, a = void 0 === i ? null : i, o = e.selectAfterUpdated, s = void 0 !== o && o, n.next = 3, Object(O.c)({
+                                    return r = e.url, i = e.cancelToken, a = void 0 === i ? null : i, o = e.selectAfterUpdated, s = void 0 !== o && o, n.next = 3, Object(O.a)({
                                         url: r,
                                         cancelToken: a
                                     }).catch((function() {}));
@@ -12535,13 +12531,30 @@ module.exports = function(e) {
                         o = void 0 === a ? 0 : a,
                         s = e.expire,
                         c = void 0 === s ? 0 : s;
-                    if (n && i && o) {
+                    if (0 <= n && 0 <= i && 0 < o) {
                         var d = Object(S.d)(n + i, 1),
                             l = Object(S.d)(o, 1),
                             u = "".concat(d, " | ").concat(l);
                         return c ? "".concat(u, " | ").concat(w()(1e3 * c).format("YYYY-MM-DD")) : u
                     }
                     return ""
+                },
+                subInfoPercent: function(e) {
+                    var t = e.upload,
+                        n = void 0 === t ? 0 : t,
+                        r = e.download,
+                        i = void 0 === r ? 0 : r,
+                        a = e.total,
+                        o = void 0 === a ? 0 : a;
+                    if (0 <= n && 0 <= i && 0 < o) {
+                        var s = (n + i) / o * 100;
+                        return {
+                            "clip-path": "inset(0 ".concat(100 >= s ? 100 - s : 100, "% 0 0)")
+                        }
+                    }
+                    return {
+                        "clip-path": "inset(0 100% 0 0)"
+                    }
                 },
                 pasteURL: function() {
                     this.inputFocus = !1, this.subUrl = this.$electron.clipboard.readText(), this.inputFocus = !0
@@ -12752,7 +12765,14 @@ module.exports = function(e) {
                     }
                 }, [e._v("\n                " + e._s("(" + e.parseDate(t) + ")") + "\n              ")])]), e._v(" "), n("div", {
                     staticClass: "item-subinfo"
-                }, [e._v("\n              " + e._s(e.formatSubInfo(t.subInfo || {})) + "\n            ")])]), e._v(" "), n("div", {
+                }, [n("div", {
+                    staticClass: "percent",
+                    style: e.subInfoPercent(t.subInfo || {})
+                }), e._v(" "), n("div", {
+                    staticStyle: {
+                        position: "relative"
+                    }
+                }, [e._v("\n                " + e._s(e.formatSubInfo(t.subInfo || {})) + "\n              ")])])]), e._v(" "), n("div", {
                     staticClass: "item-edit-zone",
                     on: {
                         click: function(e) {
@@ -13025,7 +13045,7 @@ module.exports = function(e) {
                     }
                 }
             }) : e._e()], 1)
-        }), [], !1, null, "4ae55cfc", null));
+        }), [], !1, null, "05a72b3e", null));
     fe.options.__file = "ServerView.vue", t.default = fe.exports
 }, function(e, t, n) {
     "use strict";
@@ -13043,7 +13063,7 @@ module.exports = function(e) {
 
     function i(e) {
         for (var t, n = 1; n < arguments.length; n++) t = null == arguments[n] ? {} : arguments[n], n % 2 ? r(Object(t), !0).forEach((function(n) {
-            k()(e, n, t[n])
+            y()(e, n, t[n])
         })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : r(Object(t)).forEach((function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }));
@@ -13074,7 +13094,7 @@ module.exports = function(e) {
 
     function s(e) {
         for (var t, n = 1; n < arguments.length; n++) t = null == arguments[n] ? {} : arguments[n], n % 2 ? o(Object(t), !0).forEach((function(n) {
-            k()(e, n, t[n])
+            y()(e, n, t[n])
         })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach((function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }));
@@ -13094,7 +13114,7 @@ module.exports = function(e) {
 
     function d(e) {
         for (var t, n = 1; n < arguments.length; n++) t = null == arguments[n] ? {} : arguments[n], n % 2 ? c(Object(t), !0).forEach((function(n) {
-            k()(e, n, t[n])
+            y()(e, n, t[n])
         })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach((function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }));
@@ -13106,20 +13126,20 @@ module.exports = function(e) {
     }
 
     function u() {
-        return (u = C()(O.a.mark((function e() {
+        return (u = O()(k.a.mark((function e() {
             var t, n;
-            return O.a.wrap((function(e) {
+            return k.a.wrap((function(e) {
                 for (;;) switch (e.prev = e.next) {
                     case 0:
-                        return e.next = 2, ve();
+                        return e.next = 2, fe();
                     case 2:
-                        t = e.sent, (n = new he).use(function() {
-                            var e = C()(O.a.mark((function e(t) {
+                        t = e.sent, (n = new pe).use(function() {
+                            var e = O()(k.a.mark((function e(t) {
                                 var n, r, i;
-                                return O.a.wrap((function(e) {
+                                return k.a.wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            /\/pac$/.test(t.path) ? (n = pe.a.state.app.settings.pacContentText, r = void 0 === n ? fe.a : n, (i = pe.a.getters.mixedPort) && (t.set("content-type", "application/x-ns-proxy-autoconfig"), t.body = r.replace(/%mixed-port%/g, i))) : t.res.statusCode = 404;
+                                            /\/pac$/.test(t.path) ? (n = le.a.state.app.settings.pacContentText, r = void 0 === n ? ue.a : n, (i = le.a.getters.mixedPort) && (t.set("content-type", "application/x-ns-proxy-autoconfig"), t.body = r.replace(/%mixed-port%/g, i))) : t.res.statusCode = 404;
                                         case 1:
                                         case "end":
                                             return e.stop()
@@ -13129,7 +13149,7 @@ module.exports = function(e) {
                             return function() {
                                 return e.apply(this, arguments)
                             }
-                        }()), n.listen(t, "127.0.0.1"), pe.a.commit("SET_INNER_SERVER_PORT", {
+                        }()), n.listen(t, "127.0.0.1"), le.a.commit("SET_INNER_SERVER_PORT", {
                             port: t
                         });
                     case 7:
@@ -13213,7 +13233,7 @@ module.exports = function(e) {
 
     function v(e) {
         for (var t, n = 1; n < arguments.length; n++) t = null == arguments[n] ? {} : arguments[n], n % 2 ? h(Object(t), !0).forEach((function(n) {
-            k()(e, n, t[n])
+            y()(e, n, t[n])
         })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach((function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }));
@@ -13221,26 +13241,24 @@ module.exports = function(e) {
     }
     var m = Math.floor;
     n.r(t);
-    var g = n(23),
+    var g = n(21),
         b = n.n(g),
-        x = n(21),
+        x = n(3),
         y = n.n(x),
-        w = n(3),
+        w = n(0),
         k = n.n(w),
-        _ = n(0),
+        _ = n(1),
         O = n.n(_),
-        S = n(1),
-        C = n.n(S),
-        P = n(5),
-        j = (n(20), n(27)),
-        E = n.n(j),
-        T = n(10),
-        D = n(13),
-        I = n(6),
-        A = n(91),
-        $ = n(2),
-        M = n(4),
-        L = {
+        S = n(5),
+        C = (n(20), n(27)),
+        P = n.n(C),
+        j = n(10),
+        E = n(13),
+        T = n(6),
+        D = n(91),
+        I = n(2),
+        A = n(4),
+        $ = {
             props: [],
             data: function() {
                 return {
@@ -13255,7 +13273,7 @@ module.exports = function(e) {
             },
             watch: {
                 clashStatus: function(e) {
-                    e === D.a.CONNECTED && (this.setupRequest(), this.updateInterval())
+                    e === E.a.CONNECTED && (this.setupRequest(), this.updateInterval())
                 },
                 isWindowShow: function(e) {
                     e && this.setupRequest()
@@ -13276,7 +13294,7 @@ module.exports = function(e) {
                     this.updateInterval()
                 }
             },
-            computed: i(i(i({}, Object(P.mapState)(k()({
+            computed: i(i(i({}, Object(S.mapState)(y()({
                 confData: function(e) {
                     return e.app.confData
                 },
@@ -13306,7 +13324,7 @@ module.exports = function(e) {
                 }
             }, "clashStatus", (function(e) {
                 return e.app.clashStatus
-            })))), Object(P.mapGetters)(["resourcesPath", "clashWSClient"])), {}, {
+            })))), Object(S.mapGetters)(["resourcesPath", "clashWSClient"])), {}, {
                 finalText: function() {
                     var e = this.settings.trayText;
                     return (void 0 === e ? "" : e) || this.scriptResult
@@ -13336,7 +13354,7 @@ module.exports = function(e) {
                     var e = this;
                     this.client && this.client.readyState !== WebSocket.CLOSED && this.client.readyState !== WebSocket.CONNECTING && this.client.terminate();
                     var t = this.clashWSClient("traffic"),
-                        n = this.iconImage($.join(this.resourcesPath, "static/imgs/logo_64_eyes.png"));
+                        n = this.iconImage(I.join(this.resourcesPath, "static/imgs/logo_64_eyes.png"));
                     t ? (t.on("message", (function(t) {
                         e.speed = JSON.parse(t);
                         var r = e.settings,
@@ -13382,12 +13400,12 @@ module.exports = function(e) {
                         a = t.trayScriptPath;
                     if ("" === r && a) {
                         var o = function() {
-                            var t = C()(O.a.mark((function t() {
+                            var t = O()(k.a.mark((function t() {
                                 var n, r;
-                                return O.a.wrap((function(t) {
+                                return k.a.wrap((function(t) {
                                     for (;;) switch (t.prev = t.next) {
                                         case 0:
-                                            return n = M.readFileSync(a, "utf8"), r = A("'use strict';\n".concat(n), a), t.next = 4, r.run();
+                                            return n = A.readFileSync(a, "utf8"), r = D("'use strict';\n".concat(n), a), t.next = 4, r.run();
                                         case 4:
                                             e.scriptResult = t.sent;
                                         case 5:
@@ -13409,8 +13427,8 @@ module.exports = function(e) {
                 this.setupRequest(), this.updateInterval()
             }
         },
-        N = (n(121), n(123), n(7)),
-        R = Object(N.a)(L, (function() {
+        M = (n(118), n(120), n(7)),
+        L = Object(M.a)($, (function() {
             var e = this,
                 t = e.$createElement,
                 n = e._self._c || t;
@@ -13430,11 +13448,11 @@ module.exports = function(e) {
                 staticClass: "bold-icon"
             }, [e._v("\n      " + e._s(e.withUnit(e.speed.down).unit) + "\n    ")])])])
         }), [], !1, null, "6f4bdf08", null);
-    R.options.__file = "ClashTrafficView.vue";
-    var z = R.exports,
-        F = n(16),
-        U = n.n(F),
-        H = {
+    L.options.__file = "ClashTrafficView.vue";
+    var N = L.exports,
+        R = n(16),
+        z = n.n(R),
+        F = {
             props: ["startTime"],
             data: function() {
                 return {
@@ -13449,12 +13467,12 @@ module.exports = function(e) {
             },
             computed: function(e) {
                 for (var t, n = 1; n < arguments.length; n++) t = null == arguments[n] ? {} : arguments[n], n % 2 ? a(Object(t), !0).forEach((function(n) {
-                    k()(e, n, t[n])
+                    y()(e, n, t[n])
                 })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach((function(n) {
                     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
                 }));
                 return e
-            }({}, Object(P.mapState)({
+            }({}, Object(S.mapState)({
                 isWindowShow: function(e) {
                     return e.app.isWindowShow
                 },
@@ -13491,7 +13509,7 @@ module.exports = function(e) {
                 this.refreshTimeTicking(!0)
             }
         },
-        V = (n(125), Object(N.a)(H, (function() {
+        U = (n(122), Object(M.a)(F, (function() {
             var e = this,
                 t = e.$createElement,
                 n = e._self._c || t;
@@ -13503,10 +13521,10 @@ module.exports = function(e) {
                 staticClass: "timer-text"
             }, [e._v(e._s(e.runningTime))])])
         }), [], !1, null, "03fdb0b2", null));
-    V.options.__file = "RunTimeView.vue";
-    var B = V.exports,
-        W = n(11),
-        G = {
+    U.options.__file = "RunTimeView.vue";
+    var H = U.exports,
+        V = n(11),
+        B = {
             props: ["startTime"],
             data: function() {
                 return {
@@ -13515,12 +13533,12 @@ module.exports = function(e) {
                 }
             },
             components: {
-                ClashTrafficView: z,
-                RunTimeView: B,
-                draggable: E.a
+                ClashTrafficView: N,
+                RunTimeView: H,
+                draggable: P.a
             },
             watch: {},
-            computed: s(s({}, Object(P.mapGetters)(["menuItemsWithOrder", "clashGotClient"])), {}, {
+            computed: s(s({}, Object(S.mapGetters)(["menuItemsWithOrder", "clashGotClient"])), {}, {
                 menuTheme: function() {
                     return "menu-".concat(this.theme)
                 },
@@ -13535,7 +13553,7 @@ module.exports = function(e) {
                         return this.menuItemsWithOrder
                     },
                     set: function(e) {
-                        T.a.put(W.a.MENU_ITEM_ORDER, e.map((function(e) {
+                        j.a.put(V.a.MENU_ITEM_ORDER, e.map((function(e) {
                             return e.title
                         }))), this.setMenuItems({
                             items: e
@@ -13543,7 +13561,7 @@ module.exports = function(e) {
                     }
                 }
             }),
-            methods: s(s({}, Object(P.mapMutations)({
+            methods: s(s({}, Object(S.mapMutations)({
                 setMenuItems: "SET_MENU_ITEMS"
             })), {}, {
                 handleMouseDown: function() {
@@ -13568,7 +13586,7 @@ module.exports = function(e) {
             }),
             mounted: function() {}
         },
-        q = (n(127), n(129), Object(N.a)(G, (function() {
+        W = (n(124), n(126), Object(M.a)(B, (function() {
             var e = this,
                 t = e.$createElement,
                 n = e._self._c || t;
@@ -13625,9 +13643,9 @@ module.exports = function(e) {
                 }
             }, [e._v("\n    Stop Sorting\n  ")]) : e._e()], 1)
         }), [], !1, null, "197ffb3e", null));
-    q.options.__file = "MainMenu.vue";
-    var K = q.exports,
-        Y = {
+    W.options.__file = "MainMenu.vue";
+    var G = W.exports,
+        q = {
             props: [],
             data: function() {
                 return {
@@ -13637,7 +13655,7 @@ module.exports = function(e) {
                     isPinned: !1
                 }
             },
-            computed: d(d({}, Object(P.mapState)({
+            computed: d(d({}, Object(S.mapState)({
                 updateDownloadProgress: function(e) {
                     return e.app.updateDownloadProgress
                 }
@@ -13657,7 +13675,7 @@ module.exports = function(e) {
                     this.isWinMax ? this.win.unmaximize() : this.win.maximize()
                 },
                 pinApp: function() {
-                    this.isPinned = !this.isPinned, this.$electron.remote.getCurrentWindow().setAlwaysOnTop(this.isPinned), T.a.put(W.a.IS_PIN_ENABLED, this.isPinned)
+                    this.isPinned = !this.isPinned, this.$electron.remote.getCurrentWindow().setAlwaysOnTop(this.isPinned), j.a.put(V.a.IS_PIN_ENABLED, this.isPinned)
                 }
             },
             mounted: function() {
@@ -13666,10 +13684,10 @@ module.exports = function(e) {
                     e.isWinMax = !0
                 })), this.win.on("unmaximize", (function() {
                     e.isWinMax = !1
-                })), this.isPinned = T.a.get(W.a.IS_PIN_ENABLED) || !1, this.$electron.remote.getCurrentWindow().setAlwaysOnTop(this.isPinned)
+                })), this.isPinned = j.a.get(V.a.IS_PIN_ENABLED) || !1, this.$electron.remote.getCurrentWindow().setAlwaysOnTop(this.isPinned)
             }
         },
-        X = (n(131), Object(N.a)(Y, (function() {
+        K = (n(128), Object(M.a)(q, (function() {
             var e = this,
                 t = e.$createElement,
                 n = e._self._c || t;
@@ -13805,37 +13823,37 @@ module.exports = function(e) {
                 }
             })])]) : e._e()])
         }), [], !1, null, "c9342d68", null));
-    X.options.__file = "StatusBar.vue";
-    var J = X.exports,
-        Q = n(19),
-        Z = n.n(Q),
-        ee = n(17),
-        te = (n(32), n(4)),
+    K.options.__file = "StatusBar.vue";
+    var Y = K.exports,
+        X = n(19),
+        J = n.n(X),
+        Q = n(17),
+        Z = (n(31), n(4)),
+        ee = n.n(Z),
+        te = n(2),
         ne = n.n(te),
-        re = n(2),
+        re = n(18),
         ie = n.n(re),
-        ae = n(18),
+        ae = (n(25), n(14)),
         oe = n.n(ae),
-        se = (n(25), n(14)),
-        ce = n.n(se),
-        de = (n(92), n(26)),
-        le = n(15),
-        ue = n(29),
-        pe = n(12),
-        fe = n(86),
-        he = n(134),
-        ve = n(100),
-        me = n(31),
-        ge = n(33),
-        be = n.n(ge),
-        xe = n(30),
-        ye = function() {
-            var e = C()(O.a.mark((function e(t) {
+        se = (n(92), n(26)),
+        ce = n(15),
+        de = n(29),
+        le = n(12),
+        ue = n(86),
+        pe = n(134),
+        fe = n(100),
+        he = n(33),
+        ve = n(32),
+        me = n.n(ve),
+        ge = n(30),
+        be = function() {
+            var e = O()(k.a.mark((function e(t) {
                 var n, r, i;
-                return O.a.wrap((function(e) {
+                return k.a.wrap((function(e) {
                     for (;;) switch (e.prev = e.next) {
                         case 0:
-                            return n = ["-dns", 0 < t.length ? t.join(",") : "reset"], e.next = 3, Object(xe.a)(n);
+                            return n = ["-dns", 0 < t.length ? t.join(",") : "reset"], e.next = 3, Object(ge.a)(n);
                         case 3:
                             return r = e.sent, i = r.success, e.abrupt("return", i);
                         case 6:
@@ -13848,13 +13866,13 @@ module.exports = function(e) {
                 return e.apply(this, arguments)
             }
         }(),
-        we = function() {
-            var e = C()(O.a.mark((function e() {
+        xe = function() {
+            var e = O()(k.a.mark((function e() {
                 var t, n, r, i;
-                return O.a.wrap((function(e) {
+                return k.a.wrap((function(e) {
                     for (;;) switch (e.prev = e.next) {
                         case 0:
-                            return t = ["-dns", "query"], e.next = 3, Object(xe.a)(t);
+                            return t = ["-dns", "query"], e.next = 3, Object(ge.a)(t);
                         case 3:
                             if (n = e.sent, r = n.success, i = n.output, !r) {
                                 e.next = 9;
@@ -13865,7 +13883,7 @@ module.exports = function(e) {
                                 break
                             }
                             return e.abrupt("return", RegExp.$1.split(",").filter((function(e) {
-                                return be.a.isIP(e)
+                                return me.a.isIP(e)
                             })));
                         case 9:
                             return e.abrupt("return", []);
@@ -13879,23 +13897,23 @@ module.exports = function(e) {
                 return e.apply(this, arguments)
             }
         }(),
-        ke = (n(20), n(94), n(28)),
-        _e = n(91),
-        Oe = n(135),
-        Se = n(100),
-        Ce = n(101)("./service_".concat(process.platform)),
-        Pe = Ce.statusService,
-        je = Ce.status;
-    ee.transports.console.format = function(e) {
+        ye = (n(20), n(94), n(28)),
+        we = n(91),
+        ke = n(135),
+        _e = n(100),
+        Oe = n(101)("./service_".concat(process.platform)),
+        Se = Oe.statusService,
+        Ce = Oe.status;
+    Q.transports.console.format = function(e) {
         return e.data
-    }, ee.transports.file.format = function(e) {
+    }, Q.transports.file.format = function(e) {
         return 'time="'.concat(e.date, '" level=').concat(e.level, ' msg="').concat(e.data, '"')
     };
-    var Ee = {
+    var Pe = {
             name: "landing-page",
             components: {
-                MainMenu: K,
-                StatusBar: J
+                MainMenu: G,
+                StatusBar: Y
             },
             data: function() {
                 return {
@@ -13925,20 +13943,20 @@ module.exports = function(e) {
                     })
                 },
                 mixedPort: function() {
-                    ee.info("mixed-port changed"), this.resetSystemProxySettings()
+                    Q.info("mixed-port changed"), this.resetSystemProxySettings()
                 },
                 controllerPort: function() {
-                    ee.info("external controller port changed")
+                    Q.info("external controller port changed")
                 },
                 finalInterfaceName: function(e) {
-                    ee.info("new outbound interface: ".concat(e)), this.refreshProfile()
+                    Q.info("new outbound interface: ".concat(e)), this.refreshProfile()
                 },
                 clashStatus: function() {
-                    var e = C()(O.a.mark((function e(t) {
-                        return O.a.wrap((function(e) {
+                    var e = O()(k.a.mark((function e(t) {
+                        return k.a.wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    if (ee.info("clash status change to [".concat(t === D.a.CONNECTED ? "connected" : "disconnected", "]")), this.$electron.ipcRenderer.send("clash-core-status-change", t === D.a.CONNECTED ? 0 : 1), t !== D.a.CONNECTED) {
+                                    if (Q.info("clash status change to [".concat(t === E.a.CONNECTED ? "connected" : "disconnected", "]")), this.$electron.ipcRenderer.send("clash-core-status-change", t === E.a.CONNECTED ? 0 : 1), t !== E.a.CONNECTED) {
                                         e.next = 7;
                                         break
                                     }
@@ -13961,7 +13979,7 @@ module.exports = function(e) {
                 }(),
                 clashAxiosClient: function(e) {
                     var t = this;
-                    ee.info("clash axios client changed"), e.interceptors.request.use((function(e) {
+                    Q.info("clash axios client changed"), e.interceptors.request.use((function(e) {
                         return t.addClashAxiosFlyingRequestCount({
                             count: 1
                         }), e
@@ -13983,7 +14001,7 @@ module.exports = function(e) {
                 status: {
                     immediate: !0,
                     handler: function(e) {
-                        this.updateTrayIcon(), this.$electron.ipcRenderer.send("system-proxy-changed", e === D.b.SYSTEM_PROXY)
+                        this.updateTrayIcon(), this.$electron.ipcRenderer.send("system-proxy-changed", e === E.b.SYSTEM_PROXY)
                     }
                 },
                 "settings.fontFamily": function(e) {
@@ -13991,9 +14009,9 @@ module.exports = function(e) {
                 },
                 "settings.shortcutSystemProxy": function(e, t) {
                     var n = this;
-                    this.rebindShortcut(e, t, C()(O.a.mark((function e() {
+                    this.rebindShortcut(e, t, O()(k.a.mark((function e() {
                         var t;
-                        return O.a.wrap((function(e) {
+                        return k.a.wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return t = !n.isSystemProxyOn, e.next = 3, n.$setSystemProxy(t, n.confData);
@@ -14018,13 +14036,13 @@ module.exports = function(e) {
                         var e = !n.isMixinEnable;
                         n.changeIsMixinEnable({
                             isMixin: e
-                        }), n.refreshProfile(), Object(le.c)("Shortcut", "Mixin: ".concat(e ? "On" : "Off"))
+                        }), n.refreshProfile(), Object(ce.c)("Shortcut", "Mixin: ".concat(e ? "On" : "Off"))
                     }))
                 },
                 "settings.shortcutGlobalMode": function(e, t) {
                     var n = this;
-                    this.rebindShortcut(e, t, C()(O.a.mark((function e() {
-                        return O.a.wrap((function(e) {
+                    this.rebindShortcut(e, t, O()(k.a.mark((function e() {
+                        return k.a.wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return e.next = 2, n.switchMode("global");
@@ -14037,8 +14055,8 @@ module.exports = function(e) {
                 },
                 "settings.shortcutRuleMode": function(e, t) {
                     var n = this;
-                    this.rebindShortcut(e, t, C()(O.a.mark((function e() {
-                        return O.a.wrap((function(e) {
+                    this.rebindShortcut(e, t, O()(k.a.mark((function e() {
+                        return k.a.wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return e.next = 2, n.switchMode("rule");
@@ -14051,8 +14069,8 @@ module.exports = function(e) {
                 },
                 "settings.shortcutDirectMode": function(e, t) {
                     var n = this;
-                    this.rebindShortcut(e, t, C()(O.a.mark((function e() {
-                        return O.a.wrap((function(e) {
+                    this.rebindShortcut(e, t, O()(k.a.mark((function e() {
+                        return k.a.wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return e.next = 2, n.switchMode("direct");
@@ -14065,8 +14083,8 @@ module.exports = function(e) {
                 },
                 "settings.shortcutScriptMode": function(e, t) {
                     var n = this;
-                    this.rebindShortcut(e, t, C()(O.a.mark((function e() {
-                        return O.a.wrap((function(e) {
+                    this.rebindShortcut(e, t, O()(k.a.mark((function e() {
+                        return k.a.wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return e.next = 2, n.switchMode("script");
@@ -14103,16 +14121,16 @@ module.exports = function(e) {
                     this.$electron.ipcRenderer.send("mixin-changed", e)
                 },
                 isAppSuspend: function(e) {
-                    e || (this.tun2socks && (ee.info("system resume, restart tun2socks"), this.killSpawned(this.tun2socks), this.tun2socks = null, this.spawnTun2socks()), this.refreshProfile().then((function() {})).catch((function() {})))
+                    e || (this.tun2socks && (Q.info("system resume, restart tun2socks"), this.killSpawned(this.tun2socks), this.tun2socks = null, this.spawnTun2socks()), this.refreshProfile().then((function() {})).catch((function() {})))
                 },
                 innerServerPort: function(e) {
                     console.log("inner port:", e), this.resetSystemProxySettings()
                 },
                 mode: {
                     handler: function() {
-                        var e = C()(O.a.mark((function e(t) {
+                        var e = O()(k.a.mark((function e(t) {
                             var n, r, i, a, o, s;
-                            return O.a.wrap((function(e) {
+                            return k.a.wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         if (this.$electron.ipcRenderer.send("mode-changed", t), n = this.settings.connMode, !(void 0 !== n && n)) {
@@ -14140,7 +14158,7 @@ module.exports = function(e) {
                     immediate: !0
                 }
             },
-            computed: v(v(v({}, Object(P.mapState)({
+            computed: v(v(v({}, Object(S.mapState)({
                 profiles: function(e) {
                     return e.app.profiles
                 },
@@ -14204,7 +14222,7 @@ module.exports = function(e) {
                 mode: function(e) {
                     return e.app.mode
                 }
-            })), Object(P.mapGetters)(["resourcesPath", "filesPath", "mixedPort", "controllerPort", "secret", "clashAxiosClient", "clashGotClient"])), {}, {
+            })), Object(S.mapGetters)(["resourcesPath", "filesPath", "mixedPort", "controllerPort", "secret", "clashAxiosClient", "clashGotClient"])), {}, {
                 themeClass: function() {
                     return "theme-".concat(this.theme)
                 },
@@ -14213,17 +14231,17 @@ module.exports = function(e) {
                     return (void 0 === e ? "" : e) || this.detectedInterfaceName
                 },
                 statusHint: function() {
-                    return 0 < this.pkgDownloadProgress && 1 > this.pkgDownloadProgress ? "下载进度: ".concat((100 * this.pkgDownloadProgress).toFixed(2), "%") : this.clashStatus === D.a.CONNECTED ? "已连接" : this.clashStatus === D.a.DISCONNECTED ? "未连接" : void 0
+                    return 0 < this.pkgDownloadProgress && 1 > this.pkgDownloadProgress ? "下载进度: ".concat((100 * this.pkgDownloadProgress).toFixed(2), "%") : this.clashStatus === E.a.CONNECTED ? "已连接" : this.clashStatus === E.a.DISCONNECTED ? "未连接" : void 0
                 },
                 statusIcon: function() {
                     return {
                         "clash-status-icon": !0,
-                        "clash-running": this.clashStatus === D.a.CONNECTED,
-                        "clash-stopped": this.clashStatus === D.a.DISCONNECTED
+                        "clash-running": this.clashStatus === E.a.CONNECTED,
+                        "clash-stopped": this.clashStatus === E.a.DISCONNECTED
                     }
                 }
             }),
-            methods: v(v(v({}, Object(P.mapMutations)({
+            methods: v(v(v({}, Object(S.mapMutations)({
                 setConfData: "SET_CONF_DATA",
                 changeProfile: "CHANGE_PROFILE",
                 changeProfileIndex: "CHANGE_PROFILES_INDEX",
@@ -14248,7 +14266,7 @@ module.exports = function(e) {
                 setIsSystemProxyOn: "SET_IS_SYSTEM_PROXY_ON",
                 setCurrentRoutePath: "SET_CURRENT_ROUTE_PATH",
                 addProfileRefreshTimes: "ADD_PROFILE_REFRESH_TIMES"
-            })), Object(P.mapActions)(["setMode"])), {}, {
+            })), Object(S.mapActions)(["setMode"])), {}, {
                 runTrayScript: function() {
                     this.saveSettingsObject({
                         obj: v(v({}, this.settings), {}, {
@@ -14258,8 +14276,8 @@ module.exports = function(e) {
                 },
                 resetSystemProxySettings: function() {
                     var e = this;
-                    return C()(O.a.mark((function t() {
-                        return O.a.wrap((function(t) {
+                    return O()(k.a.mark((function t() {
+                        return k.a.wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     if (!e.isSystemProxyOn) {
@@ -14275,23 +14293,23 @@ module.exports = function(e) {
                     })))()
                 },
                 updateTrayIcon: function() {
-                    Object(I.h)() && this.$electron.ipcRenderer.send("status-changed", this.$getTrayIcon(this.status === D.b.SYSTEM_PROXY ? 1 : 0))
+                    Object(T.h)() && this.$electron.ipcRenderer.send("status-changed", this.$getTrayIcon(this.status === E.b.SYSTEM_PROXY ? 1 : 0))
                 },
                 setFont: function(e) {
                     document.body.style.fontFamily = e || '"Microsoft Yahei", "PingFang SC", 微软雅黑'
                 },
                 refreshProfile: function() {
                     var e = this;
-                    return C()(O.a.mark((function t() {
-                        var r, i, a, o, s, c, d, l, u, p, f, h, m, g, b, x, w, k, _, S, C, P, j, E, T, D, A, $, M, L, N, R, z, F, U, H, V, B, W, G, q, K, Y, X, J, Q, te, re, ae, oe, se, de, ue, pe, fe, he;
-                        return O.a.wrap((function(t) {
+                    return O()(k.a.mark((function t() {
+                        var r, i, a, o, s, c, d, l, u, p, f, h, m, g, x, y, w, _, O, S, C, P, j, E, D, I, A, $, M, L, N, R, z, F, U, H, V, B, W, G, q, K, Y, X, Z, te, re, ie, ae, se, de, le, ue, pe, fe, he;
+                        return k.a.wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     if (r = !1, i = null, "", o = e.profiles.index, c = !1, !(-1 < (s = void 0 === o ? -1 : o))) {
                                         t.next = 86;
                                         break
                                     }
-                                    if (ee.info("restore at index: ".concat(s)), d = e.profiles.files[s], a = ie.a.join(e.profilesPath, d.time), t.prev = 9, l = ce.a.parse(ne.a.readFileSync(a, "utf8"), {
+                                    if (Q.info("restore at index: ".concat(s)), d = e.profiles.files[s], a = ne.a.join(e.profilesPath, d.time), t.prev = 9, l = oe.a.parse(ee.a.readFileSync(a, "utf8"), {
                                             prettyErrors: !0
                                         }), u = e.settings, p = u.mixinType, f = void 0 === p ? 0 : p, h = u.mixinText, m = u.mixinCode, g = l, !e.isMixinEnable) {
                                         t.next = 26;
@@ -14301,7 +14319,7 @@ module.exports = function(e) {
                                     break;
                                 case 17:
                                     if (h) try {
-                                        b = ce.a.parse(h), x = b.mixin, g = v(v({}, l), x)
+                                        x = oe.a.parse(h), y = x.mixin, g = v(v({}, l), y)
                                     } catch (t) {}
                                     return t.abrupt("break", 26);
                                 case 19:
@@ -14309,9 +14327,9 @@ module.exports = function(e) {
                                         t.next = 25;
                                         break
                                     }
-                                    return w = _e(m), k = d.url, _ = void 0 === k ? "" : k, S = d.name, t.next = 24, w.parse({
+                                    return w = we(m), _ = d.url, O = void 0 === _ ? "" : _, S = d.name, t.next = 24, w.parse({
                                         content: g,
-                                        url: _,
+                                        url: O,
                                         name: S
                                     }, {
                                         axios: n(18),
@@ -14319,7 +14337,7 @@ module.exports = function(e) {
                                         notify: function(e) {
                                             var t = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : "",
                                                 n = !(2 < arguments.length && void 0 !== arguments[2]) || arguments[2];
-                                            Object(le.c)(e, t, n)
+                                            Object(ce.c)(e, t, n)
                                         }
                                     });
                                 case 24:
@@ -14327,7 +14345,7 @@ module.exports = function(e) {
                                 case 25:
                                     return t.abrupt("break", 26);
                                 case 26:
-                                    if (P = (C = g).dns, j = void 0 === P ? {} : P, E = C["interface-name"], T = C.tun, D = void 0 === T ? {} : T, A = j.enable, $ = void 0 !== A && A, M = j.listen, L = D.enable, N = void 0 !== L && L, R = D["macOS-auto-detect-interface"], z = void 0 !== R && R, F = D["dns-hijack"], U = void 0 === F ? [] : F, !N || z) {
+                                    if (P = (C = g).dns, j = void 0 === P ? {} : P, E = C["interface-name"], D = C.tun, I = void 0 === D ? {} : D, A = j.enable, $ = void 0 !== A && A, M = j.listen, L = I.enable, N = void 0 !== L && L, R = I["macOS-auto-detect-interface"], z = void 0 !== R && R, F = I["dns-hijack"], U = void 0 === F ? [] : F, !N || z) {
                                         t.next = 37;
                                         break
                                     }
@@ -14349,7 +14367,7 @@ module.exports = function(e) {
                                         message: "TUN 模式已启用, 但是在这个 YAML 中没有接口名称"
                                     });
                                 case 37:
-                                    if (!Object(I.h)()) {
+                                    if (!Object(T.h)()) {
                                         t.next = 57;
                                         break
                                     }
@@ -14357,8 +14375,8 @@ module.exports = function(e) {
                                         t.next = 42;
                                         break
                                     }
-                                    ne.a.access(ie.a.join(e.clashPath, "wintun.dll"), ne.a.constants.F_OK, (function(e) {
-                                        e && Object(le.c)("TUN 模式已启用, 但是缺少 wintun.dll!", "点击以打开文档", !1, {
+                                    ee.a.access(ne.a.join(e.clashPath, "wintun.dll"), ee.a.constants.F_OK, (function(e) {
+                                        e && Object(ce.c)("TUN 模式已启用, 但是缺少 wintun.dll!", "点击以打开文档", !1, {
                                             url: "https://docs.cfw.lbyczf.com/contents/tun.html"
                                         })
                                     })), t.next = 57;
@@ -14366,7 +14384,7 @@ module.exports = function(e) {
                                 case 42:
                                     H = !0;
                                     try {
-                                        H = Z.a.execSync("netsh interface show interface").toString().includes("cfw-tap")
+                                        H = J.a.execSync("netsh interface show interface").toString().includes("cfw-tap")
                                     } catch (t) {}
                                     if (!(H && j && $ && M)) {
                                         t.next = 57;
@@ -14394,9 +14412,9 @@ module.exports = function(e) {
                                         message: "TAP 模式已启用, 但是在这个 YAML 中没有接口名称"
                                     });
                                 case 57:
-                                    return G = (W = g)["proxy-providers"], q = W["rule-providers"], K = 0 < Object.keys(null != G ? G : {}).length || 0 < Object.keys(null != q ? q : {}).length, Y = e.confData, X = Y["log-level"], J = Y.ipv6, t.next = 62, e.clashAxiosClient.put("/configs", {
-                                        payload: ce.a.stringify(v(v({}, g), {}, {
-                                            ipv6: J,
+                                    return G = (W = g)["proxy-providers"], q = W["rule-providers"], K = 0 < Object.keys(null != G ? G : {}).length || 0 < Object.keys(null != q ? q : {}).length, Y = e.confData, X = Y["log-level"], Z = Y.ipv6, t.next = 62, e.clashAxiosClient.put("/configs", {
+                                        payload: oe.a.stringify(v(v({}, g), {}, {
+                                            ipv6: Z,
                                             "log-level": X
                                         }))
                                     }, {
@@ -14406,10 +14424,10 @@ module.exports = function(e) {
                                         timeout: K ? 0 : 1e4
                                     });
                                 case 62:
-                                    if (Q = t.sent, te = Q.status, re = Q.data, r = 204 === te, ae = re.message, i = ae || "更换配置文件失败, 状态: ".concat(te), r && (K ? !e.menuItems.find((function(e) {
+                                    if (te = t.sent, re = te.status, ie = te.data, r = 204 === re, ae = ie.message, i = ae || "更换配置文件失败, 状态: ".concat(re), r && (K ? !e.menuItems.find((function(e) {
                                             return "提供器" === e.title
                                         })) && e.setMenuItems({
-                                            items: [].concat(y()(e.menuItems), [{
+                                            items: [].concat(b()(e.menuItems), [{
                                                 title: "提供器",
                                                 path: "/home/provider"
                                             }])
@@ -14420,21 +14438,21 @@ module.exports = function(e) {
                                         })), r)
                                         if (N) {
                                             if (0 < U.length) try {
-                                                ye(U)
+                                                be(U)
                                             } catch (t) {}
                                         } else if (null !== e.userDNS) try {
-                                        ye(e.userDNS)
+                                        be(e.userDNS)
                                     } catch (t) {}
                                     t.next = 79;
                                     break;
                                 case 72:
-                                    t.prev = 72, t.t1 = t.catch(9), oe = "", (se = t.t1.linePos) && ((de = se.start) && (ue = de.line, pe = de.col, oe = ", on line: ".concat(ue, ", at column: ").concat(pe))), i = "错误: ".concat(t.t1.message).concat(oe), ee.warn("fail to restore last profile with error: ".concat(t.t1));
+                                    t.prev = 72, t.t1 = t.catch(9), se = "", (de = t.t1.linePos) && ((le = de.start) && (ue = le.line, pe = le.col, se = ", on line: ".concat(ue, ", at column: ").concat(pe))), i = "错误: ".concat(t.t1.message).concat(se), Q.warn("fail to restore last profile with error: ".concat(t.t1));
                                 case 79:
                                     if (fe = d.selected, he = d.mode, !r || !fe) {
                                         t.next = 85;
                                         break
                                     }
-                                    return ee.info("restore proxy settings"), t.next = 84, Promise.allSettled(fe.map((function(t) {
+                                    return Q.info("restore proxy settings"), t.next = 84, Promise.allSettled(fe.map((function(t) {
                                         var n = t.name,
                                             r = t.now;
                                         return e.clashAxiosClient.put("/proxies/" + encodeURIComponent(n), {
@@ -14445,7 +14463,7 @@ module.exports = function(e) {
                                     t.sent.forEach((function(e, t) {
                                         var n = e.status,
                                             r = e.reason;
-                                        "rejected" === n && ee.info("restore proxy group ".concat(fe[t].name, " to ").concat(fe[t].now, " failed with reason: ").concat(r))
+                                        "rejected" === n && Q.info("restore proxy group ".concat(fe[t].name, " to ").concat(fe[t].now, " failed with reason: ").concat(r))
                                     }));
                                 case 85:
                                     r && he && e.switchMode(he, !1);
@@ -14465,8 +14483,8 @@ module.exports = function(e) {
                 },
                 switchMode: function(e) {
                     var t = this;
-                    return C()(O.a.mark((function n() {
-                        return O.a.wrap((function(n) {
+                    return O()(k.a.mark((function n() {
+                        return k.a.wrap((function(n) {
                             for (;;) switch (n.prev = n.next) {
                                 case 0:
                                     return n.next = 2, t.setMode({
@@ -14481,22 +14499,22 @@ module.exports = function(e) {
                 },
                 showLogsFolder: function() {
                     var e = 0 < arguments.length && void 0 !== arguments[0] && arguments[0];
-                    console.log(e), this.clashPath && /\.log$/.test(this.logFilePath) && (e ? this.$electron.shell.openPath(ie.a.join(this.logFilePath, "..")) : this.$electron.shell.openPath(this.logFilePath))
+                    console.log(e), this.clashPath && /\.log$/.test(this.logFilePath) && (e ? this.$electron.shell.openPath(ne.a.join(this.logFilePath, "..")) : this.$electron.shell.openPath(this.logFilePath))
                 },
                 open: function(e) {
                     this.$electron.shell.openExternal(e)
                 },
                 killClashCore: function() {
                     var e = this;
-                    return C()(O.a.mark((function t() {
-                        return O.a.wrap((function(t) {
+                    return O()(k.a.mark((function t() {
+                        return k.a.wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
-                                    if (e.killSpawned(e.clash), e.clash = null, T.a.get(W.a.IS_LIGHTWEIGHT_MODE_CLOSE) || !1) {
+                                    if (e.killSpawned(e.clash), e.clash = null, j.a.get(V.a.IS_LIGHTWEIGHT_MODE_CLOSE) || !1) {
                                         t.next = 6;
                                         break
                                     }
-                                    return t.next = 6, oe.a.get("http://127.0.0.1:53000/stop", {
+                                    return t.next = 6, ie.a.get("http://127.0.0.1:53000/stop", {
                                         timeout: 1e3
                                     }).catch((function() {}));
                                 case 6:
@@ -14508,14 +14526,14 @@ module.exports = function(e) {
                 },
                 handlerRestartClash: function() {
                     var e = this;
-                    return C()(O.a.mark((function t() {
-                        return O.a.wrap((function(t) {
+                    return O()(k.a.mark((function t() {
+                        return k.a.wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     return t.next = 2, e.killClashCore().catch((function() {}));
                                 case 2:
                                     return e.setClashStatus({
-                                        status: D.a.DISCONNECTED
+                                        status: E.a.DISCONNECTED
                                     }), e.shwoError = !1, t.next = 6, e.spawnClash().catch((function() {}));
                                 case 6:
                                 case "end":
@@ -14526,22 +14544,22 @@ module.exports = function(e) {
                 },
                 spawnClash: function() {
                     var e = this;
-                    return C()(O.a.mark((function t() {
+                    return O()(k.a.mark((function t() {
                         var n, r, i, a, o, s, c, d, l, u, p, f;
-                        return O.a.wrap((function(t) {
+                        return k.a.wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
-                                    if (ee.info("restarting clash core..."), i = ie.a.join(e.clashPath, "logs", "".concat(U()().format("YYYY-MM-DD-HHmmss"), ".log")), ne.a.readdir(ie.a.join(e.clashPath, "logs"), (function(t, n) {
+                                    if (Q.info("restarting clash core..."), i = ne.a.join(e.clashPath, "logs", "".concat(z()().format("YYYY-MM-DD-HHmmss"), ".log")), ee.a.readdir(ne.a.join(e.clashPath, "logs"), (function(t, n) {
                                             !t && 0 < n.length && n.forEach((function(t) {
-                                                /^(.*?)\.log$/.test(t) && (U()(RegExp.$1, "YYYY-MM-DD-HHmmss").isBefore(U()().subtract(7, "days")) && ne.a.unlink(ie.a.join(e.clashPath, "logs", t), (function() {})))
+                                                /^(.*?)\.log$/.test(t) && (z()(RegExp.$1, "YYYY-MM-DD-HHmmss").isBefore(z()().subtract(7, "days")) && ee.a.unlink(ne.a.join(e.clashPath, "logs", t), (function() {})))
                                             }))
-                                        })), a = T.a.get(W.a.IS_LIGHTWEIGHT_MODE_CLOSE) || !1, t.t0 = a, !t.t0) {
+                                        })), a = j.a.get(V.a.IS_LIGHTWEIGHT_MODE_CLOSE) || !1, t.t0 = a, !t.t0) {
                                         t.next = 11;
                                         break
                                     }
                                     return t.next = 8, e.getClashStatus();
                                 case 8:
-                                    t.t1 = t.sent, t.t2 = D.a.CONNECTED, t.t0 = t.t1 === t.t2;
+                                    t.t1 = t.sent, t.t2 = E.a.CONNECTED, t.t0 = t.t1 === t.t2;
                                 case 11:
                                     if (!t.t0) {
                                         t.next = 13;
@@ -14549,12 +14567,12 @@ module.exports = function(e) {
                                     }
                                     return t.abrupt("return");
                                 case 13:
-                                    if (o = (n = {}, k()(n, I.c, ie.a.join(e.filesPath, "win", "ia32")), k()(n, I.d, ie.a.join(e.filesPath, "win", "x64")), k()(n, I.b, ie.a.join(e.filesPath, "darwin", "x64")), k()(n, I.a, ie.a.join(e.filesPath, "darwin", "arm64")), n)[Object(I.e)()], s = (r = {}, k()(r, I.c, "clash-win32.exe"), k()(r, I.d, "clash-win64.exe"), k()(r, I.b, "./clash-darwin"), k()(r, I.a, "./clash-darwin"), r)[Object(I.e)()], c = e.confData["log-level"], e.isLocalMode) {
+                                    if (o = (n = {}, y()(n, T.c, ne.a.join(e.filesPath, "win", "ia32")), y()(n, T.d, ne.a.join(e.filesPath, "win", "x64")), y()(n, T.b, ne.a.join(e.filesPath, "darwin", "x64")), y()(n, T.a, ne.a.join(e.filesPath, "darwin", "arm64")), n)[Object(T.e)()], s = (r = {}, y()(r, T.c, "clash-win32.exe"), y()(r, T.d, "clash-win64.exe"), y()(r, T.b, "./clash-darwin"), y()(r, T.a, "./clash-darwin"), r)[Object(T.e)()], c = e.confData["log-level"], e.isLocalMode) {
                                         t.next = 25;
                                         break
                                     }
-                                    return t.next = 19, oe.a.post("http://127.0.0.1:53000/start", {
-                                        path: e.devMode ? Object(re.join)(process.cwd(), o, s) : Object(re.join)(o, s),
+                                    return t.next = 19, ie.a.post("http://127.0.0.1:53000/start", {
+                                        path: e.devMode ? Object(te.join)(process.cwd(), o, s) : Object(te.join)(o, s),
                                         cwd: e.clashPath,
                                         silent: "silent" === c
                                     }, {
@@ -14568,24 +14586,24 @@ module.exports = function(e) {
                                     }), t.next = 33;
                                     break;
                                 case 25:
-                                    u = [], e.portableMode && (u = ["-d", e.clashPath]), (p = Z.a.spawn(s, u, {
+                                    u = [], e.portableMode && (u = ["-d", e.clashPath]), (p = J.a.spawn(s, u, {
                                         cwd: o
                                     })).stdout.on("data", function() {
-                                        var t = C()(O.a.mark((function t(n) {
-                                            return O.a.wrap((function(t) {
+                                        var t = O()(k.a.mark((function t(n) {
+                                            return k.a.wrap((function(t) {
                                                 for (;;) switch (t.prev = t.next) {
                                                     case 0:
                                                         if (!/level=info msg="RESTful API listening at:/.test(n.toString())) {
                                                             t.next = 8;
                                                             break
                                                         }
-                                                        return ee.info("clash core startup success!"), t.t0 = e, t.next = 5, e.getClashStatus();
+                                                        return Q.info("clash core startup success!"), t.t0 = e, t.next = 5, e.getClashStatus();
                                                     case 5:
                                                         t.t1 = t.sent, t.t2 = {
                                                             status: t.t1
                                                         }, t.t0.setClashStatus.call(t.t0, t.t2);
                                                     case 8:
-                                                        /level=fatal/.test(n.toString()) && ee.error("clash core startup failed!!!");
+                                                        /level=fatal/.test(n.toString()) && Q.error("clash core startup failed!!!");
                                                     case 9:
                                                     case "end":
                                                         return t.stop()
@@ -14595,11 +14613,11 @@ module.exports = function(e) {
                                         return function() {
                                             return t.apply(this, arguments)
                                         }
-                                    }()), p.on("exit", (function() {})), "silent" !== c && (f = ne.a.createWriteStream(i, {
+                                    }()), p.on("exit", (function() {})), "silent" !== c && (f = ee.a.createWriteStream(i, {
                                         flags: "a"
                                     }), p.stdout.pipe(f), p.stderr.pipe(f), e.setLogFilePath({
                                         path: i
-                                    })), e.clash = p, T.a.put(W.a.LAST_CLASH_PID, e.clash.pid);
+                                    })), e.clash = p, j.a.put(V.a.LAST_CLASH_PID, e.clash.pid);
                                 case 33:
                                     return t.abrupt("return");
                                 case 34:
@@ -14613,14 +14631,14 @@ module.exports = function(e) {
                     var t = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : null,
                         n = function() {
                             try {
-                                return Z.a.execSync("net session"), !0
+                                return J.a.execSync("net session"), !0
                             } catch (e) {}
                             return !1
                         };
                     return new Promise((function(r) {
-                        n() ? Z.a.exec(e, (function(e) {
+                        n() ? J.a.exec(e, (function(e) {
                             t && t(void 0 === e), r(void 0 === e)
-                        })) : Object(de.exec)(e, {
+                        })) : Object(se.exec)(e, {
                             name: "Clash for Windows"
                         }, (function(e) {
                             t && t(void 0 === e), r(void 0 === e)
@@ -14629,39 +14647,39 @@ module.exports = function(e) {
                 },
                 setupTapDevice: function() {
                     var e, t, n = !(0 < arguments.length && void 0 !== arguments[0]) || arguments[0],
-                        r = ie.a.join(this.filesPath, "win", "common", "tun2socks"),
-                        i = (e = {}, k()(e, I.d, "amd64"), k()(e, I.c, "i386"), e)[Object(I.e)()],
-                        a = null !== (t = T.a.get(W.a.TAP_INFO)) && void 0 !== t ? t : {},
+                        r = ne.a.join(this.filesPath, "win", "common", "tun2socks"),
+                        i = (e = {}, y()(e, T.d, "amd64"), y()(e, T.c, "i386"), e)[Object(T.e)()],
+                        a = null !== (t = j.a.get(V.a.TAP_INFO)) && void 0 !== t ? t : {},
                         o = a.ip,
                         s = void 0 === o ? "10.0.0.1" : o,
                         c = a.subnet,
                         d = void 0 === c ? "255.255.255.0" : c,
                         l = a.gateway,
                         u = void 0 === l ? "10.0.0.0" : l,
-                        p = ie.a.join(r, "".concat(n ? "add" : "remove", "_tap_device.bat")),
+                        p = ne.a.join(r, "".concat(n ? "add" : "remove", "_tap_device.bat")),
                         f = '"'.concat(p, '" ').concat(i, " ").concat(s, " ").concat(d, " ").concat(u);
                     return this.sudoRunBAT(f)
                 },
                 spawnTun2socks: function() {
                     var e = this;
-                    return C()(O.a.mark((function t() {
+                    return O()(k.a.mark((function t() {
                         var n, r, i, a, o, s, c, d, l, u, p, f, h, v, m;
-                        return O.a.wrap((function(t) {
+                        return k.a.wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
-                                    if (!Object(I.g)()) {
+                                    if (!Object(T.g)()) {
                                         t.next = 2;
                                         break
                                     }
                                     return t.abrupt("return");
                                 case 2:
-                                    if (ee.info("Spawn go-tun2socks"), e.tun2socks && (e.killSpawned(e.tun2socks), e.tun2socks = null), i = e.mixedPort) {
+                                    if (Q.info("Spawn go-tun2socks"), e.tun2socks && (e.killSpawned(e.tun2socks), e.tun2socks = null), i = e.mixedPort) {
                                         t.next = 7;
                                         break
                                     }
                                     return t.abrupt("return");
                                 case 7:
-                                    a = null !== (n = T.a.get(W.a.TAP_INFO)) && void 0 !== n ? n : {}, o = a.ip, s = void 0 === o ? "10.0.0.1" : o, c = a.subnet, d = void 0 === c ? "255.255.255.0" : c, l = a.gateway, p = ["-tunName", "cfw-tap", "-tunDns", s, "-tunAddr", s, "-tunMask", d, "-tunGw", u = void 0 === l ? "10.0.0.0" : l, "-proxyServer", "127.0.0.1:" + i, "-loglevel", "none"], f = (r = {}, k()(r, I.d, ie.a.join(e.filesPath, "win", "x64")), k()(r, I.c, ie.a.join(e.filesPath, "win", "ia32")), r)[Object(I.e)()], e.tun2socks = Z.a.spawn("go-tun2socks.exe", p, {
+                                    a = null !== (n = j.a.get(V.a.TAP_INFO)) && void 0 !== n ? n : {}, o = a.ip, s = void 0 === o ? "10.0.0.1" : o, c = a.subnet, d = void 0 === c ? "255.255.255.0" : c, l = a.gateway, p = ["-tunName", "cfw-tap", "-tunDns", s, "-tunAddr", s, "-tunMask", d, "-tunGw", u = void 0 === l ? "10.0.0.0" : l, "-proxyServer", "127.0.0.1:" + i, "-loglevel", "none"], f = (r = {}, y()(r, T.d, ne.a.join(e.filesPath, "win", "x64")), y()(r, T.c, ne.a.join(e.filesPath, "win", "ia32")), r)[Object(T.e)()], e.tun2socks = J.a.spawn("go-tun2socks.exe", p, {
                                         cwd: f
                                     }), h = 10;
                                 case 12:
@@ -14669,13 +14687,13 @@ module.exports = function(e) {
                                         t.next = 27;
                                         break
                                     }
-                                    if (t.prev = 13, v = Z.a.execSync("route print ".concat(u, " mask ").concat(d)).toString(), m = function(e) {
+                                    if (t.prev = 13, v = J.a.execSync("route print ".concat(u, " mask ").concat(d)).toString(), m = function(e) {
                                             return e.replace(/\./g, "\\.")
                                         }, !new RegExp("".concat(m(u), "\\s+?").concat(m(d), "[\\s\\S]+").concat(m(s))).test(v)) {
                                         t.next = 19;
                                         break
                                     }
-                                    return Z.a.execSync("route add 0.0.0.0 mask 0.0.0.0 ".concat(u, " metric 1")), t.abrupt("break", 27);
+                                    return J.a.execSync("route add 0.0.0.0 mask 0.0.0.0 ".concat(u, " metric 1")), t.abrupt("break", 27);
                                 case 19:
                                     t.next = 23;
                                     break;
@@ -14699,18 +14717,18 @@ module.exports = function(e) {
                     if (e) {
                         var t = e.pid;
                         if (t) try {
-                            Z.a.execSync(Object(I.g)() ? "kill -9 ".concat(t) : "taskkill /F /PID ".concat(t))
+                            J.a.execSync(Object(T.g)() ? "kill -9 ".concat(t) : "taskkill /F /PID ".concat(t))
                         } catch (t) {}
                     }
                 },
                 setRoutes: function() {
                     var e = this;
-                    return C()(O.a.mark((function t() {
+                    return O()(k.a.mark((function t() {
                         var n, r;
-                        return O.a.wrap((function(t) {
+                        return k.a.wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
-                                    return n = ie.a.join(e.filesPath, "tun2socks"), r = ie.a.join(n, "set_routes.bat"), t.abrupt("return", e.sudoRunBAT('"'.concat(r, '"')));
+                                    return n = ne.a.join(e.filesPath, "tun2socks"), r = ne.a.join(n, "set_routes.bat"), t.abrupt("return", e.sudoRunBAT('"'.concat(r, '"')));
                                 case 3:
                                 case "end":
                                     return t.stop()
@@ -14720,9 +14738,9 @@ module.exports = function(e) {
                 },
                 getClashStatus: function() {
                     var e = this;
-                    return C()(O.a.mark((function t() {
+                    return O()(k.a.mark((function t() {
                         var n, r;
-                        return O.a.wrap((function(t) {
+                        return k.a.wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     return t.prev = 0, t.next = 3, e.clashAxiosClient.get("script", {
@@ -14732,9 +14750,9 @@ module.exports = function(e) {
                                         timeout: 1e3
                                     });
                                 case 3:
-                                    return n = t.sent, r = n.status, t.abrupt("return", 405 === r ? D.a.CONNECTED : D.a.DISCONNECTED);
+                                    return n = t.sent, r = n.status, t.abrupt("return", 405 === r ? E.a.CONNECTED : E.a.DISCONNECTED);
                                 case 8:
-                                    return t.prev = 8, t.t0 = t.catch(0), t.abrupt("return", D.a.DISCONNECTED);
+                                    return t.prev = 8, t.t0 = t.catch(0), t.abrupt("return", E.a.DISCONNECTED);
                                 case 11:
                                 case "end":
                                     return t.stop()
@@ -14746,12 +14764,12 @@ module.exports = function(e) {
                 },
                 checkForUpdate: function() {
                     var e = this;
-                    return C()(O.a.mark((function t() {
+                    return O()(k.a.mark((function t() {
                         var n, r, i, a, o, s, c, d, l, u, f, h, v, m, g;
-                        return O.a.wrap((function(t) {
+                        return k.a.wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
-                                    return n = e.$electron.remote.app.getVersion(), ee.info("check for app update, current: ".concat(n)), t.next = 4, oe.a.get("https://api.github.com/repos/Fndroid/clash_for_windows_pkg/releases/latest");
+                                    return n = e.$electron.remote.app.getVersion(), Q.info("check for app update, current: ".concat(n)), t.next = 4, ie.a.get("https://api.github.com/repos/Fndroid/clash_for_windows_pkg/releases/latest");
                                 case 4:
                                     if (200 === (r = t.sent).status && (i = r.data.tag_name, (a = function(e) {
                                             var t = 1;
@@ -14760,9 +14778,9 @@ module.exports = function(e) {
                                                 return t *= 1e3, r
                                             }), 0)
                                         })(i) > a(n))) {
-                                        "https://github.com/Fndroid/clash_for_windows_pkg/releases", c = Symbol(), d = Symbol(), l = Symbol(), o = {}, k()(o, c, {}), k()(o, d, {}), k()(o, l, {}), u = o, f = p(r.data.assets);
+                                        "https://github.com/Fndroid/clash_for_windows_pkg/releases", c = Symbol(), d = Symbol(), l = Symbol(), o = {}, y()(o, c, {}), y()(o, d, {}), y()(o, l, {}), u = o, f = p(r.data.assets);
                                         try {
-                                            for (f.s(); !(h = f.n()).done;) v = h.value, (m = v.name) && (/\d+?\.\d+?\.\d+?-win\.7z/.test(m) ? u[c][I.d] = v : /\d+?\.\d+?\.\d+?-ia32\-win\.7z/.test(m) ? u[c][I.c] = v : /\d+?\.\d+?\.\d+?-arm64-mac\.7z/.test(m) ? u[c][I.a] = v : /\d+?\.\d+?\.\d+?-mac\.7z/.test(m) ? u[c][I.b] = v : /\d+?\.\d+?\.\d+?\.ia32\.exe/.test(m) ? u[d][I.c] = v : /\d+?\.\d+?\.\d+?\.exe/.test(m) ? u[d][I.d] = v : /arm64\.dmg/.test(m) ? u[l][I.a] = v : /\.dmg/.test(m) && (u[l][I.b] = v))
+                                            for (f.s(); !(h = f.n()).done;) v = h.value, (m = v.name) && (/\d+?\.\d+?\.\d+?-win\.7z/.test(m) ? u[c][T.d] = v : /\d+?\.\d+?\.\d+?-ia32\-win\.7z/.test(m) ? u[c][T.c] = v : /\d+?\.\d+?\.\d+?-arm64-mac\.7z/.test(m) ? u[c][T.a] = v : /\d+?\.\d+?\.\d+?-mac\.7z/.test(m) ? u[c][T.b] = v : /\d+?\.\d+?\.\d+?\.ia32\.exe/.test(m) ? u[d][T.c] = v : /\d+?\.\d+?\.\d+?\.exe/.test(m) ? u[d][T.d] = v : /arm64\.dmg/.test(m) ? u[l][T.a] = v : /\.dmg/.test(m) && (u[l][T.b] = v))
                                         } catch (e) {
                                             f.e(e)
                                         } finally {
@@ -14770,8 +14788,8 @@ module.exports = function(e) {
                                         }
                                         g = function(e) {
                                             var t, n;
-                                            return null == u || null === (t = u[e]) || void 0 === t || null === (n = t[Object(I.e)()]) || void 0 === n ? void 0 : n.browser_download_url
-                                        }, s = e.portableMode ? g(c) : Object(I.g)() ? g(l) : g(d), e.newVersionInfo = {
+                                            return null == u || null === (t = u[e]) || void 0 === t || null === (n = t[Object(T.e)()]) || void 0 === n ? void 0 : n.browser_download_url
+                                        }, s = e.portableMode ? g(c) : Object(T.g)() ? g(l) : g(d), e.newVersionInfo = {
                                             version: i,
                                             log: r.data.body,
                                             url: s || "https://github.com/Fndroid/clash_for_windows_pkg/releases",
@@ -14786,11 +14804,11 @@ module.exports = function(e) {
                     })))()
                 },
                 loadConfData: function() {
-                    ee.info("load data from general config.yaml");
-                    var e = ie.a.join(this.clashPath, "config.yaml");
+                    Q.info("load data from general config.yaml");
+                    var e = ne.a.join(this.clashPath, "config.yaml");
                     try {
-                        var t = ne.a.readFileSync(e, "utf8").toString(),
-                            n = ce.a.parse(t, {
+                        var t = ee.a.readFileSync(e, "utf8").toString(),
+                            n = oe.a.parse(t, {
                                 prettyErrors: !0
                             });
                         this.setConfData({
@@ -14809,44 +14827,44 @@ module.exports = function(e) {
                         }
                         this.appendError({
                             error: "错误: ".concat(t).concat(r)
-                        }), ee.warn("fail to load general config.yaml with error: ".concat(t))
+                        }), Q.warn("fail to load general config.yaml with error: ".concat(t))
                     }
                 },
                 mkdirPathSync: function(e) {
-                    return e !== ie.a.dirname(e) && (!!ne.a.existsSync(e) || (this.mkdirPathSync(ie.a.dirname(e)) ? (ne.a.mkdirSync(e), !0) : void 0))
+                    return e !== ne.a.dirname(e) && (!!ee.a.existsSync(e) || (this.mkdirPathSync(ne.a.dirname(e)) ? (ee.a.mkdirSync(e), !0) : void 0))
                 },
                 initConfigFolder: function() {
                     this.mkdirPathSync(this.clashPath);
-                    var e = ie.a.join(this.filesPath, "default/config.yaml"),
-                        t = ie.a.join(this.clashPath, "config.yaml"),
-                        n = ie.a.join(this.clashPath, "config.yml");
-                    if (ne.a.existsSync(n)) {
+                    var e = ne.a.join(this.filesPath, "default/config.yaml"),
+                        t = ne.a.join(this.clashPath, "config.yaml"),
+                        n = ne.a.join(this.clashPath, "config.yml");
+                    if (ee.a.existsSync(n)) {
                         try {
-                            ne.a.unlinkSync(t)
+                            ee.a.unlinkSync(t)
                         } catch (t) {}
-                        ne.a.renameSync(n, t)
+                        ee.a.renameSync(n, t)
                     }
-                    if (ne.a.existsSync(t) && "" !== ne.a.readFileSync(t, {
+                    if (ee.a.existsSync(t) && "" !== ee.a.readFileSync(t, {
                             encoding: "utf8"
                         })) try {
-                        var r = ce.a.parseDocument(ne.a.readFileSync(t, "utf8"));
+                        var r = oe.a.parseDocument(ee.a.readFileSync(t, "utf8"));
                         if (!r.get("mixed-port")) {
                             var i = r.get("port"),
                                 a = r.get("socks-port");
-                            r.delete("port"), r.delete("socks-port"), ne.a.writeFileSync(t, "mixed-port: ".concat(i || a || 7890, "\n").concat(r.toString()))
+                            r.delete("port"), r.delete("socks-port"), ee.a.writeFileSync(t, "mixed-port: ".concat(i || a || 7890, "\n").concat(r.toString()))
                         }
-                    } catch (t) {} else ee.info("first luanch, creating config.yaml..."), ne.a.copyFileSync(e, t);
-                    var o = ie.a.join(this.filesPath, "default/Country.mmdb"),
-                        s = ie.a.join(this.clashPath, "Country.mmdb");
-                    ne.a.existsSync(s) || ne.a.copyFileSync(o, s);
-                    var c = ie.a.join(this.clashPath, "logs");
-                    ne.a.existsSync(c) || ne.a.mkdirSync(c)
+                    } catch (t) {} else Q.info("first luanch, creating config.yaml..."), ee.a.copyFileSync(e, t);
+                    var o = ne.a.join(this.filesPath, "default/Country.mmdb"),
+                        s = ne.a.join(this.clashPath, "Country.mmdb");
+                    ee.a.existsSync(s) || ee.a.copyFileSync(o, s);
+                    var c = ne.a.join(this.clashPath, "logs");
+                    ee.a.existsSync(c) || ee.a.mkdirSync(c)
                 },
                 initProfilesFolder: function() {
                     var e = this.profilesPath;
-                    ne.a.existsSync(e) || ne.a.mkdirSync(e);
-                    var t = ie.a.join(this.profilesPath, "list.yml");
-                    ne.a.existsSync(t) || ne.a.writeFileSync(t, "files: []\nindex: -1", {
+                    ee.a.existsSync(e) || ee.a.mkdirSync(e);
+                    var t = ne.a.join(this.profilesPath, "list.yml");
+                    ee.a.existsSync(t) || ee.a.writeFileSync(t, "files: []\nindex: -1", {
                         flag: "ax"
                     })
                 },
@@ -14856,7 +14874,7 @@ module.exports = function(e) {
                         n = void 0 === t ? [] : t,
                         r = e.options,
                         i = void 0 === r ? {} : r;
-                    return Z.a.spawn(e.command, n, i)
+                    return J.a.spawn(e.command, n, i)
                 },
                 spawnUserDefindExes: function() {
                     if (this.confData) {
@@ -14864,25 +14882,25 @@ module.exports = function(e) {
                             t = this.settings.childProcessText,
                             n = void 0 === t ? "" : t;
                         try {
-                            e = ce.a.parse(n).processes || []
+                            e = oe.a.parse(n).processes || []
                         } catch (t) {}
                         var r = [];
                         for (var i in e) {
                             var a = this.startChild(e[i]).pid;
                             r.push(a)
                         }
-                        T.a.put(W.a.LAST_USER_EXE_PIDS, r)
+                        j.a.put(V.a.LAST_USER_EXE_PIDS, r)
                     }
                 },
                 preDownloadAds: function() {
-                    return C()(O.a.mark((function e() {
+                    return O()(k.a.mark((function e() {
                         var t, n, r, i, a;
-                        return O.a.wrap((function(e) {
+                        return k.a.wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    return e.next = 2, oe.a.get("https://raw.githubusercontent.com/Fndroid/ads/master/ads_v2.json?t=" + (new Date).getTime());
+                                    return e.next = 2, ie.a.get("https://raw.githubusercontent.com/Fndroid/ads/master/ads_v2.json?t=" + (new Date).getTime());
                                 case 2:
-                                    t = e.sent, n = t.status, r = t.data, 200 === n && ((i = r.feedback) && (a = i, T.a.put(W.a.AD_IMAGES, a)));
+                                    t = e.sent, n = t.status, r = t.data, 200 === n && ((i = r.feedback) && (a = i, j.a.put(V.a.AD_IMAGES, a)));
                                 case 5:
                                 case "end":
                                     return e.stop()
@@ -14892,9 +14910,9 @@ module.exports = function(e) {
                 },
                 profileUpdater: function() {
                     var e = this;
-                    return C()(O.a.mark((function t() {
-                        var n, r, i, a, o, s, c, d, l, u, f, h, v, m, g, x, y, w;
-                        return O.a.wrap((function(t) {
+                    return O()(k.a.mark((function t() {
+                        var n, r, i, a, o, s, c, d, l, u, p, f, h, v, m;
+                        return k.a.wrap((function(t) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     if (e.profiles && !e.isAppSuspend) {
@@ -14905,76 +14923,62 @@ module.exports = function(e) {
                                 case 2:
                                     return 36e5, n = function() {
                                         return (new Date).getTime()
-                                    }, r = e.profiles, i = r.files, a = void 0 === i ? [] : i, o = r.index, s = void 0 === o ? 0 : o, c = a.filter((function(t) {
+                                    }, r = e.profiles, i = r.files, a = void 0 === i ? [] : i, o = r.index, void 0 === o ? 0 : o, s = a.filter((function(t) {
                                         var n = t.interval,
                                             r = t.url,
                                             i = t.time;
                                         try {
-                                            var a = ne.a.statSync(ie.a.join(e.profilesPath, i)).mtime;
+                                            var a = ee.a.statSync(ne.a.join(e.profilesPath, i)).mtime;
                                             if (0 < n && r && a) {
                                                 var o = e.profileUpdateFailed[r];
                                                 if (void 0 !== o) {
-                                                    if (!U()(o).add(n, "hours").isBefore(U()())) return !1;
+                                                    if (!z()(o).add(n, "hours").isBefore(z()())) return !1;
                                                     delete e.profileUpdateFailed[r]
                                                 }
-                                                return U()(a).add(n, "hours").isBefore(U()())
+                                                return z()(a).add(n, "hours").isBefore(z()())
                                             }
                                         } catch (t) {}
                                         return !1
-                                    })), t.next = 8, Promise.all(c.map((function(e) {
-                                        return Object(me.a)(e.url, {
-                                            timeout: 2e4
+                                    })), t.next = 8, Promise.allSettled(s.map((function(e) {
+                                        var t = e.url;
+                                        return Object(he.a)({
+                                            url: t
                                         })
                                     })));
                                 case 8:
-                                    d = t.sent, l = p(c.entries()), t.prev = 10, l.s();
-                                case 12:
-                                    if ((u = l.n()).done) {
-                                        t.next = 30;
-                                        break
-                                    }
-                                    if (f = b()(u.value, 2), h = f[0], v = f[1], 200 === d[h].status) {
+                                    c = t.sent, d = 0;
+                                case 10:
+                                    if (!(d < c.length)) {
                                         t.next = 20;
                                         break
                                     }
-                                    return m = c[h].url, ee.warn("fail to update profile with url: ".concat(m)), Object(le.c)("Profile update failed", m), e.profileUpdateFailed.hasOwnProperty(m) || (e.profileUpdateFailed[m] = n()), t.abrupt("continue", 28);
-                                case 20:
-                                    return g = ie.a.join(e.profilesPath, v.time), t.next = 23, Object(me.b)(v.url, d[h].data);
-                                case 23:
-                                    if (x = t.sent, ne.a.writeFileSync(g, x), v.time !== a[s].time) {
-                                        t.next = 28;
+                                    if (l = c[d].value, u = l.success, p = l.message, f = l.targetIndex, h = s[d].url, !u || f !== e.profiles.index) {
+                                        t.next = 16;
                                         break
                                     }
-                                    return t.next = 28, e.refreshProfile();
-                                case 28:
-                                    t.next = 12;
+                                    return t.next = 16, e.refreshProfile();
+                                case 16:
+                                    p && (Q.warn("fail to update profile with url: ".concat(h)), Object(ce.c)("Profile update failed", h), !e.profileUpdateFailed.hasOwnProperty(h) && (e.profileUpdateFailed[h] = n()));
+                                case 17:
+                                    d++, t.next = 10;
                                     break;
-                                case 30:
-                                    t.next = 35;
-                                    break;
-                                case 32:
-                                    t.prev = 32, t.t0 = t.catch(10), l.e(t.t0);
-                                case 35:
-                                    return t.prev = 35, l.f(), t.finish(35);
-                                case 38:
-                                    y = e.profiles.files, w = (void 0 === y ? [] : y).map((function(e) {
+                                case 20:
+                                    v = e.profiles.files, m = (void 0 === v ? [] : v).map((function(e) {
                                         return e.time
-                                    })), ne.a.readdir(ie.a.join(e.profilesPath), (function(t, n) {
+                                    })), ee.a.readdir(ne.a.join(e.profilesPath), (function(t, n) {
                                         !t && 0 < n.length && n.forEach((function(t) {
                                             if (/^\d+\.yml$/.test(t)) {
                                                 var n = !1,
-                                                    r = ne.a.statSync(ie.a.join(e.profilesPath, t)).mtimeMs;
-                                                r && (n = U()(r).isBefore(U()().subtract(1, "month"))), n && !w.includes(t) && ne.a.unlinkSync(ie.a.join(e.profilesPath, t))
+                                                    r = ee.a.statSync(ne.a.join(e.profilesPath, t)).mtimeMs;
+                                                r && (n = z()(r).isBefore(z()().subtract(1, "month"))), n && !m.includes(t) && ee.a.unlinkSync(ne.a.join(e.profilesPath, t))
                                             }
                                         }))
                                     }));
-                                case 41:
+                                case 23:
                                 case "end":
                                     return t.stop()
                             }
-                        }), t, null, [
-                            [10, 32, 35, 38]
-                        ])
+                        }), t)
                     })))()
                 },
                 rebindShortcut: function(e, t, n) {
@@ -14990,7 +14994,7 @@ module.exports = function(e) {
                     return !1
                 },
                 detectInterfaceName: function() {
-                    var e = Object(ue.a)();
+                    var e = Object(de.a)();
                     e && e !== this.detectedInterfaceName && this.setDetectedInterfaceName({
                         interfaceName: e
                     })
@@ -15002,22 +15006,22 @@ module.exports = function(e) {
             beforeDestroy: function() {},
             beforeMount: function() {
                 var e = this;
-                return C()(O.a.mark((function t() {
-                    var n, r, i, a, o, s, c, d, u, f, h, m, g, b, x, w, _, S, P, j, E, A, $, M, L, N, R, z, F, U, H, V, B;
-                    return O.a.wrap((function(t) {
+                return O()(k.a.mark((function t() {
+                    var n, r, i, a, o, s, c, d, u, f, h, m, g, x, w, _, S, C, P, D, I, A, $, M, L, N, R, z, F, U, H, B, W;
+                    return k.a.wrap((function(t) {
                         for (;;) switch (t.prev = t.next) {
                             case 0:
-                                e.startTime = (new Date).getTime(), e.devMode = ke, ee.info("app start with mode: ".concat(ke ? "dev" : "production")), e.$router.replace({
+                                e.startTime = (new Date).getTime(), e.devMode = ye, Q.info("app start with mode: ".concat(ye ? "dev" : "production")), e.$router.replace({
                                     path: e.currentRoutePath
-                                }), Object(I.h)() && l().then((function() {
-                                    ee.info("http server started at: ".concat(e.innerServerPort))
+                                }), Object(T.h)() && l().then((function() {
+                                    Q.info("http server started at: ".concat(e.innerServerPort))
                                 })).catch((function(e) {
-                                    ee.info("http server failed to start with error: ".concat(e))
+                                    Q.info("http server failed to start with error: ".concat(e))
                                 })), n = e.devMode ? "" : e.$electron.remote.app.getPath("exe"), e.setExePath({
                                     path: n
-                                }), (r = T.a.get(W.a.LAST_CLASH_PID)) && e.killSpawned({
+                                }), (r = j.a.get(V.a.LAST_CLASH_PID)) && e.killSpawned({
                                     pid: r
-                                }), i = T.a.get(W.a.LAST_USER_EXE_PIDS) || [], a = p(i);
+                                }), i = j.a.get(V.a.LAST_USER_EXE_PIDS) || [], a = p(i);
                                 try {
                                     for (a.s(); !(o = a.n()).done;) s = o.value, e.killSpawned({
                                         pid: s
@@ -15033,14 +15037,14 @@ module.exports = function(e) {
                                         shouldUseDarkTheme: c.shouldUseDarkColors
                                     })
                                 }))), e.$electron.ipcRenderer.send("clash-core-status-change", 0), d = function() {
-                                    var t = C()(O.a.mark((function t() {
-                                        return O.a.wrap((function(t) {
+                                    var t = O()(k.a.mark((function t() {
+                                        return k.a.wrap((function(t) {
                                             for (;;) switch (t.prev = t.next) {
                                                 case 0:
-                                                    return ee.info("app exiting, turn off system proxy"), t.next = 3, e.killClashCore();
+                                                    return Q.info("app exiting, turn off system proxy"), t.next = 3, e.killClashCore();
                                                 case 3:
                                                     if (null !== e.userDNS) try {
-                                                        ye(e.userDNS)
+                                                        be(e.userDNS)
                                                     } catch (t) {}
                                                     if (t.prev = 4, !e.isSystemProxyOn) {
                                                         t.next = 8;
@@ -15070,8 +15074,8 @@ module.exports = function(e) {
                                         isSuspend: "suspend" === n
                                     })
                                 })), e.$electron.ipcRenderer.on("system-proxy-changed", function() {
-                                    var t = C()(O.a.mark((function t(n, r) {
-                                        return O.a.wrap((function(t) {
+                                    var t = O()(k.a.mark((function t(n, r) {
+                                        return k.a.wrap((function(t) {
                                             for (;;) switch (t.prev = t.next) {
                                                 case 0:
                                                     return t.next = 2, e.$setSystemProxy(r, e.confData);
@@ -15099,9 +15103,9 @@ module.exports = function(e) {
                                 })), e.$electron.ipcRenderer.on("run-tray-script", e.runTrayScript), e.$electron.ipcRenderer.on("mode-changed", (function(t, n) {
                                     e.switchMode(n)
                                 })), e.$electron.ipcRenderer.on("app-open", function() {
-                                    var t = C()(O.a.mark((function t(n, r) {
+                                    var t = O()(k.a.mark((function t(n, r) {
                                         var i, a, o, s, c;
-                                        return O.a.wrap((function(t) {
+                                        return k.a.wrap((function(t) {
                                             for (;;) switch (t.prev = t.next) {
                                                 case 0:
                                                     if (!r.find((function(e) {
@@ -15114,11 +15118,11 @@ module.exports = function(e) {
                                                         t.next = 11;
                                                         break
                                                     }
-                                                    return t.next = 5, Object(me.c)({
+                                                    return t.next = 5, Object(he.a)({
                                                         url: i
                                                     });
                                                 case 5:
-                                                    a = t.sent, o = a.success, s = a.message, c = a.targetIndex, Object(le.c)("配置文件", o ? "配置文件已成功下载." : s), o && (e.changeProfileIndex({
+                                                    a = t.sent, o = a.success, s = a.message, c = a.targetIndex, Object(ce.c)("配置文件", o ? "配置文件已成功下载." : s), o && (e.changeProfileIndex({
                                                         index: c
                                                     }), e.refreshProfile());
                                                 case 11:
@@ -15148,66 +15152,66 @@ module.exports = function(e) {
                                     });
                                     else if ("close" === n) {
                                         var r = e.settings.lightweightMode;
-                                        void 0 !== r && r && !e.isLocalMode && (T.a.put(W.a.IS_LIGHTWEIGHT_MODE_CLOSE, !0), e.$electron.ipcRenderer.send("cleanup-done"))
+                                        void 0 !== r && r && !e.isLocalMode && (j.a.put(V.a.IS_LIGHTWEIGHT_MODE_CLOSE, !0), e.$electron.ipcRenderer.send("cleanup-done"))
                                     }
-                                })), u = e.$electron.remote.app.getPath("home"), f = ie.a.join(n, "../data"), h = ie.a.join(u, "/.config/clash"), ne.a.existsSync(f) && (h = f, e.portableMode = !0), e.userPath = u, e.setClashPath({
+                                })), u = e.$electron.remote.app.getPath("home"), f = ne.a.join(n, "../data"), h = ne.a.join(u, "/.config/clash"), ee.a.existsSync(f) && (h = f, e.portableMode = !0), e.userPath = u, e.setClashPath({
                                     path: h
-                                }), e.initConfigFolder(), e.loadConfData(), Object(I.g)() && we().then((function(t) {
+                                }), e.initConfigFolder(), e.loadConfData(), Object(T.g)() && xe().then((function(t) {
                                     e.userDNS = t
                                 })).catch((function(e) {
-                                    ee.info("faile to get user dns setting with error: ".concat(e))
-                                })), m = T.a.get(W.a.IS_LIGHTWEIGHT_MODE_CLOSE) || !1, g = {};
+                                    Q.info("faile to get user dns setting with error: ".concat(e))
+                                })), m = j.a.get(V.a.IS_LIGHTWEIGHT_MODE_CLOSE) || !1, g = {};
                                 try {
-                                    b = ne.a.readFileSync(ie.a.join(e.clashPath, "cfw-settings.yaml")).toString(), g = ce.a.parse(b)
+                                    x = ee.a.readFileSync(ne.a.join(e.clashPath, "cfw-settings.yaml")).toString(), g = oe.a.parse(x)
                                 } catch (t) {}
-                                if (w = (x = g).showNewVersionIcon, _ = void 0 === w || w, S = x.hideAfterStartup, P = void 0 === S || S, j = x.randomControllerPort, E = void 0 === j || j, A = x.runTimeFormat, $ = void 0 === A ? "hh : mm : ss" : A, e.setSettingsObject({
+                                if (_ = (w = g).showNewVersionIcon, S = void 0 === _ || _, C = w.hideAfterStartup, P = void 0 === C || C, D = w.randomControllerPort, I = void 0 === D || D, A = w.runTimeFormat, $ = void 0 === A ? "hh : mm : ss" : A, e.setSettingsObject({
                                         obj: v(v({}, g), {}, {
-                                            showNewVersionIcon: _,
+                                            showNewVersionIcon: S,
                                             hideAfterStartup: P,
-                                            randomControllerPort: E,
+                                            randomControllerPort: I,
                                             runTimeFormat: $
                                         })
                                     }), (m || !P) && e.$electron.remote.getCurrentWindow().show(), M = e.settings.fontFamily, e.setFont(M), L = e.settings.profilePath, e.setProfilesPath({
-                                        path: L || ie.a.join(e.clashPath, "profiles")
-                                    }), e.initProfilesFolder(), e.loadProfiles(), N = e.settings.randomControllerPort, R = void 0 === N || N, ke || m || !R) {
+                                        path: L || ne.a.join(e.clashPath, "profiles")
+                                    }), e.initProfilesFolder(), e.loadProfiles(), N = e.settings.randomControllerPort, R = void 0 === N || N, ye || m || !R) {
                                     t.next = 62;
                                     break
                                 }
-                                return t.prev = 49, t.next = 52, Se();
+                                return t.prev = 49, t.next = 52, _e();
                             case 52:
-                                return z = t.sent, F = "external-controller", U = "127.0.0.1:".concat(z), t.next = 57, Object(le.e)(ie.a.join(e.clashPath, "config.yaml"), F, U);
+                                return z = t.sent, F = "external-controller", U = "127.0.0.1:".concat(z), t.next = 57, Object(ce.e)(ne.a.join(e.clashPath, "config.yaml"), F, U);
                             case 57:
                                 e.setConfData({
-                                    data: v(v({}, e.confData), {}, k()({}, F, U))
+                                    data: v(v({}, e.confData), {}, y()({}, F, U))
                                 }), t.next = 62;
                                 break;
                             case 60:
                                 t.prev = 60, t.t0 = t.catch(49);
                             case 62:
-                                return t.next = 64, Pe();
+                                return t.next = 64, Se();
                             case 64:
                                 return H = t.sent, e.setIsLocalMode({
-                                    isLocal: H !== je.Active
-                                }), V = 0, (B = function() {
-                                    var t = C()(O.a.mark((function t() {
+                                    isLocal: H !== Ce.Active
+                                }), B = 0, (W = function() {
+                                    var t = O()(k.a.mark((function t() {
                                         var n;
-                                        return O.a.wrap((function(t) {
+                                        return k.a.wrap((function(t) {
                                             for (;;) switch (t.prev = t.next) {
                                                 case 0:
-                                                    if (e.clashStatus === D.a.CONNECTED && !e.isWindowShow || !(5 > e.clashAxiosFlyingRequestCount)) {
+                                                    if (e.clashStatus === E.a.CONNECTED && !e.isWindowShow || !(5 > e.clashAxiosFlyingRequestCount)) {
                                                         t.next = 12;
                                                         break
                                                     }
                                                     return t.next = 3, e.getClashStatus();
                                                 case 3:
-                                                    n = t.sent, t.t0 = n, t.next = t.t0 === D.a.CONNECTED ? 7 : t.t0 === D.a.DISCONNECTED ? 9 : 11;
+                                                    n = t.sent, t.t0 = n, t.next = t.t0 === E.a.CONNECTED ? 7 : t.t0 === E.a.DISCONNECTED ? 9 : 11;
                                                     break;
                                                 case 7:
-                                                    return V = 0, t.abrupt("break", 11);
+                                                    return B = 0, t.abrupt("break", 11);
                                                 case 9:
-                                                    return V += 1, t.abrupt("break", 11);
+                                                    return B += 1, t.abrupt("break", 11);
                                                 case 11:
-                                                    V >= (n === D.a.CONNECTED ? 0 : 5) && (V = 0, e.setClashStatus({
+                                                    B >= (n === E.a.CONNECTED ? 0 : 5) && (B = 0, e.setClashStatus({
                                                         status: n
                                                     }));
                                                 case 12:
@@ -15219,17 +15223,17 @@ module.exports = function(e) {
                                     return function() {
                                         return t.apply(this, arguments)
                                     }
-                                }())(), y()([, , , , , ]).forEach((function(e, t) {
-                                    setTimeout(B, 500 + 500 * t)
-                                })), setInterval(B, 3e3), t.next = 73, e.handlerRestartClash();
+                                }())(), b()([, , , , , ]).forEach((function(e, t) {
+                                    setTimeout(W, 500 + 500 * t)
+                                })), setInterval(W, 3e3), t.next = 73, e.handlerRestartClash();
                             case 73:
-                                T.a.put(W.a.IS_LIGHTWEIGHT_MODE_CLOSE, !1), e.showStartup || (e.showStartup = !0, Object(le.c)("Clash for Windows 正在后台运行", "请享受您的自由时光!")), e.detectInterfaceName(), e.spawnUserDefindExes(), e.checkForUpdate().then((function() {})).catch((function(e) {
+                                j.a.put(V.a.IS_LIGHTWEIGHT_MODE_CLOSE, !1), e.showStartup || (e.showStartup = !0, Object(ce.c)("Clash for Windows 正在后台运行", "请享受您的自由时光!")), e.detectInterfaceName(), e.spawnUserDefindExes(), e.checkForUpdate().then((function() {})).catch((function(e) {
                                     return console.error(e)
                                 })), setInterval(e.checkForUpdate, 216e5), e.preDownloadAds().then((function() {})).catch((function(e) {
                                     return console.error(e)
-                                })), setInterval(e.profileUpdater, 6e4), e.profileUpdater(), Oe.bind(["command+f12", "ctrl+f12"], (function() {
+                                })), setInterval(e.profileUpdater, 6e4), e.profileUpdater(), ke.bind(["command+f12", "ctrl+f12"], (function() {
                                     return e.$electron.remote.getCurrentWindow().webContents.toggleDevTools(), !1
-                                })), Oe.bind("esc", (function() {
+                                })), ke.bind("esc", (function() {
                                     return e.isSubViewShow || e.$electron.remote.getCurrentWindow().close(), !1
                                 }), "keyup");
                             case 84:
@@ -15242,7 +15246,7 @@ module.exports = function(e) {
                 })))()
             }
         },
-        Te = (n(136), n(138), n(140), Object(N.a)(Ee, (function() {
+        je = (n(136), n(138), n(140), Object(M.a)(Pe, (function() {
             var e = this,
                 t = e.$createElement,
                 n = e._self._c || t;
@@ -15288,8 +15292,8 @@ module.exports = function(e) {
                     }
                 }
             }, [e._v("\n        " + e._s(e.statusHint) + "\n      ")])])])], 1)
-        }), [], !1, null, "359c7ad7", null));
-    Te.options.__file = "LandingPage.vue", t.default = Te.exports
+        }), [], !1, null, "6ff665ce", null));
+    je.options.__file = "LandingPage.vue", t.default = je.exports
 }, function(e, t, n) {
     "use strict";
 
@@ -16588,7 +16592,7 @@ module.exports = function(e) {
             }, [e._v("Clash for Windows")]), e._v(" "), n("div", {
                 staticClass: "version",
                 domProps: {
-                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.15.8.0.1)")
+                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.15.9.0)")
                 },
                 on: {
                     click: e.openGithubRelease
