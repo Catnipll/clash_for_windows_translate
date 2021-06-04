@@ -5341,7 +5341,7 @@ module.exports = function(e) {
                         case 30:
                             return e.abrupt("return", {
                                 success: !1,
-                                message: "下载配置文件 (".concat(n, ") 失败, 错误: HTTP 请求状态代码 (").concat(o, ")")
+                                message: "未能下载配置文件 (".concat(n, "), 错误: HTTP 请求状态代码 (").concat(o, ")")
                             });
                         case 31:
                             e.next = 39;
@@ -5353,7 +5353,7 @@ module.exports = function(e) {
                             }
                             return e.abrupt("return", {
                                 success: !1,
-                                message: "下载配置文件 (".concat(n, ") 失败, 错误: ").concat(
+                                message: "未能下载配置文件 (".concat(n, "), 错误: ").concat(
                                     // Oh no this might be a shit from Node.js
                                     // IDK for now lets just do the dirty hack(xdd
                                     (e.t0.message == "Network Error") ? "网络错误" :
@@ -11004,7 +11004,7 @@ module.exports = function(e) {
                 editGroup: function(e, t) {
                     var n = e.type;
                     return ["url-test", "fallback", "select", "load-balance"].includes(n) ? (this.addType = 0, e._index = t, void(this.addData = e)) : void this.$alert({
-                        content: "无法编辑代理策略组类型 [".concat(n, "].")
+                        content: "未能编辑代理策略组类型 [".concat(n, "].")
                     })
                 },
                 newProxy: function() {
@@ -11013,7 +11013,7 @@ module.exports = function(e) {
                 editProxy: function(e, t) {
                     var n = e.type;
                     return ["ss", "vmess", "http", "socks"].includes(n) ? (this.addType = 1, e._index = t, void(this.addData = e)) : void this.$alert({
-                        content: "无法编辑代理类型 [".concat(n, "].")
+                        content: "未能编辑代理类型 [".concat(n, "].")
                     })
                 },
                 loadData: function() {
@@ -11537,10 +11537,10 @@ module.exports = function(e) {
                                     }
                                     return n.prev = 2, n.next = 5, t.clashAxiosClient.put("/providers/rules/".concat(encodeURIComponent(i)));
                                 case 5:
-                                    a = n.sent, 204 === a.status ? (t.loadData(), Object(S.c)("成功", "RULE-SET [".concat(i, "] 已更新!"))) : Object(S.c)("失败", "RULE-SET [".concat(i, "] 更新失败 (服务器错误)!")), n.next = 13;
+                                    a = n.sent, 204 === a.status ? (t.loadData(), Object(S.c)("成功", "RULE-SET [".concat(i, "] 已更新!"))) : Object(S.c)("失败", "RULE-SET [".concat(i, "] 未能更新 (服务器错误)!")), n.next = 13;
                                     break;
                                 case 10:
-                                    n.prev = 10, n.t0 = n.catch(2), Object(S.c)("失败", "RULE-SET [".concat(i, "] 更新失败 (网络错误)!"));
+                                    n.prev = 10, n.t0 = n.catch(2), Object(S.c)("失败", "RULE-SET [".concat(i, "] 未能更新 (网络错误)!"));
                                 case 13:
                                 case "end":
                                     return n.stop()
@@ -11606,7 +11606,7 @@ module.exports = function(e) {
                                             return n ? "".concat(t, ",").concat(n, ",").concat(r).concat(a) : "".concat(t, ",").concat(r)
                                         })), i = L.a.join(e.profilesPath, e.profileName), a = $.a.readFileSync(i, "utf8"), (o = _.a.parse(a)).rules = r, $.a.writeFileSync(i, _.a.stringify(o)), e.$emit("done"), e.saveBtnText = "完成"
                                     } catch (t) {
-                                        e.$emit("error"), e.saveBtnText = "失败"
+                                        e.$emit("error"), e.saveBtnText = "未能下载"
                                     }
                                     setTimeout((function() {
                                         e.saveBtnText = "保存"
@@ -12398,7 +12398,7 @@ module.exports = function(e) {
                                     }
                                     return n.next = 11, t.$showDialog({
                                         type: "error",
-                                        message: "无法更换至这个配置文件!",
+                                        message: "未能更换到这个配置文件!",
                                         detail: a || "",
                                         buttons: ["确认", "在文本模式下编辑"]
                                     });
@@ -12482,7 +12482,7 @@ module.exports = function(e) {
                         var n = oe.statSync(se.join(this.profilesPath, t)).mtime;
                         return w()(n).locale('zh-cn').fromNow()
                     } catch (t) {
-                        return "无法读取变更时间"
+                        return "未能读取变更时间"
                     }
                 },
                 updateConfig: function(e) {
@@ -14424,7 +14424,7 @@ module.exports = function(e) {
                                         timeout: K ? 0 : 1e4
                                     });
                                 case 62:
-                                    if (te = t.sent, re = te.status, ie = te.data, r = 204 === re, ae = ie.message, i = ae || "更换配置文件失败, 状态: ".concat(re), r && (K ? !e.menuItems.find((function(e) {
+                                    if (te = t.sent, re = te.status, ie = te.data, r = 204 === re, ae = ie.message, i = ae || "未能更换配置文件, 状态: ".concat(re), r && (K ? !e.menuItems.find((function(e) {
                                             return "提供器" === e.title
                                         })) && e.setMenuItems({
                                             items: [].concat(b()(e.menuItems), [{
@@ -16024,7 +16024,7 @@ module.exports = function(e) {
                                     Object(ne.c)("成功", "Clash for Windows 虚拟网卡已安装", !0), e.isMixinEnable && e.$parent.refreshProfile(), t.next = 16;
                                     break;
                                 case 13:
-                                    t.prev = 13, t.t0 = t.catch(6), Object(ne.c)("失败", "无法安装 Clash for Windows 虚拟网卡.", !0);
+                                    t.prev = 13, t.t0 = t.catch(6), Object(ne.c)("失败", "未能安装 Clash for Windows 虚拟网卡.", !0);
                                 case 16:
                                     t.next = 43;
                                     break;
@@ -16038,7 +16038,7 @@ module.exports = function(e) {
                                     Object(ne.c)("成功", "cfw-tap设备已移除", !0), t.next = 28;
                                     break;
                                 case 25:
-                                    t.prev = 25, t.t1 = t.catch(19), Object(ne.c)("失败", "无法删除 Clash for Windows 虚拟网卡.", !0);
+                                    t.prev = 25, t.t1 = t.catch(19), Object(ne.c)("失败", "未能删除 Clash for Windows 虚拟网卡.", !0);
                                 case 28:
                                     t.next = 43;
                                     break;
@@ -16307,7 +16307,7 @@ module.exports = function(e) {
                                                     case 33:
                                                         e.$alert({
                                                             title: "太棒了",
-                                                            content: "当前版本是最新的."
+                                                            content: "当前的版本是最新的."
                                                         });
                                                     case 34:
                                                     case "end":
@@ -16433,7 +16433,7 @@ module.exports = function(e) {
                                         n = 1 === t.percent ? "正在重新启动核心..." : "正在更新... (".concat(l(100 * t.percent), "%)"), e.geoipUpdateTime = n
                                     })), p.on("error", (function(t) {
                                         e.$alert({
-                                            content: "下载 GeoIP 数据库失败, 错误: ".concat(
+                                            content: "未能下载 GeoIP 数据库, 错误: ".concat(
                                                 // OK great, heres another dirty hack...
                                                 (t.name == "GotError") ? "遇到错误" :
                                                 (t.name == "CacheError") ? "缓存错误" :
@@ -16462,7 +16462,7 @@ module.exports = function(e) {
                                         1 === r ? (b = i, n = "正在重新启动核心...") : n = "正在更新... (".concat(l(100 * t.percent), "%)"), e.geoipUpdateTime = n
                                     })), m.on("error", (function(t) {
                                         e.$alert({
-                                            content: "下载 GeoIP 数据库失败, 错误: ".concat(
+                                            content: "未能下载 GeoIP 数据库, 错误: ".concat(
                                                 // Dirty hacks...
                                                 (t.name == "GotError") ? "遇到错误" :
                                                 (t.name == "CacheError") ? "缓存错误" :
@@ -16592,7 +16592,7 @@ module.exports = function(e) {
             }, [e._v("Clash for Windows")]), e._v(" "), n("div", {
                 staticClass: "version",
                 domProps: {
-                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.15.9.0)")
+                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.15.9.0.1)")
                 },
                 on: {
                     click: e.openGithubRelease
@@ -18899,7 +18899,7 @@ module.exports = function(e) {
                         "☆ 未知 ☆ (")
                 ))]) : e._e(), e._v(" "), t.from ? n("div", [e._v(e._s(
                     t.from.replace("couldn't find ip",
-                        "无法查询 IP").replace("dial ",
+                        "未能查询 IP").replace("dial ",
                         "查询 ").replace(": i/o timeout",
                         ": 输入输出超时").replace(": connect: connection refused",
                         ": 连接: 连接拒绝")
