@@ -16085,7 +16085,7 @@ module.exports = function(e) {
                                     }
                                     return t.prev = 19, t.next = 22, e.$parent.setupTapDevice(!1);
                                 case 22:
-                                    Object(ee.c)("成功", "cfw-tap设备已被移除", !0), t.next = 28;
+                                    Object(ee.c)("成功", "Clash for Windows 虚拟网卡已被移除", !0), t.next = 28;
                                     break;
                                 case 25:
                                     t.prev = 25, t.t1 = t.catch(19), Object(ee.c)("失败", "未能删除 Clash for Windows 虚拟网卡.", !0);
@@ -16642,7 +16642,7 @@ module.exports = function(e) {
             }, [e._v("Clash for Windows")]), e._v(" "), n("div", {
                 staticClass: "version",
                 domProps: {
-                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.15.10.0)")
+                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.15.10.0.1)")
                 },
                 on: {
                     click: e.openGithubRelease
@@ -17246,7 +17246,7 @@ module.exports = function(e) {
                         (n == "LoadBalance") ? "☆ 负载均衡 ☆" :
                         n
                     ), " · ").concat(t.data.all.length, " 个服务器").concat(1 < t.data.all.length ? "" : "") : (
-                        (n == "Relay") ? "中继" :
+                        (n == "Relay") ? "☆ 中继 ☆" :
                         n
                     )
                 },
@@ -17629,7 +17629,11 @@ module.exports = function(e) {
                 }), e._v(" "), n("div", {
                     staticClass: "proxy-hint-type"
                 }, [e._v(e._s(
+                    (t.data.type == "Selector") ? "☆ 手动选择 ☆" :
+                    (t.data.type == "Fallback") ? "☆ 可用性测试 ☆" :
+                    (t.data.type == "URLTest") ? "☆ 延迟测试 ☆" :
                     (t.data.type == "LoadBalance") ? "☆ 负载均衡 ☆" :
+                    (t.data.type == "Relay") ? "☆ 中继 ☆" :
                     t.data.type[0]
                 ))]), e._v(" "), t.data.now ? n("div", {
                     staticClass: "proxy-hint-line"
