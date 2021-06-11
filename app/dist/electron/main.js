@@ -72,7 +72,7 @@ module.exports = function(e) {
                 a(void 0)
             }))
         }
-    }
+    }, e.exports.default = e.exports, e.exports.__esModule = !0
 }, function(e) {
     e.exports = require("path")
 }, function(e) {
@@ -83,7 +83,7 @@ module.exports = function(e) {
             configurable: !0,
             writable: !0
         }) : e[t] = n, e
-    }
+    }, e.exports.default = e.exports, e.exports.__esModule = !0
 }, function(e, t, n) {
     "use strict";
 
@@ -100,7 +100,7 @@ module.exports = function(e) {
 
     function o(e) {
         for (var t, n = 1; n < arguments.length; n++) t = null == arguments[n] ? {} : arguments[n], n % 2 ? r(Object(t), !0).forEach((function(n) {
-            h()(e, n, t[n])
+            f()(e, n, t[n])
         })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : r(Object(t)).forEach((function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }));
@@ -142,9 +142,9 @@ module.exports = function(e) {
         })), _.on("session-end", (function(e) {
             e.preventDefault(), _.webContents.send("app-exit")
         })), _.webContents.on("render-process-gone", function() {
-            var e = f()(l.a.mark((function e(t, n) {
+            var e = l()(h.a.mark((function e(t, n) {
                 var r, o, i;
-                return l.a.wrap((function(e) {
+                return h.a.wrap((function(e) {
                     for (;;) switch (e.prev = e.next) {
                         case 0:
                             if (r = n.reason, "darwin" !== process.platform) {
@@ -229,9 +229,9 @@ module.exports = function(e) {
         });
         r.setTemplateImage(!0);
         var i = y.join(__static, "tray_normal.ico");
-        (x = new m.Tray("darwin" === process.platform ? r : i)).setToolTip("Clash for Windows"), x.on("click", (function() {
+        (R = new m.Tray("darwin" === process.platform ? r : i)).setToolTip("Clash for Windows"), R.on("click", (function() {
             if ("darwin" === process.platform) {
-                x.popUpContextMenu(u)
+                R.popUpContextMenu(u)
             } else {
                 _.setBounds(a(_.getBounds())), _.show()
             }
@@ -239,7 +239,7 @@ module.exports = function(e) {
             c(), m.app.isQuiting = !0, m.app.quit()
         })), m.ipcMain.on("status-changed", (function(e, t) {
             try {
-                "darwin" !== process.platform && x.setImage(t)
+                "darwin" !== process.platform && R.setImage(t)
             } catch (t) {}
         })), m.ipcMain.on("show-notification", (function(e, t) {
             var n = y.join(global.__static, "imgs/logo_64.png"),
@@ -366,10 +366,10 @@ module.exports = function(e) {
             var r = Math.ceil,
                 o = 3 < arguments.length && void 0 !== arguments[3] ? arguments[3] : "#fff";
             try {
-                if (x) {
+                if (R) {
                     var i = m.nativeImage.createFromDataURL(t);
                     if ("win32" === process.platform) {
-                        if (60 === n) return void(O && (O.destroy(), O = null, R = 0));
+                        if (60 === n) return void(O && (O.destroy(), O = null, x = 0));
                         var a = i.crop({
                                 x: 0,
                                 y: 0,
@@ -403,10 +403,10 @@ module.exports = function(e) {
                                 c()
                             })), O.loadFile(u)
                         }
-                        O.show(), O.reload(), R !== n && O.setBounds({
+                        O.show(), O.reload(), x !== n && O.setBounds({
                             height: r(f / 2.8),
                             width: r(d / 2.8)
-                        }), R = n
+                        }), x = n
                     }
                     if ("darwin" === process.platform) {
                         var v = i.crop({
@@ -417,12 +417,12 @@ module.exports = function(e) {
                         }).resize({
                             height: 23
                         });
-                        v.setTemplateImage(!0), x.setImage(v)
+                        v.setTemplateImage(!0), R.setImage(v)
                     }
                 }
             } catch (t) {}
-        })), x.on("right-click", (function() {
-            x.popUpContextMenu(u)
+        })), R.on("right-click", (function() {
+            R.popUpContextMenu(u)
         }));
         var d = [{
             label: m.app.name,
@@ -466,9 +466,9 @@ module.exports = function(e) {
             submenu: [{
                 label: "GitHub",
                 click: function() {
-                    var e = f()(l.a.mark((function e() {
+                    var e = l()(h.a.mark((function e() {
                         var t, r;
-                        return l.a.wrap((function(e) {
+                        return h.a.wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return t = n(0), r = t.shell, e.next = 3, r.openExternal("https://github.com/Fndroid/clash_for_windows_pkg");
@@ -485,9 +485,9 @@ module.exports = function(e) {
             }, {
                 label: "Document",
                 click: function() {
-                    var e = f()(l.a.mark((function e() {
+                    var e = l()(h.a.mark((function e() {
                         var t, r;
-                        return l.a.wrap((function(e) {
+                        return h.a.wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return t = n(0), r = t.shell, e.next = 3, r.openExternal("https://docs.cfw.lbyczf.com/");
@@ -550,11 +550,11 @@ module.exports = function(e) {
         return {}
     }
     n.r(t);
-    var u = n(1),
+    var u = n(2),
         l = n.n(u),
-        d = n(2),
+        d = n(4),
         f = n.n(d),
-        p = n(4),
+        p = n(1),
         h = n.n(p),
         m = n(0),
         g = (n.n(m), n(0).TouchBar),
@@ -564,7 +564,7 @@ module.exports = function(e) {
         v = n(8),
         E = n(9);
     n(10).initialize(), global.__static = n(3).join(__dirname, "/static").replace(/\\/g, "\\\\"), E(), m.app.disableHardwareAcceleration(), m.app.commandLine.appendSwitch("disable-features", "OutOfBlinkCors"), "darwin" === process.platform && m.app.dock.hide();
-    var _, O, R, x, C = y.join(m.app.getPath("userData"), "window_ocnfig.json"),
+    var _, O, x, R, C = y.join(m.app.getPath("userData"), "window_ocnfig.json"),
         k = "file://".concat(__dirname, "/index.html"),
         M = m.app.requestSingleInstanceLock();
     m.app.setAppUserModelId("com.lbyczf.clashwin"), m.app.setAsDefaultProtocolClient("clash"), m.app.setName("Clash for Windows"), m.app.setAboutPanelOptions({
@@ -662,8 +662,8 @@ module.exports = function(e) {
         function u(e, t, n) {
             var o = _;
             return function(i, a) {
-                if (o == R) throw new Error("Generator is already running");
-                if (o == x) {
+                if (o == x) throw new Error("Generator is already running");
+                if (o == R) {
                     if ("throw" === i) throw a;
                     return {
                         value: void 0,
@@ -681,19 +681,19 @@ module.exports = function(e) {
                     }
                     if ("next" === n.method) n.sent = n._sent = n.arg;
                     else if ("throw" === n.method) {
-                        if (o == _) throw o = x, n.arg;
+                        if (o == _) throw o = R, n.arg;
                         n.dispatchException(n.arg)
                     } else "return" === n.method && n.abrupt("return", n.arg);
-                    o = R;
+                    o = x;
                     var u = r(e, t, n);
                     if ("normal" === u.type) {
-                        if (o = n.done ? x : O, u.arg === C) continue;
+                        if (o = n.done ? R : O, u.arg === C) continue;
                         return {
                             value: u.arg,
                             done: n.done
                         }
                     }
-                    "throw" === u.type && (o = x, n.method = "throw", n.arg = u.arg)
+                    "throw" === u.type && (o = R, n.method = "throw", n.arg = u.arg)
                 }
             }
         }
@@ -773,8 +773,8 @@ module.exports = function(e) {
         e.wrap = n;
         var _ = "suspendedStart",
             O = "suspendedYield",
-            R = "executing",
-            x = "completed",
+            x = "executing",
+            R = "completed",
             C = {},
             k = {};
         k[w] = function() {
@@ -946,7 +946,7 @@ module.exports = function(e) {
             if (void 0 !== n && void 0 === n.deref() && (d.delete(t), !e.webContents.isDestroyed())) try {
                 e.webContents.sendToFrame(e.frameId, "REMOTE_RENDERER_RELEASE_CALLBACK", e.id[0], e.id[1])
             } catch (e) {
-                console.warn(`sendToFrame() failed: ${e}`)
+                console.warn("sendToFrame() failed: " + e)
             }
         }),
         p = new WeakMap,
@@ -1019,10 +1019,10 @@ module.exports = function(e) {
             throw t.code = "EBADRPC", t.errno = -72, t
         },
         y = (e, t) => {
-            let n = "Attempting to call a function in a renderer window that has been closed or released." + `\nFunction provided here: ${p.get(t)}`;
+            let n = "Attempting to call a function in a renderer window that has been closed or released.\nFunction provided here: " + p.get(t);
             if (e instanceof i.EventEmitter) {
                 const r = e.eventNames().filter(n => e.listeners(n).includes(t));
-                0 < r.length && (n += `\nRemote event names: ${r.join(", ")}`, r.forEach(n => {
+                0 < r.length && (n += "\nRemote event names: " + r.join(", "), r.forEach(n => {
                     e.removeListener(n, t)
                 }))
             }
@@ -1073,7 +1073,7 @@ module.exports = function(e) {
                             if (!e.isDestroyed()) try {
                                 i = !1 !== e.sendToFrame(t, "REMOTE_RENDERER_CALLBACK", n, o.id, g(e, n, r))
                             } catch (e) {
-                                console.warn(`sendToFrame() failed: ${e}`)
+                                console.warn("sendToFrame() failed: " + e)
                             }
                             i || y(this, c)
                         };
@@ -1091,7 +1091,7 @@ module.exports = function(e) {
                             }(i, e, t, c), c
                     }
                     default:
-                        throw new TypeError(`Unknown type: ${o.type}`)
+                        throw new TypeError("Unknown type: " + o.type)
                 }
             };
             return o.map(i)
@@ -1130,17 +1130,17 @@ module.exports = function(e) {
             };
             return s.app.emit(t, r, e, ...n), e.emit(t, r, ...n), r
         },
-        R = function(e, t, n) {
+        x = function(e, t, n) {
             n && console.warn(`WebContents (${e.id}): ${t}`, n)
         };
-    let x = !1;
+    let R = !1;
     t.initialize = function() {
-        if (x) throw new Error("electron-remote has already been initialized");
-        x = !0, _("REMOTE_BROWSER_WRONG_CONTEXT_ERROR", (function(e, t, n, o) {
+        if (R) throw new Error("electron-remote has already been initialized");
+        R = !0, _("REMOTE_BROWSER_WRONG_CONTEXT_ERROR", (function(e, t, n, o) {
             const i = r([n, o]);
             void 0 === i || y(e.sender, i)
         })), _("REMOTE_BROWSER_REQUIRE", (function(e, t, n, r) {
-            R(e.sender, `remote.require('${n}')`, r);
+            x(e.sender, `remote.require('${n}')`, r);
             const o = O(e.sender, "remote-require", n);
             if (void 0 === o.returnValue) {
                 if (o.defaultPrevented) throw new Error(`Blocked remote.require('${n}')`);
@@ -1148,7 +1148,7 @@ module.exports = function(e) {
             }
             return g(e.sender, t, o.returnValue)
         })), _("REMOTE_BROWSER_GET_BUILTIN", (function(e, t, r, o) {
-            R(e.sender, `remote.getBuiltin('${r}')`, o);
+            x(e.sender, `remote.getBuiltin('${r}')`, o);
             const i = O(e.sender, "remote-get-builtin", r);
             if (void 0 === i.returnValue) {
                 if (i.defaultPrevented) throw new Error(`Blocked remote.getBuiltin('${r}')`);
@@ -1156,7 +1156,7 @@ module.exports = function(e) {
             }
             return g(e.sender, t, i.returnValue)
         })), _("REMOTE_BROWSER_GET_GLOBAL", (function(e, t, n, r) {
-            R(e.sender, `remote.getGlobal('${n}')`, r);
+            x(e.sender, `remote.getGlobal('${n}')`, r);
             const o = O(e.sender, "remote-get-global", n);
             if (void 0 === o.returnValue) {
                 if (o.defaultPrevented) throw new Error(`Blocked remote.getGlobal('${n}')`);
@@ -1164,7 +1164,7 @@ module.exports = function(e) {
             }
             return g(e.sender, t, o.returnValue)
         })), _("REMOTE_BROWSER_GET_CURRENT_WINDOW", (function(e, t, n) {
-            R(e.sender, "remote.getCurrentWindow()", n);
+            x(e.sender, "remote.getCurrentWindow()", n);
             const r = O(e.sender, "remote-get-current-window");
             if (void 0 === r.returnValue) {
                 if (r.defaultPrevented) throw new Error("Blocked remote.getCurrentWindow()");
@@ -1172,7 +1172,7 @@ module.exports = function(e) {
             }
             return g(e.sender, t, r.returnValue)
         })), _("REMOTE_BROWSER_GET_CURRENT_WEB_CONTENTS", (function(e, t, n) {
-            R(e.sender, "remote.getCurrentWebContents()", n);
+            x(e.sender, "remote.getCurrentWebContents()", n);
             const r = O(e.sender, "remote-get-current-web-contents");
             if (void 0 === r.returnValue) {
                 if (r.defaultPrevented) throw new Error("Blocked remote.getCurrentWebContents()");
@@ -1182,11 +1182,11 @@ module.exports = function(e) {
         })), _("REMOTE_BROWSER_CONSTRUCTOR", (function(e, t, n, r) {
             r = v(e.sender, e.frameId, t, r);
             const o = a.default.get(n);
-            return null == o && b(`Cannot call constructor on missing remote object ${n}`), g(e.sender, t, new o(...r))
+            return null == o && b("Cannot call constructor on missing remote object " + n), g(e.sender, t, new o(...r))
         })), _("REMOTE_BROWSER_FUNCTION_CALL", (function(e, t, n, r) {
             r = v(e.sender, e.frameId, t, r);
             const o = a.default.get(n);
-            null == o && b(`Cannot call function on missing remote object ${n}`);
+            null == o && b("Cannot call function on missing remote object " + n);
             try {
                 return g(e.sender, t, o(...r), !0)
             } catch (e) {
@@ -1368,5 +1368,5 @@ module.exports = function(e) {
     "use strict";
     Object.defineProperty(t, "__esModule", {
         value: !0
-    }), t.getElectronBinding = void 0, t.getElectronBinding = process.electronBinding ? e => process.electronBinding(e) : e => process._linkedBinding("electron_common_" + e)
+    }), t.getElectronBinding = void 0, t.getElectronBinding = e => process._linkedBinding ? process._linkedBinding("electron_common_" + e) : process.electronBinding ? process.electronBinding(e) : null
 }]);
