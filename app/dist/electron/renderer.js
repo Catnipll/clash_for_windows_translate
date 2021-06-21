@@ -12459,7 +12459,10 @@ module.exports = function(e) {
                                     return n.next = 11, t.$showDialog({
                                         type: "error",
                                         message: "未能更换到这个配置文件!",
-                                        detail: a || "",
+                                        detail: (
+                                            (a == "Network Error") ? "网络错误" :
+                                            a
+                                        ) || "",
                                         buttons: ["确认", "在文本模式下编辑"]
                                     });
                                 case 11:
