@@ -1,6 +1,6 @@
 {
   "name": "clash_win",
-  "version": "0.15.10",
+  "version": "0.16.0",
   "author": "Fndroid",
   "description": "基于 Clash 的 Windows 客户端",
   "license": "MIT",
@@ -9,6 +9,7 @@
     "@babel/runtime": "^7.12.1",
     "@electron/remote": "^1.0.4",
     "axios": "^0.21.1",
+    "dhcp": "^0.2.20",
     "electron-is-dev": "^1.1.0",
     "electron-log": "^4.1.0",
     "fix-path": "^3.0.0",
