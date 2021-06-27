@@ -19941,7 +19941,6 @@ module.exports = function(e) {
                     staticClass: "conn2"
                 }, [e._v(e._s(
                     (t.metadata.type == "HTTP Connect") ? "☆ HTTP 连接 ☆" :
-                    (t.metadata.type == "Socks5") ? "☆ Socks5 连接 ☆" :
                     t.metadata.type
                 ))]), e._v(" "), e.connectionGroup(t) ? n("div", {
                     staticClass: "conn3",
