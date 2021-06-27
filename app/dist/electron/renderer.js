@@ -10006,7 +10006,7 @@ module.exports = function(e) {
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("自定义的解析器")]), e._v(" "), n("MoreHint", {
+            }, [n("div", [e._v("自定义的预处理器")]), e._v(" "), n("MoreHint", {
                 staticClass: "hint",
                 attrs: {
                     text: "编辑"
@@ -12228,9 +12228,9 @@ module.exports = function(e) {
                                     return r = t.matchingParserCount(e), i = r.map((function(e, n) {
                                         return "".concat(n + 1, ". ").concat(t.parserHint(e))
                                     })).join("<br />"), n.next = 4, t.$select({
-                                        title: "找到 ".concat(r.length, " 个匹配的解析器"),
+                                        title: "找到 ".concat(r.length, " 个匹配的预处理器"),
                                         message: "".concat(i),
-                                        items: ["编辑解析器", "确认"]
+                                        items: ["编辑预处理器", "确认"]
                                     });
                                 case 4:
                                     0 === n.sent && t.$router.replace({
@@ -13090,7 +13090,7 @@ module.exports = function(e) {
                         xmlns: "http://www.w3.org/2000/svg",
                         viewBox: "0 0 24 24"
                     }
-                }, [n("title", [e._v("解析器信息")]), e._v(" "), n("path", {
+                }, [n("title", [e._v("预处理器信息")]), e._v(" "), n("path", {
                     attrs: {
                         d: "M0 0h24v24H0V0z",
                         fill: "none"
