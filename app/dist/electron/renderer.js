@@ -9327,7 +9327,7 @@ module.exports = function(e) {
                                     return t.prev = 0, n = Object(L.b)().map((function(e) {
                                         return e.name
                                     })), t.next = 4, e.$select({
-                                        title: "选择出站接口",
+                                        title: "请选择出站接口",
                                         message: "仅在虚拟网卡模式启用时工作",
                                         items: [].concat(u()(n), ["[ 重置 ]"])
                                     });
@@ -10524,7 +10524,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "策略组名称"
+                    placeholder: "请输入策略组名称"
                 },
                 domProps: {
                     value: e.groupName
@@ -10621,7 +10621,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "代理名称"
+                    placeholder: "请输入代理名称"
                 },
                 domProps: {
                     value: e.proxyName
@@ -10670,7 +10670,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "服务器"
+                    placeholder: "请输入服务器"
                 },
                 domProps: {
                     value: e.proxyServer
@@ -10689,7 +10689,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "端口"
+                    placeholder: "请输入端口"
                 },
                 domProps: {
                     value: e.proxyPort
@@ -10708,7 +10708,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "密码"
+                    placeholder: "请输入密码"
                 },
                 domProps: {
                     value: e.proxyPassword
@@ -10789,7 +10789,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Obfs (可选, tls / http)"
+                    placeholder: "请输入 Obfs (可选, tls / http)"
                 },
                 domProps: {
                     value: e.proxyObfs
@@ -10808,7 +10808,7 @@ module.exports = function(e) {
                 }],
                 attrs: {
                     type: "text",
-                    placeholder: "Obfs-host (可选)"
+                    placeholder: "请输入 Obfs-host (可选)"
                 },
                 domProps: {
                     value: e.proxyObfshost
@@ -11556,7 +11556,7 @@ module.exports = function(e) {
                 class: ["scroll-view-" + e.theme]
             }, ["MATCH" === e.selectedType ? e._e() : n("div", {
                 staticClass: "rule-section-title"
-            }, [e._v("\n              内容\n            ")]), e._v(" "), n("div", ["MATCH" === e.selectedType ? e._e() : n("input", {
+            }, [e._v("\n              请输入内容\n            ")]), e._v(" "), n("div", ["MATCH" === e.selectedType ? e._e() : n("input", {
                 directives: [{
                     name: "model",
                     rawName: "v-model",
@@ -11578,7 +11578,7 @@ module.exports = function(e) {
                 }
             })]), e._v(" "), n("div", {
                 staticClass: "rule-section-title"
-            }, [e._v("类型")]), e._v(" "), n("div", {
+            }, [e._v("请选择类型")]), e._v(" "), n("div", {
                 staticClass: "rule-type-group"
             }, e._l(e.ruleTypes, (function(t, r) {
                 return n("div", {
@@ -11606,7 +11606,7 @@ module.exports = function(e) {
                 ) + "\n              ")])
             })), 0), e._v(" "), n("div", {
                 staticClass: "rule-section-title"
-            }, [e._v("代理 / 策略")]), e._v(" "), n("div", {
+            }, [e._v("请选择代理 / 策略")]), e._v(" "), n("div", {
                 staticClass: "rule-proxy-group"
             }, e._l(e.proxyGroups, (function(t, r) {
                 return n("div", {
@@ -12276,7 +12276,7 @@ module.exports = function(e) {
                                     return r = [{
                                         name: "名称",
                                         key: "filename",
-                                        placeholder: "输入新的文件名",
+                                        placeholder: "请输入新的文件名",
                                         required: !0
                                     }], n.prev = 1, n.next = 4, t.$input({
                                         title: "克隆配置文件",
@@ -12305,16 +12305,16 @@ module.exports = function(e) {
                                 case 0:
                                     return r = p({}, t.pfs.files[e]), "编辑配置文件信息", i = r.interval, a = void 0 === i ? 0 : i, o = [{
                                         key: "name",
-                                        name: "名称",
+                                        name: "请输入名称",
                                         required: !0,
                                         value: r.name
                                     }, {
                                         key: "url",
-                                        name: "URL",
+                                        name: "请输入 URL",
                                         value: r.url
                                     }, {
                                         key: "interval",
-                                        name: "更新间隔时间 (小时)",
+                                        name: "请输入更新间隔时间 (小时)",
                                         validate: function(e) {
                                             return /^\d+$/.test(e) ? "" : "更新间隔时间必须为整数"
                                         },
@@ -16004,7 +16004,7 @@ module.exports = function(e) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     return t.prev = 0, n = ["silent", "error", "warning", "info", "debug"], t.next = 4, e.$select({
-                                        title: "选择核心日志等级",
+                                        title: "请选择核心日志等级",
                                         message: "如果为静默, 将阻止在下次启动时生成 .log 文件",
                                         items: ["静默", "错误", "警告", "信息", "调试"]
                                     });
@@ -16259,7 +16259,7 @@ module.exports = function(e) {
                                     }
                                     return t.next = 8, e.$select({
                                         title: "打开已设置好代理的终端",
-                                        message: "选择终端",
+                                        message: "请选择终端",
                                         items: ["CMD", "Powershell", "Windows Terminal", "仅复制指令"]
                                     });
                                 case 8:
@@ -16292,7 +16292,7 @@ module.exports = function(e) {
                             for (;;) switch (t.prev = t.next) {
                                 case 0:
                                     return n = [{
-                                        name: "新的端口",
+                                        name: "请输入新的端口",
                                         key: "port",
                                         placeholder: e.port,
                                         value: "",
@@ -16502,7 +16502,7 @@ module.exports = function(e) {
                                     }
                                     return t.prev = 5, t.next = 8, e.$select({
                                         title: "复制代理设置命令",
-                                        message: "选择终端",
+                                        message: "请选择终端",
                                         items: ["CMD", "Powershell"]
                                     });
                                 case 8:
@@ -16553,12 +16553,12 @@ module.exports = function(e) {
                                     return t.abrupt("return");
                                 case 6:
                                     return r = [{
-                                        name: "MaxMind 用户许可证密钥",
+                                        name: "请输入 MaxMind 用户许可证密钥",
                                         key: "token",
                                         placeholder: "",
                                         value: W.a.get(B.a.GEOIP_TOKEN) || ""
                                     }, {
-                                        name: "URL",
+                                        name: "请输入 URL",
                                         key: "url",
                                         placeholder: "",
                                         value: W.a.get(B.a.GEOIP_URL) || "https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb"
@@ -17054,7 +17054,7 @@ module.exports = function(e) {
                                             return n = e.interfaces.map((function(e) {
                                                 return e.name
                                             })), t.next = 3, e.$select({
-                                                title: "Select a interface",
+                                                title: "请选择一个接口",
                                                 message: "",
                                                 items: n
                                             });
