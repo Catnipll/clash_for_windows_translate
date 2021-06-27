@@ -9785,7 +9785,7 @@ module.exports = function(e) {
                 }
             })], 1) : e._e(), e._v(" "), n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("Static Host")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("静态主机")]), e._v(" "), n("div", {
                 staticClass: "item"
             }, [n("SimpleInput", {
                 attrs: {
@@ -19530,11 +19530,20 @@ module.exports = function(e) {
                         "☆ 匹配 ☆ (").replace("Unknown(",
                         "☆ 未知 ☆ (")
                 ))]) : e._e(), e._v(" "), t.from ? n("div", [e._v(e._s(
-                    t.from.replace("couldn't find ip",
-                        "未能查询 IP").replace("dial ",
-                        "查询 ").replace(": i/o timeout",
-                        ": 输入输出超时").replace(": connect: connection refused",
-                        ": 连接: 连接拒绝")
+                    t.from.replaceAll("couldn't find ip",
+                        "未能查询 IP").replaceAll("dial ",
+                        "查询 ").replaceAll("i/o timeout",
+                        "输入 / 输出超时").replaceAll("connect: ",
+                        "连接: ").replaceAll("connection refused", 
+                        "连接被拒绝").replaceAll("connect error: ",
+                        "连接错误: ").replaceAll("error: ",
+                        "错误: ").replaceAll("all DNS requests failed, first error: ",
+                        "DNS 全部请求失败, 首个错误: ").replaceAll("read ",
+                        "读取 ").replaceAll("read: ",
+                        "读取: ").replaceAll("connection reset by peer",
+                        "被连接方重置连接").replaceAll("socket: ",
+                        "套接字: ").replaceAll("too many open files",
+                        "过多打开文件")
                 ))]) : e._e(), e._v(" "), n("div", [e._v(e._s(t.time.format("HH:mm:ss.SSS")))])])]), e._v(" "), t.proxy ? n("div", {
                     staticClass: "proxy-name",
                     style: e.randomBGC(t.proxy),
