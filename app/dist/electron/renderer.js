@@ -10202,11 +10202,11 @@ module.exports = function(e) {
                 }
             })], 1)])], 1), e._v(" "), e.isMacOS ? n("Section", {
                 attrs: {
-                    title: "Experimental Features"
+                    title: "实验性特性"
                 }
             }, [n("div", {
                 staticClass: "item"
-            }, [n("div", [e._v("DHCP Server")]), e._v(" "), n("SwitchView", {
+            }, [n("div", [e._v("DHCP 服务端")]), e._v(" "), n("SwitchView", {
                 model: {
                     value: e.settings.enableDHCPServer,
                     callback: function(t) {
@@ -14255,12 +14255,12 @@ module.exports = function(e) {
                 "settings.enableDHCPServer": function(e) {
                     e ? this.setMenuItems({
                         items: [].concat(y()(this.menuItems), [{
-                            title: "Router",
+                            title: "内建路由",
                             path: "/home/router"
                         }])
                     }) : this.setMenuItems({
                         items: this.menuItems.filter((function(e) {
-                            return "Router" !== e.title
+                            return "内建路由" !== e.title
                         }))
                     })
                 },
@@ -17103,9 +17103,9 @@ module.exports = function(e) {
                         }
                     }, [n("div", {
                         staticClass: "title"
-                    }, [e._v("Configuration")]), e._v(" "), n("div", {
+                    }, [e._v("配置")]), e._v(" "), n("div", {
                         staticClass: "sec"
-                    }, [n("span", [e._v("Interface")]), e._v(" "), n("input", {
+                    }, [n("span", [e._v("接口")]), e._v(" "), n("input", {
                         staticClass: "clickable",
                         attrs: {
                             readonly: ""
@@ -17118,7 +17118,7 @@ module.exports = function(e) {
                         }
                     })]), e._v(" "), n("div", {
                         staticClass: "sec"
-                    }, [n("span", [e._v("Local IP Address")]), e._v(" "), n("input", {
+                    }, [n("span", [e._v("本地 IP 地址")]), e._v(" "), n("input", {
                         directives: [{
                             name: "model",
                             rawName: "v-model",
@@ -17138,9 +17138,9 @@ module.exports = function(e) {
                         }
                     })]), e._v(" "), n("div", {
                         staticClass: "sec"
-                    }, [n("span", [e._v("DHCP IP Range")]), e._v(" "), n("div", {
+                    }, [n("span", [e._v("DHCP IP 范围")]), e._v(" "), n("div", {
                         staticClass: "flex"
-                    }, [n("div", [n("span", [e._v("From")]), e._v(" "), n("input", {
+                    }, [n("div", [n("span", [e._v("从")]), e._v(" "), n("input", {
                         directives: [{
                             name: "model",
                             rawName: "v-model",
@@ -17158,7 +17158,7 @@ module.exports = function(e) {
                                 t.target.composing || (e.rangeFrom = t.target.value)
                             }
                         }
-                    })]), e._v(" "), n("div", [n("span", [e._v("To")]), e._v(" "), n("input", {
+                    })]), e._v(" "), n("div", [n("span", [e._v("至")]), e._v(" "), n("input", {
                         directives: [{
                             name: "model",
                             rawName: "v-model",
@@ -17178,7 +17178,7 @@ module.exports = function(e) {
                         }
                     })])])]), e._v(" "), n("div", {
                         staticClass: "sec"
-                    }, [n("span", [e._v("Netmask")]), e._v(" "), n("input", {
+                    }, [n("span", [e._v("网络掩码")]), e._v(" "), n("input", {
                         directives: [{
                             name: "model",
                             rawName: "v-model",
@@ -17198,7 +17198,7 @@ module.exports = function(e) {
                         }
                     })]), e._v(" "), n("div", {
                         staticClass: "sec"
-                    }, [n("span", [e._v("Default Router")]), e._v(" "), n("input", {
+                    }, [n("span", [e._v("默认路由")]), e._v(" "), n("input", {
                         directives: [{
                             name: "model",
                             rawName: "v-model",
@@ -17218,9 +17218,9 @@ module.exports = function(e) {
                         }
                     })]), e._v(" "), n("div", {
                         staticClass: "sec"
-                    }, [n("span", [e._v("DNS Servers")]), e._v(" "), n("div", {
+                    }, [n("span", [e._v("DNS 服务器")]), e._v(" "), n("div", {
                         staticClass: "flex"
-                    }, [n("div", [n("span", [e._v("Primary")]), e._v(" "), n("input", {
+                    }, [n("div", [n("span", [e._v("主要")]), e._v(" "), n("input", {
                         directives: [{
                             name: "model",
                             rawName: "v-model",
@@ -17238,7 +17238,7 @@ module.exports = function(e) {
                                 t.target.composing || (e.primaryDns = t.target.value)
                             }
                         }
-                    })]), e._v(" "), n("div", [n("span", [e._v("Alternative")]), e._v(" "), n("input", {
+                    })]), e._v(" "), n("div", [n("span", [e._v("备选")]), e._v(" "), n("input", {
                         directives: [{
                             name: "model",
                             rawName: "v-model",
@@ -17261,7 +17261,7 @@ module.exports = function(e) {
                         on: {
                             click: e.handleContinueClick
                         }
-                    }, [e._v("Continue")])])])
+                    }, [e._v("继续")])])])
                 }), [], !1, null, "66a3e40b", null).exports
             },
             data: function() {
@@ -17286,7 +17286,7 @@ module.exports = function(e) {
                     return null !== this.server
                 },
                 buttonText: function() {
-                    return this.serverRunning ? "Stop" : "Start"
+                    return this.serverRunning ? "停止" : "启动"
                 }
             }),
             methods: i(i({}, Object(d.mapMutations)({
@@ -17391,7 +17391,7 @@ module.exports = function(e) {
                 class: ["main-router-view-" + e.theme]
             }, [n("div", {
                 staticClass: "header"
-            }, [n("div", [e._v("DHCP Server")]), e._v(" "), n("div", {
+            }, [n("div", [e._v("DHCP 服务端")]), e._v(" "), n("div", {
                 staticClass: "btn",
                 class: [e.serverRunning ? "btn-stop" : "btn-start"],
                 on: {
@@ -17433,14 +17433,14 @@ module.exports = function(e) {
                             return e.handleGotoConnections(t.chaddr)
                         }
                     }
-                }, [e._v("\n          Connections\n        ")]) : e._e(), e._v(" "), n("div", {
+                }, [e._v("\n          连接\n        ")]) : e._e(), e._v(" "), n("div", {
                     staticClass: "btn hijack-button",
                     on: {
                         click: function() {
                             return e.handleMacToHijack(t.options[61])
                         }
                     }
-                }, [e._v("\n          " + e._s(e.routerHijackMacAddresses.includes(t.options[61]) ? "Clash TUN" : "Default Gateway") + "\n        ")])])])
+                }, [e._v("\n          " + e._s(e.routerHijackMacAddresses.includes(t.options[61]) ? "Clash TUN" : "默认网关") + "\n        ")])])])
             })), 0), e._v(" "), e.isShowConfigView ? n("config-view", {
                 on: {
                     close: function() {
