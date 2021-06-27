@@ -112,7 +112,7 @@ module.exports = function(e) {
             t = void 0 === e ? {} : e;
         (_ = new m.BrowserWindow(o({
             height: 713,
-            width: 978,
+            width: 993,
             minWidth: 850,
             minHeight: 603,
             backgroundColor: "#f5f5f5",

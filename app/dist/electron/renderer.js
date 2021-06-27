@@ -10612,7 +10612,7 @@ module.exports = function(e) {
                 staticClass: "input-view"
             }, [n("div", {
                 staticClass: "title"
-            }, [e._v(e._s(e.data ? "编辑" : "新建") + " 代理")]), e._v(" "), n("input", {
+            }, [e._v(e._s(e.data ? "编辑" : "新建") + "代理")]), e._v(" "), n("input", {
                 directives: [{
                     name: "model",
                     rawName: "v-model",
