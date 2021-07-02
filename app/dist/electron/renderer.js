@@ -16744,7 +16744,7 @@ module.exports = function(e) {
             }, [e._v("Clash for Windows")]), e._v(" "), n("div", {
                 staticClass: "version",
                 domProps: {
-                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.16.1.0)")
+                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.16.1.0.1)")
                 },
                 on: {
                     click: e.openGithubRelease
@@ -19632,7 +19632,8 @@ module.exports = function(e) {
                                 "(☆ 匹配目标端口 ☆ ").replace("(match Process",
                                 "(☆ 匹配进程 ☆ ").replace("(match Unknown",
                                 "(☆ 未知匹配 ☆ ").replace("(match ",
-                                "(☆ 匹配 ☆ ")
+                                "(☆ 匹配 ☆ ").replace("Match/",
+                                "☆ 匹配 ☆/")
                         ))
                     }
                 }) : e._e()])])
