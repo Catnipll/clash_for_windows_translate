@@ -16744,7 +16744,7 @@ module.exports = function(e) {
             }, [e._v("Clash for Windows")]), e._v(" "), n("div", {
                 staticClass: "version",
                 domProps: {
-                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.16.1.0.1)")
+                    innerHTML: e._s(e.version + "\n<br/>\n(zh_CN v 0.16.1.0.2)")
                 },
                 on: {
                     click: e.openGithubRelease
@@ -19598,7 +19598,8 @@ module.exports = function(e) {
                         "☆ 目标端口 ☆ (").replace("Process(",
                         "☆ 进程 ☆ (").replace("Match(",
                         "☆ 匹配 ☆ (").replace("Unknown(",
-                        "☆ 未知 ☆ (")
+                        "☆ 未知 ☆ (").replace("NoMatch",
+                        "☆ 未匹配 ☆")
                 ))]) : e._e(), e._v(" "), t.from ? n("div", [e._v(e._s(
                     t.from.replaceAll("couldn't find ip",
                         "未能查询 IP").replaceAll("dial ",
@@ -19613,7 +19614,8 @@ module.exports = function(e) {
                         "读取: ").replaceAll("connection reset by peer",
                         "被连接方重置连接").replaceAll("socket: ",
                         "套接字: ").replaceAll("too many open files",
-                        "过多打开文件")
+                        "过多打开文件").replaceAll("unexpected EOF",
+                        "未预料的文件末尾")
                 ))]) : e._e(), e._v(" "), n("div", [e._v(e._s(t.time.format("HH:mm:ss.SSS")))])])]), e._v(" "), t.proxy ? n("div", {
                     staticClass: "proxy-name",
                     style: e.randomBGC(t.proxy),
@@ -19633,7 +19635,8 @@ module.exports = function(e) {
                                 "(☆ 匹配进程 ☆ ").replace("(match Unknown",
                                 "(☆ 未知匹配 ☆ ").replace("(match ",
                                 "(☆ 匹配 ☆ ").replace("Match/",
-                                "☆ 匹配 ☆/")
+                                "☆ 匹配 ☆/").replace("Domain/",
+                                "☆ 域名 ☆")
                         ))
                     }
                 }) : e._e()])])
